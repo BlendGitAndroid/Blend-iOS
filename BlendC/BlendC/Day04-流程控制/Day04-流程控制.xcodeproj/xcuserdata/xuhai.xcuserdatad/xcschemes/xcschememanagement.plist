@@ -7,52 +7,52 @@
 		<key>01-复习.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 		<key>02-作业讲解.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>72</integer>
 		</dict>
-		<key>03-goto跳转语句.xcscheme_^#shared#^_</key>
+		<key>03-逻辑运算符与逻辑表达式.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>124</integer>
+			<integer>81</integer>
 		</dict>
-		<key>04-函数的基本使用.xcscheme_^#shared#^_</key>
+		<key>04-运算符的优先级和结合性.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>59</integer>
+			<integer>53</integer>
 		</dict>
-		<key>05-全局变量.xcscheme_^#shared#^_</key>
+		<key>05-IF结构.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>69</integer>
+			<integer>10</integer>
 		</dict>
-		<key>06-带参数的函数.xcscheme_^#shared#^_</key>
+		<key>06-变量的作用域.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>120</integer>
+			<integer>105</integer>
 		</dict>
-		<key>07-带多个参数的函数2.xcscheme_^#shared#^_</key>
+		<key>07-IF-ELSE结构.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>113</integer>
+			<integer>45</integer>
 		</dict>
-		<key>08-return关键字.xcscheme_^#shared#^_</key>
+		<key>08-IF-ELSE IF结构.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>55</integer>
+			<integer>87</integer>
 		</dict>
-		<key>09-带返回值的函数.xcscheme_^#shared#^_</key>
+		<key>09-三元表达式.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>111</integer>
 		</dict>
-		<key>10-函数的声明.xcscheme_^#shared#^_</key>
+		<key>10-如何产生1个随机数.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>108</integer>
+			<integer>50</integer>
 		</dict>
 	</dict>
 </dict>

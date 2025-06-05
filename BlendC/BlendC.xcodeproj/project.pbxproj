@@ -20,6 +20,32 @@
 
 /* Begin PBXFileReference section */
 		0987D5E32DF13E7400B0E0EF /* BlendC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlendC; sourceTree = BUILT_PRODUCTS_DIR; };
+		0987D6052DF1455E00B0E0EF /* Day03-表达式.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day03-表达式.xcodeproj"; sourceTree = "<group>"; };
+		0987D6472DF1460F00B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day02-IDE的使用与数据类型.xcodeproj"; sourceTree = "<group>"; };
+		0987D6842DF1463A00B0E0EF /* Day04-流程控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day04-流程控制.xcodeproj"; sourceTree = "<group>"; };
+		0987D6C72DF1465700B0E0EF /* Day05-循环控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day05-循环控制.xcodeproj"; sourceTree = "<group>"; };
+		0987D7082DF1466800B0E0EF /* Day06-循环增强.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day06-循环增强.xcodeproj"; sourceTree = "<group>"; };
+		0987D7412DF1467900B0E0EF /* Day07-函数.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day07-函数.xcodeproj"; sourceTree = "<group>"; };
+		0987D78A2DF1468700B0E0EF /* Day08-进制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day08-进制.xcodeproj"; sourceTree = "<group>"; };
+		0987D7D62DF1469600B0E0EF /* Day09-数组.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day09-数组.xcodeproj"; sourceTree = "<group>"; };
+		0987D81A2DF146A400B0E0EF /* Day10-字符串.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day10-字符串.xcodeproj"; sourceTree = "<group>"; };
+		0987D8572DF146BE00B0E0EF /* Day11-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day11-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987D8992DF146D100B0E0EF /* Day12-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day12-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987D8E02DF146DE00B0E0EF /* Day13-结构体与枚举.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day13-结构体与枚举.xcodeproj"; sourceTree = "<group>"; };
+		0987D9472DF146F400B0E0EF /* Day14-预处理指令.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day14-预处理指令.xcodeproj"; sourceTree = "<group>"; };
+		0987D9BF2DF1666500B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day02-IDE的使用与数据类型.xcodeproj"; sourceTree = "<group>"; };
+		0987D9D92DF1666500B0E0EF /* Day03-表达式.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day03-表达式.xcodeproj"; sourceTree = "<group>"; };
+		0987D9F02DF1666500B0E0EF /* Day04-流程控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day04-流程控制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA092DF1666500B0E0EF /* Day05-循环控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day05-循环控制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA1C2DF1666500B0E0EF /* Day06-循环增强.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day06-循环增强.xcodeproj"; sourceTree = "<group>"; };
+		0987DA332DF1666500B0E0EF /* Day07-函数.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day07-函数.xcodeproj"; sourceTree = "<group>"; };
+		0987DA522DF1666500B0E0EF /* Day08-进制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day08-进制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA6A2DF1666500B0E0EF /* Day09-数组.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day09-数组.xcodeproj"; sourceTree = "<group>"; };
+		0987DA802DF1666500B0E0EF /* Day10-字符串.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day10-字符串.xcodeproj"; sourceTree = "<group>"; };
+		0987DA962DF1666500B0E0EF /* Day11-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day11-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987DAAE2DF1666500B0E0EF /* Day12-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day12-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987DACA2DF1666500B0E0EF /* Day13-结构体与枚举.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day13-结构体与枚举.xcodeproj"; sourceTree = "<group>"; };
+		0987DAFB2DF1666500B0E0EF /* Day14-预处理指令.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day14-预处理指令.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,6 +79,188 @@
 			isa = PBXGroup;
 			children = (
 				0987D5E32DF13E7400B0E0EF /* BlendC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6072DF1455E00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6492DF1460F00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6862DF1463A00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6C92DF1465700B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D70A2DF1466800B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D7432DF1467900B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D78C2DF1468700B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D7D82DF1469600B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D81C2DF146A400B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D8592DF146BE00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D89B2DF146D100B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D8E22DF146DE00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D9492DF146F400B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DAFF2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB012DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB032DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB052DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB072DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB092DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0B2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0D2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0F2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB112DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB132DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB152DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB172DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +316,112 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0987D5E42DF13E7400B0E0EF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0987DB052DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9BF2DF1666500B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6492DF1460F00B0E0EF /* Products */;
+					ProjectRef = 0987D6472DF1460F00B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB032DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9D92DF1666500B0E0EF /* Day03-表达式.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6072DF1455E00B0E0EF /* Products */;
+					ProjectRef = 0987D6052DF1455E00B0E0EF /* Day03-表达式.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB072DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9F02DF1666500B0E0EF /* Day04-流程控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6862DF1463A00B0E0EF /* Products */;
+					ProjectRef = 0987D6842DF1463A00B0E0EF /* Day04-流程控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6C92DF1465700B0E0EF /* Products */;
+					ProjectRef = 0987D6C72DF1465700B0E0EF /* Day05-循环控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0B2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA092DF1666500B0E0EF /* Day05-循环控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D70A2DF1466800B0E0EF /* Products */;
+					ProjectRef = 0987D7082DF1466800B0E0EF /* Day06-循环增强.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB152DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA1C2DF1666500B0E0EF /* Day06-循环增强.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D7432DF1467900B0E0EF /* Products */;
+					ProjectRef = 0987D7412DF1467900B0E0EF /* Day07-函数.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB112DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA332DF1666500B0E0EF /* Day07-函数.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0F2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA522DF1666500B0E0EF /* Day08-进制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D78C2DF1468700B0E0EF /* Products */;
+					ProjectRef = 0987D78A2DF1468700B0E0EF /* Day08-进制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB132DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA6A2DF1666500B0E0EF /* Day09-数组.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D7D82DF1469600B0E0EF /* Products */;
+					ProjectRef = 0987D7D62DF1469600B0E0EF /* Day09-数组.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DAFF2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA802DF1666500B0E0EF /* Day10-字符串.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D81C2DF146A400B0E0EF /* Products */;
+					ProjectRef = 0987D81A2DF146A400B0E0EF /* Day10-字符串.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB092DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA962DF1666500B0E0EF /* Day11-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D8592DF146BE00B0E0EF /* Products */;
+					ProjectRef = 0987D8572DF146BE00B0E0EF /* Day11-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB012DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DAAE2DF1666500B0E0EF /* Day12-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D89B2DF146D100B0E0EF /* Products */;
+					ProjectRef = 0987D8992DF146D100B0E0EF /* Day12-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D8E22DF146DE00B0E0EF /* Products */;
+					ProjectRef = 0987D8E02DF146DE00B0E0EF /* Day13-结构体与枚举.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB172DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DACA2DF1666500B0E0EF /* Day13-结构体与枚举.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0D2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DAFB2DF1666500B0E0EF /* Day14-预处理指令.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D9492DF146F400B0E0EF /* Products */;
+					ProjectRef = 0987D9472DF146F400B0E0EF /* Day14-预处理指令.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0987D5E22DF13E7400B0E0EF /* BlendC */,
