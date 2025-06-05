@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC442B9D240E551A00E98613 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC442B9C240E551A00E98613 /* main.c */; };
+		EC442BA8240E593200E98613 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC442BA7240E593200E98613 /* main.c */; };
+		EC8423D1240DDEC0004676C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC8423D0240DDEC0004676C2 /* main.c */; };
+		EC8423DE240DE20D004676C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC8423DD240DE20D004676C2 /* main.c */; };
+		EC8423E9240DE5D9004676C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC8423E8240DE5D9004676C2 /* main.c */; };
+		EC8423F4240DEA2D004676C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC8423F3240DEA2D004676C2 /* main.c */; };
+		EC86BAC2240E2B8A00EE8676 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC86BAC1240E2B8A00EE8676 /* main.c */; };
+		EC86BACD240E32AA00EE8676 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC86BACC240E32AA00EE8676 /* main.c */; };
+		EC86BAD8240E3B7F00EE8676 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC86BAD7240E3B7F00EE8676 /* main.c */; };
+		EC86BAE3240E4B8500EE8676 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC86BAE2240E4B8500EE8676 /* main.c */; };
+		EC86BAEE240E504C00EE8676 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC86BAED240E504C00EE8676 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC442B98240E551A00E98613 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC442BA3240E593200E98613 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC8423CB240DDEBF004676C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC8423D9240DE20D004676C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC8423E4240DE5D9004676C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC8423EF240DEA2D004676C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC86BABD240E2B8A00EE8676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC86BAC8240E32AA00EE8676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC86BAD3240E3B7F00EE8676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC86BADE240E4B8500EE8676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC86BAE9240E504C00EE8676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC442B9A240E551A00E98613 /* 09-冒泡排序 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "09-冒泡排序"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC442B9C240E551A00E98613 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC442BA5240E593200E98613 /* 10-二分查找法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "10-二分查找法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC442BA7240E593200E98613 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC8423CD240DDEBF004676C2 /* Day09-数组 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Day09-数组"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8423D0240DDEC0004676C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC8423DB240DE20D004676C2 /* 01-格式控制符总结 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-格式控制符总结"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8423DD240DE20D004676C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC8423E6240DE5D9004676C2 /* 02-垃圾值的由来 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-垃圾值的由来"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8423E8240DE5D9004676C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC8423F1240DEA2D004676C2 /* 03-数组的基本使用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-数组的基本使用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8423F3240DEA2D004676C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC86BABF240E2B8A00EE8676 /* 04-数组在内存中的存储 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-数组在内存中的存储"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86BAC1240E2B8A00EE8676 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC86BACA240E32AA00EE8676 /* 05-数组的应用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-数组的应用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86BACC240E32AA00EE8676 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC86BAD5240E3B7F00EE8676 /* 06-数组与函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "06-数组与函数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86BAD7240E3B7F00EE8676 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC86BAE0240E4B8500EE8676 /* 07-数组的其他应用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-数组的其他应用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86BAE2240E4B8500EE8676 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC86BAEB240E504C00EE8676 /* 08-数组的排序 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "08-数组的排序"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86BAED240E504C00EE8676 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC442B97240E551A00E98613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC442BA2240E593200E98613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423CA240DDEBF004676C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423D8240DE20D004676C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423E3240DE5D9004676C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423EE240DEA2D004676C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BABC240E2B8A00EE8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAC7240E32AA00EE8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAD2240E3B7F00EE8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BADD240E4B8500EE8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAE8240E504C00EE8676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC442B9B240E551A00E98613 /* 09-冒泡排序 */ = {
+			isa = PBXGroup;
+			children = (
+				EC442B9C240E551A00E98613 /* main.c */,
+			);
+			path = "09-冒泡排序";
+			sourceTree = "<group>";
+		};
+		EC442BA6240E593200E98613 /* 10-二分查找法 */ = {
+			isa = PBXGroup;
+			children = (
+				EC442BA7240E593200E98613 /* main.c */,
+			);
+			path = "10-二分查找法";
+			sourceTree = "<group>";
+		};
+		EC8423C4240DDEBF004676C2 = {
+			isa = PBXGroup;
+			children = (
+				EC8423CF240DDEBF004676C2 /* Day09-数组 */,
+				EC8423DC240DE20D004676C2 /* 01-格式控制符总结 */,
+				EC8423E7240DE5D9004676C2 /* 02-垃圾值的由来 */,
+				EC8423F2240DEA2D004676C2 /* 03-数组的基本使用 */,
+				EC86BAC0240E2B8A00EE8676 /* 04-数组在内存中的存储 */,
+				EC86BACB240E32AA00EE8676 /* 05-数组的应用 */,
+				EC86BAD6240E3B7F00EE8676 /* 06-数组与函数 */,
+				EC86BAE1240E4B8500EE8676 /* 07-数组的其他应用 */,
+				EC86BAEC240E504C00EE8676 /* 08-数组的排序 */,
+				EC442B9B240E551A00E98613 /* 09-冒泡排序 */,
+				EC442BA6240E593200E98613 /* 10-二分查找法 */,
+				EC8423CE240DDEBF004676C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8423CE240DDEBF004676C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8423CD240DDEBF004676C2 /* Day09-数组 */,
+				EC8423DB240DE20D004676C2 /* 01-格式控制符总结 */,
+				EC8423E6240DE5D9004676C2 /* 02-垃圾值的由来 */,
+				EC8423F1240DEA2D004676C2 /* 03-数组的基本使用 */,
+				EC86BABF240E2B8A00EE8676 /* 04-数组在内存中的存储 */,
+				EC86BACA240E32AA00EE8676 /* 05-数组的应用 */,
+				EC86BAD5240E3B7F00EE8676 /* 06-数组与函数 */,
+				EC86BAE0240E4B8500EE8676 /* 07-数组的其他应用 */,
+				EC86BAEB240E504C00EE8676 /* 08-数组的排序 */,
+				EC442B9A240E551A00E98613 /* 09-冒泡排序 */,
+				EC442BA5240E593200E98613 /* 10-二分查找法 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8423CF240DDEBF004676C2 /* Day09-数组 */ = {
+			isa = PBXGroup;
+			children = (
+				EC8423D0240DDEC0004676C2 /* main.c */,
+			);
+			path = "Day09-数组";
+			sourceTree = "<group>";
+		};
+		EC8423DC240DE20D004676C2 /* 01-格式控制符总结 */ = {
+			isa = PBXGroup;
+			children = (
+				EC8423DD240DE20D004676C2 /* main.c */,
+			);
+			path = "01-格式控制符总结";
+			sourceTree = "<group>";
+		};
+		EC8423E7240DE5D9004676C2 /* 02-垃圾值的由来 */ = {
+			isa = PBXGroup;
+			children = (
+				EC8423E8240DE5D9004676C2 /* main.c */,
+			);
+			path = "02-垃圾值的由来";
+			sourceTree = "<group>";
+		};
+		EC8423F2240DEA2D004676C2 /* 03-数组的基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				EC8423F3240DEA2D004676C2 /* main.c */,
+			);
+			path = "03-数组的基本使用";
+			sourceTree = "<group>";
+		};
+		EC86BAC0240E2B8A00EE8676 /* 04-数组在内存中的存储 */ = {
+			isa = PBXGroup;
+			children = (
+				EC86BAC1240E2B8A00EE8676 /* main.c */,
+			);
+			path = "04-数组在内存中的存储";
+			sourceTree = "<group>";
+		};
+		EC86BACB240E32AA00EE8676 /* 05-数组的应用 */ = {
+			isa = PBXGroup;
+			children = (
+				EC86BACC240E32AA00EE8676 /* main.c */,
+			);
+			path = "05-数组的应用";
+			sourceTree = "<group>";
+		};
+		EC86BAD6240E3B7F00EE8676 /* 06-数组与函数 */ = {
+			isa = PBXGroup;
+			children = (
+				EC86BAD7240E3B7F00EE8676 /* main.c */,
+			);
+			path = "06-数组与函数";
+			sourceTree = "<group>";
+		};
+		EC86BAE1240E4B8500EE8676 /* 07-数组的其他应用 */ = {
+			isa = PBXGroup;
+			children = (
+				EC86BAE2240E4B8500EE8676 /* main.c */,
+			);
+			path = "07-数组的其他应用";
+			sourceTree = "<group>";
+		};
+		EC86BAEC240E504C00EE8676 /* 08-数组的排序 */ = {
+			isa = PBXGroup;
+			children = (
+				EC86BAED240E504C00EE8676 /* main.c */,
+			);
+			path = "08-数组的排序";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC442B99240E551A00E98613 /* 09-冒泡排序 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC442BA0240E551A00E98613 /* Build configuration list for PBXNativeTarget "09-冒泡排序" */;
+			buildPhases = (
+				EC442B96240E551A00E98613 /* Sources */,
+				EC442B97240E551A00E98613 /* Frameworks */,
+				EC442B98240E551A00E98613 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "09-冒泡排序";
+			productName = "09-冒泡排序";
+			productReference = EC442B9A240E551A00E98613 /* 09-冒泡排序 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC442BA4240E593200E98613 /* 10-二分查找法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC442BA9240E593200E98613 /* Build configuration list for PBXNativeTarget "10-二分查找法" */;
+			buildPhases = (
+				EC442BA1240E593200E98613 /* Sources */,
+				EC442BA2240E593200E98613 /* Frameworks */,
+				EC442BA3240E593200E98613 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10-二分查找法";
+			productName = "10-二分查找法";
+			productReference = EC442BA5240E593200E98613 /* 10-二分查找法 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC8423CC240DDEBF004676C2 /* Day09-数组 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8423D4240DDEC0004676C2 /* Build configuration list for PBXNativeTarget "Day09-数组" */;
+			buildPhases = (
+				EC8423C9240DDEBF004676C2 /* Sources */,
+				EC8423CA240DDEBF004676C2 /* Frameworks */,
+				EC8423CB240DDEBF004676C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day09-数组";
+			productName = "Day09-数组";
+			productReference = EC8423CD240DDEBF004676C2 /* Day09-数组 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC8423DA240DE20D004676C2 /* 01-格式控制符总结 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8423DF240DE20D004676C2 /* Build configuration list for PBXNativeTarget "01-格式控制符总结" */;
+			buildPhases = (
+				EC8423D7240DE20D004676C2 /* Sources */,
+				EC8423D8240DE20D004676C2 /* Frameworks */,
+				EC8423D9240DE20D004676C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-格式控制符总结";
+			productName = "01-格式控制符总结";
+			productReference = EC8423DB240DE20D004676C2 /* 01-格式控制符总结 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC8423E5240DE5D9004676C2 /* 02-垃圾值的由来 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8423EA240DE5D9004676C2 /* Build configuration list for PBXNativeTarget "02-垃圾值的由来" */;
+			buildPhases = (
+				EC8423E2240DE5D9004676C2 /* Sources */,
+				EC8423E3240DE5D9004676C2 /* Frameworks */,
+				EC8423E4240DE5D9004676C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-垃圾值的由来";
+			productName = "02-垃圾值的由来";
+			productReference = EC8423E6240DE5D9004676C2 /* 02-垃圾值的由来 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC8423F0240DEA2D004676C2 /* 03-数组的基本使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8423F5240DEA2D004676C2 /* Build configuration list for PBXNativeTarget "03-数组的基本使用" */;
+			buildPhases = (
+				EC8423ED240DEA2D004676C2 /* Sources */,
+				EC8423EE240DEA2D004676C2 /* Frameworks */,
+				EC8423EF240DEA2D004676C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-数组的基本使用";
+			productName = "03-数组的基本使用";
+			productReference = EC8423F1240DEA2D004676C2 /* 03-数组的基本使用 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC86BABE240E2B8A00EE8676 /* 04-数组在内存中的存储 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86BAC5240E2B8A00EE8676 /* Build configuration list for PBXNativeTarget "04-数组在内存中的存储" */;
+			buildPhases = (
+				EC86BABB240E2B8A00EE8676 /* Sources */,
+				EC86BABC240E2B8A00EE8676 /* Frameworks */,
+				EC86BABD240E2B8A00EE8676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04-数组在内存中的存储";
+			productName = "04-数组在内存中的存储";
+			productReference = EC86BABF240E2B8A00EE8676 /* 04-数组在内存中的存储 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC86BAC9240E32AA00EE8676 /* 05-数组的应用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86BACE240E32AA00EE8676 /* Build configuration list for PBXNativeTarget "05-数组的应用" */;
+			buildPhases = (
+				EC86BAC6240E32AA00EE8676 /* Sources */,
+				EC86BAC7240E32AA00EE8676 /* Frameworks */,
+				EC86BAC8240E32AA00EE8676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-数组的应用";
+			productName = "05-数组的应用";
+			productReference = EC86BACA240E32AA00EE8676 /* 05-数组的应用 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC86BAD4240E3B7F00EE8676 /* 06-数组与函数 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86BAD9240E3B7F00EE8676 /* Build configuration list for PBXNativeTarget "06-数组与函数" */;
+			buildPhases = (
+				EC86BAD1240E3B7F00EE8676 /* Sources */,
+				EC86BAD2240E3B7F00EE8676 /* Frameworks */,
+				EC86BAD3240E3B7F00EE8676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-数组与函数";
+			productName = "06-数组与函数";
+			productReference = EC86BAD5240E3B7F00EE8676 /* 06-数组与函数 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC86BADF240E4B8500EE8676 /* 07-数组的其他应用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86BAE6240E4B8500EE8676 /* Build configuration list for PBXNativeTarget "07-数组的其他应用" */;
+			buildPhases = (
+				EC86BADC240E4B8500EE8676 /* Sources */,
+				EC86BADD240E4B8500EE8676 /* Frameworks */,
+				EC86BADE240E4B8500EE8676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-数组的其他应用";
+			productName = "07-数组的其他应用";
+			productReference = EC86BAE0240E4B8500EE8676 /* 07-数组的其他应用 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC86BAEA240E504C00EE8676 /* 08-数组的排序 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86BAEF240E504C00EE8676 /* Build configuration list for PBXNativeTarget "08-数组的排序" */;
+			buildPhases = (
+				EC86BAE7240E504C00EE8676 /* Sources */,
+				EC86BAE8240E504C00EE8676 /* Frameworks */,
+				EC86BAE9240E504C00EE8676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "08-数组的排序";
+			productName = "08-数组的排序";
+			productReference = EC86BAEB240E504C00EE8676 /* 08-数组的排序 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8423C5240DDEBF004676C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = itheima;
+				TargetAttributes = {
+					EC442B99240E551A00E98613 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC442BA4240E593200E98613 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC8423CC240DDEBF004676C2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC8423DA240DE20D004676C2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC8423E5240DE5D9004676C2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC8423F0240DEA2D004676C2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC86BABE240E2B8A00EE8676 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC86BAC9240E32AA00EE8676 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC86BAD4240E3B7F00EE8676 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC86BADF240E4B8500EE8676 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC86BAEA240E504C00EE8676 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = EC8423C8240DDEBF004676C2 /* Build configuration list for PBXProject "Day09-数组" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC8423C4240DDEBF004676C2;
+			productRefGroup = EC8423CE240DDEBF004676C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8423CC240DDEBF004676C2 /* Day09-数组 */,
+				EC8423DA240DE20D004676C2 /* 01-格式控制符总结 */,
+				EC8423E5240DE5D9004676C2 /* 02-垃圾值的由来 */,
+				EC8423F0240DEA2D004676C2 /* 03-数组的基本使用 */,
+				EC86BABE240E2B8A00EE8676 /* 04-数组在内存中的存储 */,
+				EC86BAC9240E32AA00EE8676 /* 05-数组的应用 */,
+				EC86BAD4240E3B7F00EE8676 /* 06-数组与函数 */,
+				EC86BADF240E4B8500EE8676 /* 07-数组的其他应用 */,
+				EC86BAEA240E504C00EE8676 /* 08-数组的排序 */,
+				EC442B99240E551A00E98613 /* 09-冒泡排序 */,
+				EC442BA4240E593200E98613 /* 10-二分查找法 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC442B96240E551A00E98613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC442B9D240E551A00E98613 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC442BA1240E593200E98613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC442BA8240E593200E98613 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423C9240DDEBF004676C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8423D1240DDEC0004676C2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423D7240DE20D004676C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8423DE240DE20D004676C2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423E2240DE5D9004676C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8423E9240DE5D9004676C2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8423ED240DEA2D004676C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8423F4240DEA2D004676C2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BABB240E2B8A00EE8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86BAC2240E2B8A00EE8676 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAC6240E32AA00EE8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86BACD240E32AA00EE8676 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAD1240E3B7F00EE8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86BAD8240E3B7F00EE8676 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BADC240E4B8500EE8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86BAE3240E4B8500EE8676 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86BAE7240E504C00EE8676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86BAEE240E504C00EE8676 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC442B9E240E551A00E98613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC442B9F240E551A00E98613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC442BAA240E593200E98613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC442BAB240E593200E98613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC8423D2240DDEC0004676C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC8423D3240DDEC0004676C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC8423D5240DDEC0004676C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8423D6240DDEC0004676C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC8423E0240DE20D004676C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8423E1240DE20D004676C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC8423EB240DE5D9004676C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8423EC240DE5D9004676C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC8423F6240DEA2D004676C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8423F7240DEA2D004676C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC86BAC3240E2B8A00EE8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC86BAC4240E2B8A00EE8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC86BACF240E32AA00EE8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC86BAD0240E32AA00EE8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC86BADA240E3B7F00EE8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC86BADB240E3B7F00EE8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC86BAE4240E4B8500EE8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC86BAE5240E4B8500EE8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC86BAF0240E504C00EE8676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC86BAF1240E504C00EE8676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC442BA0240E551A00E98613 /* Build configuration list for PBXNativeTarget "09-冒泡排序" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC442B9E240E551A00E98613 /* Debug */,
+				EC442B9F240E551A00E98613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC442BA9240E593200E98613 /* Build configuration list for PBXNativeTarget "10-二分查找法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC442BAA240E593200E98613 /* Debug */,
+				EC442BAB240E593200E98613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC8423C8240DDEBF004676C2 /* Build configuration list for PBXProject "Day09-数组" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8423D2240DDEC0004676C2 /* Debug */,
+				EC8423D3240DDEC0004676C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8423D4240DDEC0004676C2 /* Build configuration list for PBXNativeTarget "Day09-数组" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8423D5240DDEC0004676C2 /* Debug */,
+				EC8423D6240DDEC0004676C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8423DF240DE20D004676C2 /* Build configuration list for PBXNativeTarget "01-格式控制符总结" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8423E0240DE20D004676C2 /* Debug */,
+				EC8423E1240DE20D004676C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8423EA240DE5D9004676C2 /* Build configuration list for PBXNativeTarget "02-垃圾值的由来" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8423EB240DE5D9004676C2 /* Debug */,
+				EC8423EC240DE5D9004676C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8423F5240DEA2D004676C2 /* Build configuration list for PBXNativeTarget "03-数组的基本使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8423F6240DEA2D004676C2 /* Debug */,
+				EC8423F7240DEA2D004676C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC86BAC5240E2B8A00EE8676 /* Build configuration list for PBXNativeTarget "04-数组在内存中的存储" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86BAC3240E2B8A00EE8676 /* Debug */,
+				EC86BAC4240E2B8A00EE8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC86BACE240E32AA00EE8676 /* Build configuration list for PBXNativeTarget "05-数组的应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86BACF240E32AA00EE8676 /* Debug */,
+				EC86BAD0240E32AA00EE8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC86BAD9240E3B7F00EE8676 /* Build configuration list for PBXNativeTarget "06-数组与函数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86BADA240E3B7F00EE8676 /* Debug */,
+				EC86BADB240E3B7F00EE8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC86BAE6240E4B8500EE8676 /* Build configuration list for PBXNativeTarget "07-数组的其他应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86BAE4240E4B8500EE8676 /* Debug */,
+				EC86BAE5240E4B8500EE8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC86BAEF240E504C00EE8676 /* Build configuration list for PBXNativeTarget "08-数组的排序" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86BAF0240E504C00EE8676 /* Debug */,
+				EC86BAF1240E504C00EE8676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8423C5240DDEBF004676C2 /* Project object */;
+}
