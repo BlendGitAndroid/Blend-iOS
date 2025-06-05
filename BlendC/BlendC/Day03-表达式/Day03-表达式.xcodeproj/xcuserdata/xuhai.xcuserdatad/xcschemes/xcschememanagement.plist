@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>01-复习.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>02-数据类型转换.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>03-scanf函数的使用.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>88</integer>
+		</dict>
+		<key>04-scanf函数的其他用法.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>05-scanf函数的缓冲区.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>104</integer>
+		</dict>
+		<key>06-交换两个变量的值.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>110</integer>
+		</dict>
+		<key>07-算术运算符.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>60</integer>
+		</dict>
+		<key>08-复合赋值运算符.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>93</integer>
+		</dict>
+		<key>09-自增与自减运算.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>10-逗号表达式.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>89</integer>
+		</dict>
+		<key>11-比较运算符与比较表达式.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

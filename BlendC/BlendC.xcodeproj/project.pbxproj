@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0987D5E12DF13E7400B0E0EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0987D5E32DF13E7400B0E0EF /* BlendC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlendC; sourceTree = BUILT_PRODUCTS_DIR; };
+		0987D6052DF1455E00B0E0EF /* Day03-表达式.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day03-表达式.xcodeproj"; sourceTree = "<group>"; };
+		0987D6472DF1460F00B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day02-IDE的使用与数据类型.xcodeproj"; sourceTree = "<group>"; };
+		0987D6842DF1463A00B0E0EF /* Day04-流程控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day04-流程控制.xcodeproj"; sourceTree = "<group>"; };
+		0987D6C72DF1465700B0E0EF /* Day05-循环控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day05-循环控制.xcodeproj"; sourceTree = "<group>"; };
+		0987D7082DF1466800B0E0EF /* Day06-循环增强.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day06-循环增强.xcodeproj"; sourceTree = "<group>"; };
+		0987D7412DF1467900B0E0EF /* Day07-函数.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day07-函数.xcodeproj"; sourceTree = "<group>"; };
+		0987D78A2DF1468700B0E0EF /* Day08-进制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day08-进制.xcodeproj"; sourceTree = "<group>"; };
+		0987D7D62DF1469600B0E0EF /* Day09-数组.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day09-数组.xcodeproj"; sourceTree = "<group>"; };
+		0987D81A2DF146A400B0E0EF /* Day10-字符串.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day10-字符串.xcodeproj"; sourceTree = "<group>"; };
+		0987D8572DF146BE00B0E0EF /* Day11-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day11-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987D8992DF146D100B0E0EF /* Day12-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day12-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987D8E02DF146DE00B0E0EF /* Day13-结构体与枚举.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day13-结构体与枚举.xcodeproj"; sourceTree = "<group>"; };
+		0987D9472DF146F400B0E0EF /* Day14-预处理指令.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day14-预处理指令.xcodeproj"; sourceTree = "<group>"; };
+		0987D9BF2DF1666500B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day02-IDE的使用与数据类型.xcodeproj"; sourceTree = "<group>"; };
+		0987D9D92DF1666500B0E0EF /* Day03-表达式.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day03-表达式.xcodeproj"; sourceTree = "<group>"; };
+		0987D9F02DF1666500B0E0EF /* Day04-流程控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day04-流程控制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA092DF1666500B0E0EF /* Day05-循环控制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day05-循环控制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA1C2DF1666500B0E0EF /* Day06-循环增强.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day06-循环增强.xcodeproj"; sourceTree = "<group>"; };
+		0987DA332DF1666500B0E0EF /* Day07-函数.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day07-函数.xcodeproj"; sourceTree = "<group>"; };
+		0987DA522DF1666500B0E0EF /* Day08-进制.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day08-进制.xcodeproj"; sourceTree = "<group>"; };
+		0987DA6A2DF1666500B0E0EF /* Day09-数组.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day09-数组.xcodeproj"; sourceTree = "<group>"; };
+		0987DA802DF1666500B0E0EF /* Day10-字符串.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day10-字符串.xcodeproj"; sourceTree = "<group>"; };
+		0987DA962DF1666500B0E0EF /* Day11-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day11-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987DAAE2DF1666500B0E0EF /* Day12-指针.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day12-指针.xcodeproj"; sourceTree = "<group>"; };
+		0987DACA2DF1666500B0E0EF /* Day13-结构体与枚举.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day13-结构体与枚举.xcodeproj"; sourceTree = "<group>"; };
+		0987DAFB2DF1666500B0E0EF /* Day14-预处理指令.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Day14-预处理指令.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0987D5E52DF13E7400B0E0EF /* BlendC */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BlendC;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0987D5E02DF13E7400B0E0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0987D5DA2DF13E7400B0E0EF = {
+			isa = PBXGroup;
+			children = (
+				0987D5E52DF13E7400B0E0EF /* BlendC */,
+				0987D5E42DF13E7400B0E0EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0987D5E42DF13E7400B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0987D5E32DF13E7400B0E0EF /* BlendC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6072DF1455E00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6492DF1460F00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6862DF1463A00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D6C92DF1465700B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D70A2DF1466800B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D7432DF1467900B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D78C2DF1468700B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D7D82DF1469600B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D81C2DF146A400B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D8592DF146BE00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D89B2DF146D100B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D8E22DF146DE00B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987D9492DF146F400B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DAFF2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB012DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB032DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB052DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB072DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB092DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0B2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0D2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB0F2DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB112DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB132DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB152DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0987DB172DF1666500B0E0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0987D5E22DF13E7400B0E0EF /* BlendC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0987D5EA2DF13E7400B0E0EF /* Build configuration list for PBXNativeTarget "BlendC" */;
+			buildPhases = (
+				0987D5DF2DF13E7400B0E0EF /* Sources */,
+				0987D5E02DF13E7400B0E0EF /* Frameworks */,
+				0987D5E12DF13E7400B0E0EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0987D5E52DF13E7400B0E0EF /* BlendC */,
+			);
+			name = BlendC;
+			packageProductDependencies = (
+			);
+			productName = BlendC;
+			productReference = 0987D5E32DF13E7400B0E0EF /* BlendC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0987D5DB2DF13E7400B0E0EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					0987D5E22DF13E7400B0E0EF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 0987D5DE2DF13E7400B0E0EF /* Build configuration list for PBXProject "BlendC" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0987D5DA2DF13E7400B0E0EF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0987D5E42DF13E7400B0E0EF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0987DB052DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9BF2DF1666500B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6492DF1460F00B0E0EF /* Products */;
+					ProjectRef = 0987D6472DF1460F00B0E0EF /* Day02-IDE的使用与数据类型.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB032DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9D92DF1666500B0E0EF /* Day03-表达式.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6072DF1455E00B0E0EF /* Products */;
+					ProjectRef = 0987D6052DF1455E00B0E0EF /* Day03-表达式.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB072DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987D9F02DF1666500B0E0EF /* Day04-流程控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6862DF1463A00B0E0EF /* Products */;
+					ProjectRef = 0987D6842DF1463A00B0E0EF /* Day04-流程控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D6C92DF1465700B0E0EF /* Products */;
+					ProjectRef = 0987D6C72DF1465700B0E0EF /* Day05-循环控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0B2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA092DF1666500B0E0EF /* Day05-循环控制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D70A2DF1466800B0E0EF /* Products */;
+					ProjectRef = 0987D7082DF1466800B0E0EF /* Day06-循环增强.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB152DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA1C2DF1666500B0E0EF /* Day06-循环增强.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D7432DF1467900B0E0EF /* Products */;
+					ProjectRef = 0987D7412DF1467900B0E0EF /* Day07-函数.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB112DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA332DF1666500B0E0EF /* Day07-函数.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0F2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA522DF1666500B0E0EF /* Day08-进制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D78C2DF1468700B0E0EF /* Products */;
+					ProjectRef = 0987D78A2DF1468700B0E0EF /* Day08-进制.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB132DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA6A2DF1666500B0E0EF /* Day09-数组.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D7D82DF1469600B0E0EF /* Products */;
+					ProjectRef = 0987D7D62DF1469600B0E0EF /* Day09-数组.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DAFF2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA802DF1666500B0E0EF /* Day10-字符串.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D81C2DF146A400B0E0EF /* Products */;
+					ProjectRef = 0987D81A2DF146A400B0E0EF /* Day10-字符串.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB092DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DA962DF1666500B0E0EF /* Day11-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D8592DF146BE00B0E0EF /* Products */;
+					ProjectRef = 0987D8572DF146BE00B0E0EF /* Day11-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB012DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DAAE2DF1666500B0E0EF /* Day12-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D89B2DF146D100B0E0EF /* Products */;
+					ProjectRef = 0987D8992DF146D100B0E0EF /* Day12-指针.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D8E22DF146DE00B0E0EF /* Products */;
+					ProjectRef = 0987D8E02DF146DE00B0E0EF /* Day13-结构体与枚举.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB172DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DACA2DF1666500B0E0EF /* Day13-结构体与枚举.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987DB0D2DF1666500B0E0EF /* Products */;
+					ProjectRef = 0987DAFB2DF1666500B0E0EF /* Day14-预处理指令.xcodeproj */;
+				},
+				{
+					ProductGroup = 0987D9492DF146F400B0E0EF /* Products */;
+					ProjectRef = 0987D9472DF146F400B0E0EF /* Day14-预处理指令.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0987D5E22DF13E7400B0E0EF /* BlendC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0987D5DF2DF13E7400B0E0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0987D5E82DF13E7400B0E0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0987D5E92DF13E7400B0E0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0987D5EB2DF13E7400B0E0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0987D5EC2DF13E7400B0E0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0987D5DE2DF13E7400B0E0EF /* Build configuration list for PBXProject "BlendC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0987D5E82DF13E7400B0E0EF /* Debug */,
+				0987D5E92DF13E7400B0E0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0987D5EA2DF13E7400B0E0EF /* Build configuration list for PBXNativeTarget "BlendC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0987D5EB2DF13E7400B0E0EF /* Debug */,
+				0987D5EC2DF13E7400B0E0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0987D5DB2DF13E7400B0E0EF /* Project object */;
+}

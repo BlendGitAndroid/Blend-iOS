@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC6E750E2404F7EC00894C74 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC6E750D2404F7EC00894C74 /* main.c */; };
+		EC6E75192404FC8600894C74 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC6E75182404FC8600894C74 /* main.c */; };
+		EC6E752424050FD300894C74 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC6E752324050FD300894C74 /* main.c */; };
+		EC6E752F240519F600894C74 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC6E752E240519F600894C74 /* main.c */; };
+		EC6E753A24051D7000894C74 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC6E753924051D7000894C74 /* main.c */; };
+		ECBCBEE824049FE3003473E9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ECBCBEE724049FE3003473E9 /* main.c */; };
+		ECBCBEF32404A5F0003473E9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ECBCBEF22404A5F0003473E9 /* main.c */; };
+		ECBCBEFE2404AA41003473E9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ECBCBEFD2404AA41003473E9 /* main.c */; };
+		ECBCBF092404C105003473E9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ECBCBF082404C105003473E9 /* main.c */; };
+		ECBCBF142404C618003473E9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = ECBCBF132404C618003473E9 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC6E75092404F7EB00894C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC6E75142404FC8600894C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC6E751F24050FD300894C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC6E752A240519F600894C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC6E753524051D7000894C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ECBCBEE324049FE3003473E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ECBCBEEE2404A5F0003473E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ECBCBEF92404AA41003473E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ECBCBF042404C105003473E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ECBCBF0F2404C618003473E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC6E750B2404F7EB00894C74 /* 06-变量的作用域 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "06-变量的作用域"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E750D2404F7EC00894C74 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC6E75162404FC8600894C74 /* 07-IF-ELSE结构 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "07-IF-ELSE结构"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E75182404FC8600894C74 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC6E752124050FD300894C74 /* 08-IF-ELSE IF结构 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "08-IF-ELSE IF结构"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E752324050FD300894C74 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC6E752C240519F600894C74 /* 09-三元表达式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "09-三元表达式"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E752E240519F600894C74 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC6E753724051D7000894C74 /* 10-如何产生1个随机数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "10-如何产生1个随机数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E753924051D7000894C74 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ECBCBEE524049FE3003473E9 /* 01-复习 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-复习"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCBEE724049FE3003473E9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ECBCBEF02404A5F0003473E9 /* 02-作业讲解 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-作业讲解"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCBEF22404A5F0003473E9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ECBCBEFB2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-逻辑运算符与逻辑表达式"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCBEFD2404AA41003473E9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ECBCBF062404C105003473E9 /* 04-运算符的优先级和结合性 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-运算符的优先级和结合性"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCBF082404C105003473E9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ECBCBF112404C618003473E9 /* 05-IF结构 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-IF结构"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCBF132404C618003473E9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6E75082404F7EB00894C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E75132404FC8600894C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E751E24050FD300894C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E7529240519F600894C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E753424051D7000894C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEE224049FE3003473E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEED2404A5F0003473E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEF82404AA41003473E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBF032404C105003473E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBF0E2404C618003473E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC6E750C2404F7EB00894C74 /* 06-变量的作用域 */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E750D2404F7EC00894C74 /* main.c */,
+			);
+			path = "06-变量的作用域";
+			sourceTree = "<group>";
+		};
+		EC6E75172404FC8600894C74 /* 07-IF-ELSE结构 */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E75182404FC8600894C74 /* main.c */,
+			);
+			path = "07-IF-ELSE结构";
+			sourceTree = "<group>";
+		};
+		EC6E752224050FD300894C74 /* 08-IF-ELSE IF结构 */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E752324050FD300894C74 /* main.c */,
+			);
+			path = "08-IF-ELSE IF结构";
+			sourceTree = "<group>";
+		};
+		EC6E752D240519F600894C74 /* 09-三元表达式 */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E752E240519F600894C74 /* main.c */,
+			);
+			path = "09-三元表达式";
+			sourceTree = "<group>";
+		};
+		EC6E753824051D7000894C74 /* 10-如何产生1个随机数 */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E753924051D7000894C74 /* main.c */,
+			);
+			path = "10-如何产生1个随机数";
+			sourceTree = "<group>";
+		};
+		ECBCBECE24049FCB003473E9 = {
+			isa = PBXGroup;
+			children = (
+				ECBCBEE624049FE3003473E9 /* 01-复习 */,
+				ECBCBEF12404A5F0003473E9 /* 02-作业讲解 */,
+				ECBCBEFC2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */,
+				ECBCBF072404C105003473E9 /* 04-运算符的优先级和结合性 */,
+				ECBCBF122404C618003473E9 /* 05-IF结构 */,
+				EC6E750C2404F7EB00894C74 /* 06-变量的作用域 */,
+				EC6E75172404FC8600894C74 /* 07-IF-ELSE结构 */,
+				EC6E752224050FD300894C74 /* 08-IF-ELSE IF结构 */,
+				EC6E752D240519F600894C74 /* 09-三元表达式 */,
+				EC6E753824051D7000894C74 /* 10-如何产生1个随机数 */,
+				ECBCBED824049FCB003473E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECBCBED824049FCB003473E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBEE524049FE3003473E9 /* 01-复习 */,
+				ECBCBEF02404A5F0003473E9 /* 02-作业讲解 */,
+				ECBCBEFB2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */,
+				ECBCBF062404C105003473E9 /* 04-运算符的优先级和结合性 */,
+				ECBCBF112404C618003473E9 /* 05-IF结构 */,
+				EC6E750B2404F7EB00894C74 /* 06-变量的作用域 */,
+				EC6E75162404FC8600894C74 /* 07-IF-ELSE结构 */,
+				EC6E752124050FD300894C74 /* 08-IF-ELSE IF结构 */,
+				EC6E752C240519F600894C74 /* 09-三元表达式 */,
+				EC6E753724051D7000894C74 /* 10-如何产生1个随机数 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECBCBEE624049FE3003473E9 /* 01-复习 */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBEE724049FE3003473E9 /* main.c */,
+			);
+			path = "01-复习";
+			sourceTree = "<group>";
+		};
+		ECBCBEF12404A5F0003473E9 /* 02-作业讲解 */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBEF22404A5F0003473E9 /* main.c */,
+			);
+			path = "02-作业讲解";
+			sourceTree = "<group>";
+		};
+		ECBCBEFC2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBEFD2404AA41003473E9 /* main.c */,
+			);
+			path = "03-逻辑运算符与逻辑表达式";
+			sourceTree = "<group>";
+		};
+		ECBCBF072404C105003473E9 /* 04-运算符的优先级和结合性 */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBF082404C105003473E9 /* main.c */,
+			);
+			path = "04-运算符的优先级和结合性";
+			sourceTree = "<group>";
+		};
+		ECBCBF122404C618003473E9 /* 05-IF结构 */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCBF132404C618003473E9 /* main.c */,
+			);
+			path = "05-IF结构";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC6E750A2404F7EB00894C74 /* 06-变量的作用域 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6E75112404F7EC00894C74 /* Build configuration list for PBXNativeTarget "06-变量的作用域" */;
+			buildPhases = (
+				EC6E75072404F7EB00894C74 /* Sources */,
+				EC6E75082404F7EB00894C74 /* Frameworks */,
+				EC6E75092404F7EB00894C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-变量的作用域";
+			productName = "06-变量的作用域";
+			productReference = EC6E750B2404F7EB00894C74 /* 06-变量的作用域 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC6E75152404FC8600894C74 /* 07-IF-ELSE结构 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6E751A2404FC8600894C74 /* Build configuration list for PBXNativeTarget "07-IF-ELSE结构" */;
+			buildPhases = (
+				EC6E75122404FC8600894C74 /* Sources */,
+				EC6E75132404FC8600894C74 /* Frameworks */,
+				EC6E75142404FC8600894C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-IF-ELSE结构";
+			productName = "07-IF-ELSE结构";
+			productReference = EC6E75162404FC8600894C74 /* 07-IF-ELSE结构 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC6E752024050FD300894C74 /* 08-IF-ELSE IF结构 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6E752524050FD300894C74 /* Build configuration list for PBXNativeTarget "08-IF-ELSE IF结构" */;
+			buildPhases = (
+				EC6E751D24050FD300894C74 /* Sources */,
+				EC6E751E24050FD300894C74 /* Frameworks */,
+				EC6E751F24050FD300894C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "08-IF-ELSE IF结构";
+			productName = "08-IF-ELSE IF结构";
+			productReference = EC6E752124050FD300894C74 /* 08-IF-ELSE IF结构 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC6E752B240519F600894C74 /* 09-三元表达式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6E7530240519F600894C74 /* Build configuration list for PBXNativeTarget "09-三元表达式" */;
+			buildPhases = (
+				EC6E7528240519F600894C74 /* Sources */,
+				EC6E7529240519F600894C74 /* Frameworks */,
+				EC6E752A240519F600894C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "09-三元表达式";
+			productName = "09-三元表达式";
+			productReference = EC6E752C240519F600894C74 /* 09-三元表达式 */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC6E753624051D7000894C74 /* 10-如何产生1个随机数 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6E753B24051D7000894C74 /* Build configuration list for PBXNativeTarget "10-如何产生1个随机数" */;
+			buildPhases = (
+				EC6E753324051D7000894C74 /* Sources */,
+				EC6E753424051D7000894C74 /* Frameworks */,
+				EC6E753524051D7000894C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10-如何产生1个随机数";
+			productName = "10-如何产生1个随机数";
+			productReference = EC6E753724051D7000894C74 /* 10-如何产生1个随机数 */;
+			productType = "com.apple.product-type.tool";
+		};
+		ECBCBEE424049FE3003473E9 /* 01-复习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCBEE924049FE3003473E9 /* Build configuration list for PBXNativeTarget "01-复习" */;
+			buildPhases = (
+				ECBCBEE124049FE3003473E9 /* Sources */,
+				ECBCBEE224049FE3003473E9 /* Frameworks */,
+				ECBCBEE324049FE3003473E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-复习";
+			productName = "01-复习";
+			productReference = ECBCBEE524049FE3003473E9 /* 01-复习 */;
+			productType = "com.apple.product-type.tool";
+		};
+		ECBCBEEF2404A5F0003473E9 /* 02-作业讲解 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCBEF42404A5F0003473E9 /* Build configuration list for PBXNativeTarget "02-作业讲解" */;
+			buildPhases = (
+				ECBCBEEC2404A5F0003473E9 /* Sources */,
+				ECBCBEED2404A5F0003473E9 /* Frameworks */,
+				ECBCBEEE2404A5F0003473E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-作业讲解";
+			productName = "02-作业讲解";
+			productReference = ECBCBEF02404A5F0003473E9 /* 02-作业讲解 */;
+			productType = "com.apple.product-type.tool";
+		};
+		ECBCBEFA2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCBEFF2404AA41003473E9 /* Build configuration list for PBXNativeTarget "03-逻辑运算符与逻辑表达式" */;
+			buildPhases = (
+				ECBCBEF72404AA41003473E9 /* Sources */,
+				ECBCBEF82404AA41003473E9 /* Frameworks */,
+				ECBCBEF92404AA41003473E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-逻辑运算符与逻辑表达式";
+			productName = "03-逻辑运算符与逻辑表达式";
+			productReference = ECBCBEFB2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */;
+			productType = "com.apple.product-type.tool";
+		};
+		ECBCBF052404C105003473E9 /* 04-运算符的优先级和结合性 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCBF0A2404C105003473E9 /* Build configuration list for PBXNativeTarget "04-运算符的优先级和结合性" */;
+			buildPhases = (
+				ECBCBF022404C105003473E9 /* Sources */,
+				ECBCBF032404C105003473E9 /* Frameworks */,
+				ECBCBF042404C105003473E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04-运算符的优先级和结合性";
+			productName = "04-运算符的优先级和结合性";
+			productReference = ECBCBF062404C105003473E9 /* 04-运算符的优先级和结合性 */;
+			productType = "com.apple.product-type.tool";
+		};
+		ECBCBF102404C618003473E9 /* 05-IF结构 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCBF152404C618003473E9 /* Build configuration list for PBXNativeTarget "05-IF结构" */;
+			buildPhases = (
+				ECBCBF0D2404C618003473E9 /* Sources */,
+				ECBCBF0E2404C618003473E9 /* Frameworks */,
+				ECBCBF0F2404C618003473E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-IF结构";
+			productName = "05-IF结构";
+			productReference = ECBCBF112404C618003473E9 /* 05-IF结构 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECBCBECF24049FCB003473E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = itheima;
+				TargetAttributes = {
+					EC6E750A2404F7EB00894C74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC6E75152404FC8600894C74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC6E752024050FD300894C74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC6E752B240519F600894C74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EC6E753624051D7000894C74 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ECBCBEE424049FE3003473E9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ECBCBEEF2404A5F0003473E9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ECBCBEFA2404AA41003473E9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ECBCBF052404C105003473E9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ECBCBF102404C618003473E9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = ECBCBED224049FCB003473E9 /* Build configuration list for PBXProject "Day04-流程控制" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECBCBECE24049FCB003473E9;
+			productRefGroup = ECBCBED824049FCB003473E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECBCBEE424049FE3003473E9 /* 01-复习 */,
+				ECBCBEEF2404A5F0003473E9 /* 02-作业讲解 */,
+				ECBCBEFA2404AA41003473E9 /* 03-逻辑运算符与逻辑表达式 */,
+				ECBCBF052404C105003473E9 /* 04-运算符的优先级和结合性 */,
+				ECBCBF102404C618003473E9 /* 05-IF结构 */,
+				EC6E750A2404F7EB00894C74 /* 06-变量的作用域 */,
+				EC6E75152404FC8600894C74 /* 07-IF-ELSE结构 */,
+				EC6E752024050FD300894C74 /* 08-IF-ELSE IF结构 */,
+				EC6E752B240519F600894C74 /* 09-三元表达式 */,
+				EC6E753624051D7000894C74 /* 10-如何产生1个随机数 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6E75072404F7EB00894C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6E750E2404F7EC00894C74 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E75122404FC8600894C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6E75192404FC8600894C74 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E751D24050FD300894C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6E752424050FD300894C74 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E7528240519F600894C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6E752F240519F600894C74 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6E753324051D7000894C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6E753A24051D7000894C74 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEE124049FE3003473E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCBEE824049FE3003473E9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEEC2404A5F0003473E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCBEF32404A5F0003473E9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBEF72404AA41003473E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCBEFE2404AA41003473E9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBF022404C105003473E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCBF092404C105003473E9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBCBF0D2404C618003473E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCBF142404C618003473E9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC6E750F2404F7EC00894C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6E75102404F7EC00894C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC6E751B2404FC8600894C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6E751C2404FC8600894C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC6E752624050FD300894C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6E752724050FD300894C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC6E7531240519F600894C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6E7532240519F600894C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC6E753C24051D7000894C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6E753D24051D7000894C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECBCBEDC24049FCB003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ECBCBEDD24049FCB003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ECBCBEEA24049FE3003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECBCBEEB24049FE3003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECBCBEF52404A5F0003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECBCBEF62404A5F0003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECBCBF002404AA41003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECBCBF012404AA41003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECBCBF0B2404C105003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECBCBF0C2404C105003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECBCBF162404C618003473E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECBCBF172404C618003473E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6E75112404F7EC00894C74 /* Build configuration list for PBXNativeTarget "06-变量的作用域" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E750F2404F7EC00894C74 /* Debug */,
+				EC6E75102404F7EC00894C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6E751A2404FC8600894C74 /* Build configuration list for PBXNativeTarget "07-IF-ELSE结构" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E751B2404FC8600894C74 /* Debug */,
+				EC6E751C2404FC8600894C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6E752524050FD300894C74 /* Build configuration list for PBXNativeTarget "08-IF-ELSE IF结构" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E752624050FD300894C74 /* Debug */,
+				EC6E752724050FD300894C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6E7530240519F600894C74 /* Build configuration list for PBXNativeTarget "09-三元表达式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E7531240519F600894C74 /* Debug */,
+				EC6E7532240519F600894C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6E753B24051D7000894C74 /* Build configuration list for PBXNativeTarget "10-如何产生1个随机数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6E753C24051D7000894C74 /* Debug */,
+				EC6E753D24051D7000894C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECBCBED224049FCB003473E9 /* Build configuration list for PBXProject "Day04-流程控制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBEDC24049FCB003473E9 /* Debug */,
+				ECBCBEDD24049FCB003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCBEE924049FE3003473E9 /* Build configuration list for PBXNativeTarget "01-复习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBEEA24049FE3003473E9 /* Debug */,
+				ECBCBEEB24049FE3003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCBEF42404A5F0003473E9 /* Build configuration list for PBXNativeTarget "02-作业讲解" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBEF52404A5F0003473E9 /* Debug */,
+				ECBCBEF62404A5F0003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCBEFF2404AA41003473E9 /* Build configuration list for PBXNativeTarget "03-逻辑运算符与逻辑表达式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBF002404AA41003473E9 /* Debug */,
+				ECBCBF012404AA41003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCBF0A2404C105003473E9 /* Build configuration list for PBXNativeTarget "04-运算符的优先级和结合性" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBF0B2404C105003473E9 /* Debug */,
+				ECBCBF0C2404C105003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCBF152404C618003473E9 /* Build configuration list for PBXNativeTarget "05-IF结构" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCBF162404C618003473E9 /* Debug */,
+				ECBCBF172404C618003473E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECBCBECF24049FCB003473E9 /* Project object */;
+}
