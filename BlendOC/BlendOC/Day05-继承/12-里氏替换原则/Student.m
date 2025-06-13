@@ -1,0 +1,24 @@
+//
+//  Student.m
+//  Day05-继承
+//
+//  Created by 传智播客 on 20/7/5.
+//  Copyright (c) 2020年 itcast. All rights reserved.
+//
+
+#import "Student.h"
+
+@implementation Student
+- (void)setStuNumber:(NSString *)stuNumber
+{
+    _stuNumber = stuNumber;
+}
+- (NSString *)stuNumber
+{
+    return _stuNumber;
+}
+- (void)study
+{
+    NSLog(@"我在学习 。。");
+}
+@end
