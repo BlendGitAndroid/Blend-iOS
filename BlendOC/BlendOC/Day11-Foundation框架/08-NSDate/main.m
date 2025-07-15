@@ -93,9 +93,9 @@ int main(int argc, const char * argv[])
     
 //    NSDate *date = [NSDate date];
 //    //1. 先创建1个日历对象.日历对象的作用可以从日期对象中取到日期的各个部分.
-//    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
 //    //2. 让日历对象从日期对象中取出日期的各个部分.
-//    NSDateComponents *com =  [calendar components: NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday|NSCalendarUnitHour  fromDate:date];
+    NSDateComponents *com =  [calendar components: NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday|NSCalendarUnitHour  fromDate:date];
 //    
 //    
 //    NSLog(@"%lu---%lu----%lu---%lu",com.year,com.month,com.day,com.weekday);

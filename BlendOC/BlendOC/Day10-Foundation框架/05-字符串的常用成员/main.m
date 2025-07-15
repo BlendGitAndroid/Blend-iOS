@@ -54,9 +54,9 @@ int main(int argc, const char * argv[])
     
     
     
-//    NSString *str = @"         dni2wnd       iw2ndi2nd      ";
-//    NSLog(@"%@",str);
-//    str =  [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *str = @"         dni2wnd       iw2ndi2nd      ";
+    NSLog(@"%@",str);
+    str =  [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 //    
 //    NSLog(@"%@",str);
 //    NSString *str = @"110";

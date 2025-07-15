@@ -14,7 +14,7 @@
 {
     NSLog(@"名字叫做%@的人挂了.",_name);
  
-    [super dealloc];
+//    [super dealloc];
 }
 
 

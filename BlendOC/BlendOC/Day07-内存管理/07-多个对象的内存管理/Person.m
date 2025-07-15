@@ -13,7 +13,7 @@
 - (void)dealloc
 {
     //当人对象挂的时候,代表当前这个人对象就不会再使用_car指向的对象了.
-    //我们说,当不再使用1个对象的时候 应该为这个对象发送1条releaexiaoxi
+    //我们说,当不再使用1个对象的时候 应该为这个对象发送1条releae消息
     [_car release];
     NSLog(@"人挂了.");
     [super dealloc];

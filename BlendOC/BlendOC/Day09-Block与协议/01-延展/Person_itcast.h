@@ -8,6 +8,7 @@
 
 #import "Person.h"
 
+// 延展本质上是一个分类，标准的分类中()是有名字的，但是延展没有名字
 @interface Person ()
 {
     float _height;

@@ -7,7 +7,7 @@
       
  
    2. 使用命令.  -fno-objc-arc
- 
+        在Build Phases的Compile Sources下面的MRC类，增加上面的标识，标识这个类适用MRC，其他的类适用ARC
  
  
  

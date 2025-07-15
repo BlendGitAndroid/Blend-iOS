@@ -23,7 +23,7 @@
       
       方法不写声明,只写实现. 那么这个方法就是1个私有方法.
       只能在本类的其他方法中调用 不能再外界调用.
- 
+      这个才是真私有
  
  
  
@@ -41,6 +41,7 @@ int main(int argc, const char * argv[])
     
     Girl *g1 = [Girl new];
     [g1 showMyBest];
+//    g1 -> _name;
     
     
     return 0;

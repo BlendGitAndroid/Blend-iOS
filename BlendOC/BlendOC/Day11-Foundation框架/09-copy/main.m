@@ -1,9 +1,10 @@
 /*
  
   1. 无论在MRC还是ARC下,如果属性的类型是NSString类型的. @property参数使用copy.
- 
+     所以，对于NSString类，@property推荐使用copy，而不是strong
  
   2. copy 复制
+ 系统会自动对传入的字符串进行 copy 操作（生成一个不可变的副本），而不是直接保留原始对象的引用。
  
      1). copy是1个方法.定义在NSObject类之中. 作用:拷贝对象.
  

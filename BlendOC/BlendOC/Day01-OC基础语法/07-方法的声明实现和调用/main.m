@@ -1,4 +1,12 @@
 /*
+ 
+ 在OC中，@ 是 Objective-C 的语法标记符号，用于区分 C 语言扩展和原生 Objective-C 特性。
+ Objective-C 的方法命名风格以可读性和自描述性为核心，: 是方法参数的分隔符，其设计目的包括：
+ 1. 参数标签化。每个参数前必须有标签（即冒号前的部分），形成自然语言式的调用
+ 2. 方法签名唯一性。方法名包含所有标签和冒号，形成完整签名。
+ 3. 编译器通过完整签名区分方法，避免重载歧义（Objective-C 不支持方法重载）。
+ 冒号明确标识这是消息传递（Message Passing），而非函数调用。消息传递也是OC语法的核心，所有的都是消息传递
+
   1.定义1个类.
  
     分为类的声明和实现
@@ -73,15 +81,15 @@
           定义了1个方法 这个方法没有返回值.
           这个方法的名字叫做eat:
           这个方法有1个参数,类型是NSString *类型的 参数的名字叫做foodName
+          OC中语法奇葩就在于方法如果有参数，那方法名之后要有:，并且方法的签名是带有:的
  
  
  
          - (void)eat:(NSString *)foodName;
  
          void eat(NSString *foodName);
- 
- 
- 
+
+
  
  
  
@@ -100,11 +108,11 @@
  
          b. 调用语法:
  
-            [对象名 方法名:实参];
+            [对象名 方法名:实参];     调用的时候，方法名后面也是要有:的，:后面才是参数
  
          
  
-     方法头中的数据类型都要用1个小括弧括起来.
+     方法头中的数据类型都要用1个小括弧括起来，也就是参数类型都要用()括起来.
  
      - (返回值类型)方法名称:(参数类型)参数名称;
  
@@ -208,6 +216,7 @@
 
 - (int)sumWithNum1:(int)num1 andNum2:(int)num2;
 
+- (int)sumWithNum1:(int)num1 andNum2:(int)num2 andNum3:(int)num3;
 
 @end
 
@@ -249,6 +258,12 @@
     return num3;
 }
 
+- (int)sumWithNum1:(int)num1 andNum2:(int)num2 andNum3:(int)num3
+{
+    int result = num1 + num2 + num3;
+    return result;
+}
+
 
 @end
 
@@ -265,6 +280,9 @@ int main(int argc, const char * argv[])
     int sum =  [p1 sum:10 :20];
     sum =   [p1 sumWith:10 and:20];
     [p1 sumWithNum1:10 andNum2:20];
+    
+    int result = [p1 sumWithNum1:20 andNum2:20];
+    int result1 = [p1 sumWithNum1:20 andNum2:30 andNum3:10];
     
     
     

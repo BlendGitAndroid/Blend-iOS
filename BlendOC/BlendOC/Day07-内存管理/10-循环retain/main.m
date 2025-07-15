@@ -7,7 +7,7 @@
   2. 解决方案: 1端使用retain 另外1端使用assign 使用assign的那1端在dealloc中不再需要release了.
  
  
- 
+ 是的，即使在最新的 Objective-C（如 ARC 环境下），循环引用仍然会导致内存泄漏。ARC 只是自动管理 retain/release，但无法自动检测循环引用，开发者仍需手动处理弱引用关系。
  
  */
 #import <Foundation/Foundation.h>

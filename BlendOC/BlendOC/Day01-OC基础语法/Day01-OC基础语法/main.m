@@ -50,7 +50,7 @@
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/Foundation.h
  
  
-         Foundation。h这个文件中包含了Foundation框架中的其他的所有的头文件.
+         Foundation.h这个文件中包含了Foundation框架中的其他的所有的头文件.
          所以,我们只要包含Foundation.h 就相当于包含了Foundation框架中所有的头文件.
          那么Foundation框架中的所有的函数和类就可以直接使用.
  

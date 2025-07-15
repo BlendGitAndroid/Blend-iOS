@@ -97,10 +97,25 @@
  
  
      什么时候要自定义构造方法?
-     
+     self只能在构造方法中赋值
  
  
  
+ 
+ 为什么是警告而非错误？
+ （1）Objective-C 的弱类型检查
+ Objective-C 本质上是一种 动态类型语言，编译器对类型匹配的检查较为宽松。
+ 虽然 Desk 和 NSString 类型不匹配，但编译器会将其视为 潜在的类型不兼容（Incompatible pointer types），而非直接阻止编译。
+
+ （2）指针赋值的通用性
+ 所有 Objective-C 对象本质上都是 id 类型（通用对象指针），编译器允许任意对象指针之间赋值（尽管可能不安全）。
+ 例如，以下代码也是合法的（但有警告）：
+
+ objectivec
+ NSArray *array = [[UIButton alloc] init]; // 警告但能编译
+ 
+ （3）运行时而非编译时绑定
+ Objective-C 的方法调用（消息发送）在运行时才确定，编译器无法在编译阶段保证 Desk 是否真的实现了 NSString 的方法。因此它只能提示风险，而非直接禁止。
  */
 
 #import <Foundation/Foundation.h>

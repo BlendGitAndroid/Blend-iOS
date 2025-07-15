@@ -23,6 +23,7 @@
 int main(int argc, const char * argv[])
 {
 
+    // 注意，这里是char指针，不是char，char指针占用8个字节
     char *countries[] =
     {
         "Nepal",

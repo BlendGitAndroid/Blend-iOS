@@ -2,7 +2,7 @@
   1. SEL 全称叫做  selector 选择器.
      SEL 是1个数据类型. 所以要在内存中申请空间存储数据.
      SEL其实是1个类. SEL对象是用来存储1个方法的.
- 
+     记住，SEL其实是一个类，是用于存储一个方法的，方法是以SEL对象的方式存储的，先根据方法拿到SEL对象，再将这个消息发送给对象
  
   2. 类是以Class对象的形式存储在代码段之中.
  
@@ -20,7 +20,7 @@
      1). 因为SEL是1个typedef类型的 在自定义的时候已经加*了.
          所以 我们在声明SEL指针的时候 不需要加*
  
-     2). 取到存储方法的SEL对象,
+     2). 取到存储方法的SEL对象,使用的时候，使用@selector
          SEL s1 = @selector(方法名);
  
  
@@ -114,7 +114,7 @@ int main(int argc, const char * argv[])
     Params *ps = [Params new];
     
     
-    SEL s1 = @selector(testWith:);
+    SEL s1 = @selector(testWith:); // 如果方法有参数，那就是带冒号的
     
     [p1 performSelector:s1 withObject:ps];
     

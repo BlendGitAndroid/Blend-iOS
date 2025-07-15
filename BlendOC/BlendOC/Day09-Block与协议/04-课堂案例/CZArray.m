@@ -39,7 +39,8 @@
     }
 }
 
-- (void)bianLiWithBlock
+// 这个是自作主张的处理，但是得叫调用者自己处理
+- (void)bianli
 {
     for(int i = 0; i < 10; i++)
     {

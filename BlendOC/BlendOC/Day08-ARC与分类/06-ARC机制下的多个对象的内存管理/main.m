@@ -14,6 +14,7 @@
      而我们在ARC的机制下 不需要这些代码.
  
      所以,在ARC机制下的setter方法 什么都不需要做.直接赋值就可以了.
+     记住这一点，在ARC下，之前的retain就不要写了
  
  
   5. ARC机制下,我们关注的重点.
@@ -25,6 +26,7 @@
      如何控制@property生成的私有属性,是1个强类型的还是1个弱类型的呢?
  
      使用参数, strong和weak
+     在ARC下的OC对象，不需要retain了，需要使用strong或者weak来表明生成的OC对象
  
      @property(nonatomic,strong)Car *car;
      代表生成的私有属性_car 是1个强类型的.
@@ -39,7 +41,7 @@
   6. 使用建议.
  
      1). 在ARC机制下.如果属性的类型是OC对象类型的.绝大多数场景下使用strong
-     2). 在ARC机制下.如果属性的类型不是OC对象类型的.使用assign
+     2). 在ARC机制下.如果属性的类型不是OC对象类型的.使用assign，还是和之前是一样的
  
      3).  strong和weak都是应用在属性的类型是OC对象的时候. 属性的类型不是OC对象的时候就使用assign.
  

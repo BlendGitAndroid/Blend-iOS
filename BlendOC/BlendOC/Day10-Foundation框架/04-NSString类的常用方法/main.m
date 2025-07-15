@@ -41,6 +41,7 @@
  
  
   5. 字符串比较:忽略大小写的比较:
+    增加options的NSCaseInsensitiveSearch的判断
  
  
   6. 字符串的相等判断.
@@ -110,7 +111,7 @@
              range.location = 3;
              range.length = 4;
  
-        2). 第二种方式:    NSRange range = {3, 7};
+        2). 第二种方式:   NSRange range = {3, 7};
         3). 第三种方式:   NSRange range = {.location = 3,.length = 7};
  
  
@@ -142,7 +143,7 @@ int main(int argc, const char * argv[])
     
     NSString *str = @"";
     [str compare:@""];
-    str.intValue
+   //  str.intValue;
     
     
     //NSRange range = {.location = 3,.length = 7};

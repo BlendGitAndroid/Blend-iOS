@@ -90,6 +90,7 @@
         比如我们使用类名来调用类方法.
         [Person sayHi];
         完全可以使用c1来调用. 因为c1就是Person
+        在OC中，Class对象完全和类是一样的
         [c1 sayHi];
  
  

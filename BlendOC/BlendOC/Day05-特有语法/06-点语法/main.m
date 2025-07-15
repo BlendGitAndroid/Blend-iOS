@@ -5,6 +5,7 @@
  
  
      OC的对象如果要为属性赋值或者取值 就要调用对应的getter或者setter.
+     注意：OC中的点语法，其根本是调用getter或者setter方法，是在编译期就决定的
  
  
   2. 使用点语法来访问对象的属性.
@@ -75,7 +76,7 @@ int main(int argc, const char * argv[])
     Person *p1 = [Person new];
     p1.age = 10;
     
-    p1.
+    p1.age;
     
     //p1.name = @"jack";
     

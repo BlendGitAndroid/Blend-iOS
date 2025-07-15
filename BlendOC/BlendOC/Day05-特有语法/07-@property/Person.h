@@ -20,12 +20,10 @@
 
 @property float weight;
 /*
+ @property float _weight;
+ 下面的这个是加上_的声明，就是不对了
  - (void)set_Weight:(float)_weight;
  - (float)_weight;
- 
- 
- 
- 
  */
 
 
@@ -47,5 +45,7 @@
  
  
  */
+
+@property NSString *testBlend;
 
 @end

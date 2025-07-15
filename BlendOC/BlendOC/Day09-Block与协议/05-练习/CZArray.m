@@ -30,8 +30,9 @@
             
             //写1个block来存储1段代码,这段代码做的事情:比较j j+1两个字符串的大小.返回结果.
             //int res =   strcmp(countries[j], countries[j+1]);
+                        
+            BOOL res = compareBlock(countries[j], countries[j + 1]);
             
-            BOOL res =   compareBlock(countries[j], countries[j+1]);
             if(res == YES)
             {
                 char *temp = countries[j];

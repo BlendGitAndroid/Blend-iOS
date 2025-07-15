@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+{
+    @private
+    int _aaa;
+}
 
+@property NSString *testCategoty;
 
 - (void)setAge:(int)age;
 - (int)age;

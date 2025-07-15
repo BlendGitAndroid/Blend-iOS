@@ -11,6 +11,7 @@
 @interface Girl ()
 
 @property(nonatomic,assign)int age;
+
 - (void)moPi;
 
 @end

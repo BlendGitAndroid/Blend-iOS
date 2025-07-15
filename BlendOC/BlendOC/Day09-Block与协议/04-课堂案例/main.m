@@ -13,6 +13,7 @@ int main(int argc, const char * argv[])
 {
 
     CZArray *arr = [CZArray new];
+    [arr bianli];
     
 //    [arr bianLiWithBlock:^(int val) {
 //        

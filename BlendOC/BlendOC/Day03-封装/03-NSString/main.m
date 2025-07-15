@@ -58,7 +58,7 @@
         返回值是unichar 其实就是unsinged short 占据2个字节.
  
  
-        如果要输出unichar变量的值使用%C 钛金眼睁大 这是大写的C 
+        如果要输出unicode char变量的值使用%C 钛金眼睁大 这是大写的C
         %c
  
  

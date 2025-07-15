@@ -13,7 +13,7 @@
 - (void)dealloc
 {
     NSLog(@"人挂了");
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

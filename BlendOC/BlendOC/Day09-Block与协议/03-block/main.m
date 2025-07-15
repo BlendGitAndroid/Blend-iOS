@@ -44,9 +44,13 @@
  
          int (^myBlock3)(int num1,int num2);
  
+         这个bolck有点像接口回调，
+ 
      3). 最重要的
          声明block变量的时候要指定这个block变量可以存储的代码段的返回值和参数描述.
          一旦指定.这个block变量中就只能存储这样的代码段了. 其他格式的代码段无法存储.
+ 
+    这个^就是为了标识block的
  
  
   4. 初始化block变量
@@ -93,7 +97,7 @@
          };
  
  
-     5). 既有参数既有返回值的代码段.
+     5). 既有参数也有返回值的代码段.
  
          ^int(int num1,int num2){
             int num3= num1 + num2;
@@ -200,12 +204,12 @@
  7.  使用typedef将复杂的block定义简化.
  8.  访问外部变量的问题.
  
- 
+ 只有声明的时候，block这个类型才需要定义类型名称，实现的时候不需要定义了
  
  */
 
 #import <Foundation/Foundation.h>
-typedef void (^NewType)();
+typedef void (^NewType)();  // 这个是typedef 定义的类型
 
 
 
@@ -214,7 +218,7 @@ int num1 = 100;// 全局变量.
 int main(int argc, const char * argv[])
 {
   
-    __block int num2 = 200;//局部变量.
+    __block int num2 = 200;//局部变量.并且这个局部变量在block中修改了，所以得加上__下划线
     
     NewType block1 = ^{
     

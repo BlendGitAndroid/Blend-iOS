@@ -48,13 +48,15 @@
  
          NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"jack",@"name",@"北京市XX街道",@"address", nil];
  
+        // OC的字典创建有点奇葩，value在前面，key在后面
+ 
  
      4). 简要创建方式.
             
          NSDictionary *dict = @{键1:值1,键2:值2,键3:值3,........};
-          
+         // 例如：
          NSDictionary *dict = @{@"name":@"rose",@"age":@"18",@"addredd":@"BeiJingXXSttreet"};
- 
+         简要的创建方式才是对的啊
  
  
   4. 使用字典数组.
@@ -82,7 +84,7 @@
  
      3). 往字典数组中存储键值对的时候 键不允许重复.
 
-         如果键重复: 后加的无效.. ???????????????
+         如果键重复: 后加的无效.. ???????????????，记住这个是不可变的Dictionary，后加的无效
              
 
  

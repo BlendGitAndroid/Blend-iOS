@@ -16,7 +16,7 @@
     int count = 0;
     for(int i = 0; i < self.length; i++)
     {
-        unichar ch = [self characterAtIndex:i];
+        unichar ch = [self characterAtIndex:i]; // unichar，显示中文
         if(ch >= '0' && ch <= '9')
         {
             count++;

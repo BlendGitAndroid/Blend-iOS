@@ -13,5 +13,10 @@
 {
     [self setAge:19];
     int age = [self age];
+    
+    NSString *testBlend = [self testCategoty];
+    int testBlend1 = self->_aaa;
+    
+    self->_aaa = 10;
 }
 @end

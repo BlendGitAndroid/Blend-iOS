@@ -11,7 +11,7 @@
          所以,NSArray是OC中的数组.
  
      2). 特点:
-         a. 只能存储OC对象.任意的OC对象 无法存储
+         a. 只能存储OC对象.任意的OC对象都可以 基本类型无法存储
          b. 长度固定. 一旦NSArray数组创建完毕之后,元素的长度固定,无法新增 无法删除元素.
          c. 每1个元素都是紧密相连的. 每1个元素仍然有自己的下标.
          d. 元素的类型是id类型的.
@@ -96,7 +96,7 @@
  
      1). 得到NSArray数组中的元素的个数.
  
-         @property (readonly) NSUInteger count;
+         @property (readonly) NSUInteger count; // 返回当前数组的个数
  
      2). 判断NSArray数组中是否包含指定的元素.
  
@@ -141,7 +141,7 @@
                 直接通过变量名就可以拿到数组中的每1个元素.
             }
  
-         b. 声明在for()中的变量叫做迭代变量.
+         b. 声明在for()中的变量叫做迭代变量. 也就是这个变量名就是迭代变量
  
          c. 执行的原理.  
  
@@ -197,24 +197,24 @@
 int main(int argc, const char * argv[])
 {
     
-//    NSString *str = @"北京,昌平区,传智播客,iOS基础班1010";
-//    //使用,将字符串进行分隔
-//    NSArray *arr =  [str componentsSeparatedByString:@","];
-//    for(NSString *item in arr)
-//    {
-//        NSLog(@"%@",item);
-//    }
-//    
-    
-    NSString *str = @"jack";
-    NSLog(@"%@",str);
+    NSString *str = @"北京,昌平区,传智播客,iOS基础班1010";
+    //使用,将字符串进行分隔
+    NSArray *arr =  [str componentsSeparatedByString:@","];
+    for(NSString *item in arr)
+    {
+        NSLog(@"%@",item);
+    }
     
     
-  NSArray *arr = @[@"jack",@"rose",@"jim"];
+    NSString *str11 = @"jack";
+    NSLog(@"%@",str11);
     
-    [arr objectAtIndex:1];
-     NSLog(@"%@",arr);
-//    
+    
+  NSArray *arr11 = @[@"jack",@"rose",@"jim"];
+    
+    [arr11 objectAtIndex:1];
+     NSLog(@"%@",arr11);
+//
 //    
 //    NSString *str =  [arr componentsJoinedByString:@""];
 //    NSLog(@"%@",str);
@@ -237,18 +237,21 @@ int main(int argc, const char * argv[])
 //    }];
     
     //这个方法做的事情:将arr数组中的每1个元素遍历出来.
-    //当它将每1个元素遍历出来以后.诶.如何处理遍历出来的元素呢?
+    //当它将每1个元素遍历出来以后.
+    //诶.如何处理遍历出来的元素呢?
     //所以要求我们传递1段处理元素的代码过去.
-//    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL *stop) {
-//        NSLog(@"%@.lenth = %lu",obj,[obj length]);
-//        NSLog(@"idx = %lu",idx);
-//        //如果想停止遍历,就讲stop指针指向的BOOL变量的值改为YES
-//        if(idx == 1)
-//        {
-//            *stop = YES;
-//        }
-//    }];
-//    
+    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%@.lenth = %lu",obj,[obj length]); // obj表示每一个元素
+        NSLog(@"idx = %lu",idx);  // idx每一个元素的下表
+    
+    
+        //如果想停止遍历,就讲stop指针指向的BOOL变量的值改为YES
+        if(idx == 1)
+        {
+            *stop = YES;
+        }
+    }];
+    
     
     
     

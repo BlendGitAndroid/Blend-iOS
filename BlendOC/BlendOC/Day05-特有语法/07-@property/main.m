@@ -41,10 +41,40 @@
  
  
      3). @property只是生成getter和setter方法的声明. 实现还要自己来. 属性还要自己定义.
+     所以@property只是对getter和setter方法有用，实现还是自己的
  
-         
  
+ 为什么生成的默认设计在 .m 中？
+ 封装性：隐藏实现细节，避免外部直接访问内部变量。
+
+ 灵活性：可通过存取方法（getter/setter）添加额外逻辑（如内存管理、线程安全、KVO 等）。
+
+ 兼容性：子类无需关心父类的实例变量命名冲突，实现了命名隔离。
  
+ @interface MyClass : NSObject
+    @property NSString *testBlend;
+ @end
+ 
+ 编译器会生成类似以下代码：
+ @implementation MyClass {
+     NSString *_testBlend; // 自动生成的实例变量
+ }
+
+ // Getter
+ - (NSString *)testBlend {
+     return _testBlend;
+ }
+
+ // Setter
+ - (void)setTestBlend:(NSString *)testBlend {
+     if (_testBlend != testBlend) {
+         [_testBlend release];      // MRC 下释放旧值
+         _testBlend = [testBlend retain]; // MRC 下保留新值
+         // ARC 下等效于直接赋值：_testBlend = testBlend;
+     }
+ }
+ @end
+
  
  
  */
@@ -57,9 +87,11 @@ int main(int argc, const char * argv[]) {
     
     
     Person *p1 = [Person new];
-    [p1 setW]
+    [p1 setWeight:17.8f];
     
+    [p1 setTestBlend:@"Test"];
     
+    NSString *test = p1.testBlend;
     
     
     

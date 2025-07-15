@@ -42,7 +42,20 @@
  
                      类模板中定义了什么属性.就把这些属性依次的声明在对象之中.
                      对象中还有另外1个属性 叫做isa 是1个指针. 指向对象所属的类在代码段中的地址.
- 
+                     isa其实是is a的缩写，表示对象与类之间的归属关系，本质：它是一个指针，存在于每个 Objective-C 对象的头部，指向对象所属的类（Class）。
+        isa 的作用
+        （1）动态消息派发
+        当调用对象方法时（如 [obj method]），运行时系统会：
+
+        通过 isa 找到对象的类。
+
+        在类的方法列表中查找对应的方法实现。
+
+        若未找到，沿继承链向上搜索（通过父类的 isa）。
+
+        （2）运行时类型检查
+        isKindOfClass: 和 isMemberOfClass: 等方法依赖 isa 指针判断对象的类型。
+
                   c. 初始化对象的属性
                      如果属性的类型是基本数据类型 那么就赋值为0
                      如果属性的类型是C语言的指针类型 那么就赋值为NULL
@@ -84,8 +97,20 @@
      如果属性的类型是OC指针类型  那么默认值是nil
  
  
- 
- 
+ Objective-C 常用格式说明符
+ 说明符         类型                                       示例
+ %@            Objective-C 对象（调用 description 方法）    NSLog(@"%@", obj);
+ %d, %i        32 位有符号整数（int）                       NSLog(@"%d", 42);
+ %u            32 位无符号整数（unsigned int）              NSLog(@"%u", 100U);
+ %ld, %li      64 位有符号整数（long）                      NSLog(@"%ld", 100L);
+ %lu           64 位无符号整数（unsigned long）             NSLog(@"%lu", 100UL);
+ %lld, %lli    64 位有符号整数（long long）                 NSLog(@"%lld", 100LL);
+ %llu          64 位无符号整数（unsigned long long）        NSLog(@"%llu", 100ULL);
+ %f            浮点数（float/double，默认 6 位小数）         NSLog(@"%f", 3.14);
+ %c            单个字符（char）                            NSLog(@"%c", 'A'); → A
+ %s            C 字符串（char *，以 \0 结尾）               NSLog(@"%s", "Hello");
+ %p            指针地址（十六进制）                         NSLog(@"%p", obj); → 0x600000123456
+ @C            打印 Unicode 字符 的格式说明符，打印非 ASCII 字符（必须用 %C）
  
  
  
@@ -107,12 +132,29 @@
 
 @end
 
+@interface Dog : NSObject
+{
+    @public
+    NSString *_name;
+    int age;
+}
+- (void) eat:(NSString *)food;
+@end
+
 @implementation Person
 
 - (void)sayHi
 {
     NSLog(@"大家好,我叫%@，我今年%d岁",_name,_age);
 }
+
+@end
+
+@implementation Dog
+- (void) eat:(NSString *)food{
+    NSLog(@"我是狗狗，我在吃%@", food);
+}
+<#methods#>
 
 @end
 
@@ -134,8 +176,10 @@ int main(int argc, const char * argv[])
 //    NSLog(@"p1 = %p",p1);
     
     
-    
-    
+    Dog *dog = [Dog new];
+    dog->_name = @"大黄";
+    dog->age = 12;
+    [dog eat:@"狗粮"];
     
     return 0;
 }

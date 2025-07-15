@@ -40,16 +40,16 @@ int main(int argc, const char * argv[])
 {
     
     Person *p1 = [Person new];
-    [p1 retain];
-    [p1 retain];
-    [p1 retain];
-    [p1 retain];
-    [p1 release];
-    [p1 release];
-    [p1 release];
-    [p1 release];
-    
-    
-    [p1 release];
+//    [p1 retain];
+//    [p1 retain];
+//    [p1 retain];
+//    [p1 retain];
+//    [p1 release];
+//    [p1 release];
+//    [p1 release];
+//    [p1 release];
+//    
+//    
+//    [p1 release];
     return 0;
 }

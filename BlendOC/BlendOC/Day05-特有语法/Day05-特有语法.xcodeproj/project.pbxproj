@@ -824,6 +824,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 6579B29024B3FB730000FDB6;
@@ -1067,6 +1068,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1074,6 +1076,7 @@
 		6579B2AD24B3FB8B0000FDB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1211,6 +1214,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1218,6 +1222,7 @@
 		65EB28841BA94FA900715DF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1367,6 +1372,7 @@
 				65EB28671BA9447900715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28741BA9490600715DF1 /* Build configuration list for PBXNativeTarget "08-@synthesize" */ = {
 			isa = XCConfigurationList;
@@ -1375,6 +1381,7 @@
 				65EB28761BA9490600715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28821BA94FA900715DF1 /* Build configuration list for PBXNativeTarget "09-@property增强" */ = {
 			isa = XCConfigurationList;
@@ -1383,6 +1390,7 @@
 				65EB28841BA94FA900715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28961BA9569A00715DF1 /* Build configuration list for PBXNativeTarget "10-动态类型和静态类型" */ = {
 			isa = XCConfigurationList;
@@ -1391,6 +1399,7 @@
 				65EB28981BA9569A00715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28A71BA95CCB00715DF1 /* Build configuration list for PBXNativeTarget "11-id类型" */ = {
 			isa = XCConfigurationList;
@@ -1399,6 +1408,7 @@
 				65EB28A91BA95CCB00715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28B81BA968FA00715DF1 /* Build configuration list for PBXNativeTarget "12-动态类型检测" */ = {
 			isa = XCConfigurationList;
@@ -1407,6 +1417,7 @@
 				65EB28BA1BA968FA00715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB28C91BA96E8200715DF1 /* Build configuration list for PBXNativeTarget "13-构造方法" */ = {
 			isa = XCConfigurationList;
@@ -1415,6 +1426,7 @@
 				65EB28CB1BA96E8200715DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

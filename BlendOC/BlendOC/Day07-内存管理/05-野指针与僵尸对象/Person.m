@@ -13,7 +13,7 @@
 - (void)dealloc
 {
     NSLog(@"当你看到这句话的时候,说明我已经离开这个世界了.");
-    [super dealloc];
+//    [super dealloc];
 }
 
 - (void)sayHi

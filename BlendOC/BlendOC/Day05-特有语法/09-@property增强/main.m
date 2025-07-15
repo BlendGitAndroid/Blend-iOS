@@ -69,8 +69,9 @@
 int main(int argc, const char * argv[])
 {
     Student *s1 = [Student new];
+    [s1 setAge:12];
     [s1 setName:@"jack"];
     NSString *name = [s1 name];
-
+    NSLog(@"name is %@", name);
     return 0;
 }

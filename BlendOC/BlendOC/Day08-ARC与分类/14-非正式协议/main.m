@@ -4,6 +4,7 @@
      可以不可以为系统的类写1个分类呢?
  
      为系统自带的类写分类 这个就叫做非正式协议.
+     非正式协议，他不是后面学的协议，而是为系统的类写分类，所以叫：分正式协议
  
  
   2. 分类的第2个作用:
@@ -43,7 +44,7 @@ int main(int argc, const char * argv[])
     //2个字节.
 //    unichar ch =  [str characterAtIndex:1];
 //   
-//    NSLog(@"ch = %C",ch);
+//    NSLog(@"ch = %C",ch); // %C就是连续读两个字节
     
     
     

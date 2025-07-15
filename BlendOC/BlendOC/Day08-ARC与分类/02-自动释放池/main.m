@@ -10,6 +10,9 @@
  
      自动释放池的好处: 将创建的对象存储到自动释放池中,不需要再写release
  
+     自动释放池唯一的作用: 省略创建对象匹配的那个release，其实就是这个作用
+
+ 
  
   2. 如何创建自动释放池.
  
@@ -62,7 +65,7 @@
          所以其好处就是:创建对象将对象存储在自动释放池,就不需要在写个release了.
  
      7).  自动释放池可以嵌套.
-          调用对象的autorelease方法,会讲对象加入到当前自动释放池之中
+          调用对象的autorelease方法,会将对象加入到当前自动释放池之中
           只有在当前自动释放池结束的时候才会像对象发送release消息.
  
  5. autorelease的规范.
@@ -82,6 +85,8 @@
          规范
          a. 这个类方法以类名开头. 如果没有参数就直接是类名 如果有参数就是 类名WithXX:
          b. 使用类方法得到的对象,要求这个对象就已经被autorelease过了.
+ 
+        类方法要求适用autorelease，但是对象方法不要求
  
          + (instancetype)person
          {
@@ -116,17 +121,17 @@ int main(int argc, const char * argv[])
    
     
     
-    @autoreleasepool
-    {
-        Pig *p1 = [Pig pigWithName:@"猪猪" andAge:1 andWeight:100];
-        
-        
-        
-        NSString *str0 = [[[NSString alloc] initWithFormat:@"jack"] autorelease];
-     
-        NSString *str1 = [NSString stringWithFormat:@"jack"];
-
-    }
+//    @autoreleasepool
+//    {
+//        Pig *p1 = [Pig pigWithName:@"猪猪" andAge:1 andWeight:100];
+//        
+//        
+//        
+//        NSString *str0 = [[[NSString alloc] initWithFormat:@"jack"] autorelease];
+//     
+//        NSString *str1 = [NSString stringWithFormat:@"jack"];
+//
+//    }
     
     
     

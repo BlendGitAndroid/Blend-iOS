@@ -109,15 +109,15 @@ int main(int argc, const char * argv[])
 //    unichar ch =  [str characterAtIndex:2];
 //    NSLog(@"ch = %C",ch);
 //    
-//    int age = 10;
+    int age = 10;
 //    NSString *str = @"jack";
 //    //大家好.我叫xx 我今年xx岁.
-//    NSString *newStr =    [NSString stringWithFormat:@"大家好,我叫%@,我今年%d岁",str,age];
+    NSString *newStr =    [NSString stringWithFormat:@"大家好,我叫%@,我今年%d岁",str,age];
 //    NSLog(@"newStr = %@",newStr);
 //    
 //    
-//    NSUInteger len =  newStr.length;
-//    NSLog(@"%lu",len);
+    NSUInteger len =  newStr.length;
+    NSLog(@"%lu",len);
     
     
     
