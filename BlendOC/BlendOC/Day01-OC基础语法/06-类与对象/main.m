@@ -184,27 +184,32 @@
 
 int main(int argc, const char * argv[])
 {
+    Student *s1 = [Student new];
+    Student *s2 = [Student new];
+    Student *s3 = [Student new];
+    // 可是使用 -> 快捷键
+    s1->_name = @"小花";
+    s1->_age = 17;
+    s1->_shuXue = 100;
+    s1->_yingYu = 99;
+    s1->_yuWen = 98;
+    
+    s2->_name = @"小牛";
+    s2->_shuXue = 18;
+    s2->_yingYu = 30;
     
     
-   
-   
-//    Student *s1 = [Student new];
-//    s1->_name = @"小花";
-//    s1->_age = 17;
-//    s1->_shuXue = 100;
-//    s1->_yingYu = 99;
-//    s1->_yuWen = 98;
-//    
-//    
-//    NSLog(@"s1对象的姓名是%@,年龄是%d 语文是%d 数学是%d 英语是%d",
-//          s1->_name,
-//          s1->_age,
-//          s1->_yuWen,
-//          s1->_shuXue,
-//          s1->_yingYu
-//          );
-//    
-//    
+    NSLog(@"s1对象的姓名是%@,年龄是%d 语文是%d 数学是%d 英语是%d",
+          s1->_name,
+          s1->_age,
+          s1->_yuWen,
+          s1->_shuXue,
+          s1->_yingYu
+          );
+    
+    NSLog(@"s2对象的姓名是%@，年来%@", s2->_age, s2->_name);
+    
+    
 //    
     
     

@@ -24,7 +24,7 @@
          1). 可以存储YES或者NO中的任意1个数据.
  
          2). 一般情况下BOOL类型的变量用来存储条件表达式的结果.如果条件表达式成立 那么结果就是YES
-             如果条件表达式不成立 结果过就是NO
+             如果条件表达式不成立 结果就是NO
  
  
          3). BOOL的本质.
@@ -47,7 +47,7 @@
  
  
          c. 本质
-            typedef unsigned char                   Boolean;
+            typedef unsigned char Boolean;
  
              #define true 1
              #define false 0
