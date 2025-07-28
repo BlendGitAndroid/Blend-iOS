@@ -11,6 +11,7 @@
 @interface ViewController ()
 - (IBAction)show:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *txt1;
+@property (weak, nonatomic) IBOutlet UITextField *text2;
 
 @end
 
@@ -35,7 +36,7 @@
 //        view.backgroundColor = [UIColor redColor];
 //    }
     
-    //self.txt1.superview.backgroundColor = [UIColor yellowColor];
+    self.txt1.superview.superview.backgroundColor = [UIColor yellowColor];
 
     
     

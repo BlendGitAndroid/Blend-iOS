@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 - (IBAction)up;
-- (IBAction)down:(id)sender;
+- (IBAction)down:(id)sender; // 这里写的是id，表示任何类型
 - (IBAction)left;
 - (IBAction)right;
 
@@ -92,6 +92,7 @@
     NSLog(@"右");
 }
 
+// 放大和缩小是以左上角为原点来的
 // 放大
 - (IBAction)big {
     //NSLog(@"bigger");

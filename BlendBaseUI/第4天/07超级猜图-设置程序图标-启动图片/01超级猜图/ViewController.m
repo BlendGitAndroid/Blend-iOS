@@ -112,7 +112,7 @@
     // 记录一下头像按钮的原始frame
     self.iconFrame = self.btnIcon.frame;
     
-    // 1.创建大小与self.view一样的按钮, 把这个按钮作为一个"阴影"
+    // 1.创建大小与self.view一样的按钮, 把这个按钮作为一个"阴影"，就是一个蒙层
     UIButton *btnCover = [[UIButton alloc] init];
     // 设置按钮大小
     btnCover.frame = self.view.bounds;
@@ -129,10 +129,10 @@
     
     
     // 2. 把图片设置到阴影的上面
-    // 把self.view中的所有子控件中, 只把self.btnIcon显示到最上层
+    // 把self.view中的所有子控件中, 只把self.btnIcon显示到最上层，这样当点击头像的时候，就能把头像显示到最上面了
     [self.view bringSubviewToFront:self.btnIcon];
     
-    // 通过self.cover来引用btnCover
+    // 通过self.cover来引用btnCover，这个btnCover就是显示在整个View上面，为了缩小图片的时候，获取点击事件
     self.cover = btnCover;
     
     
@@ -267,7 +267,7 @@
     self.optionsView.userInteractionEnabled = YES;
     
     
-    // 1. 清除待选按钮的view中的所有子控件
+    // 1. 清除待选按钮的view中的所有子控件，removeFromSuperview这个是系统的
     [self.optionsView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     // 2. 获取当前题目的待选文字的数组
@@ -344,7 +344,7 @@
             
             // 把当前点击的待选按钮的文字设置给对应的答案按钮
             [answerBtn setTitle:text forState:UIControlStateNormal];
-            // 把当前点击的待选按钮的tag值也设置给对应的答案按钮
+            // 把当前点击的待选按钮的tag值也设置给对应的答案按钮，为以后的相等做
             answerBtn.tag = sender.tag;
             
             break;
@@ -444,7 +444,7 @@
 // 创建答案按钮
 - (void)makeAnswerButtons:(CZQuestion *)model
 {
-    // 这句话的意思：让subviews这个数组中的每个对象, 分别调用一次removeFromSuperview方法, 内部执行了循环,无需我们自己来些循环
+    // 这句话的意思：让subviews这个数组中的每个对象, 分别调用一次removeFromSuperview方法, 内部执行了循环,无需我们自己来些循环，就是叫answerView下面的每一个View都执行移除代码
     [self.answerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     // 5.1 获取当前答案的文字的个数
@@ -484,7 +484,7 @@
 // 参数sender, 就表示当前点击的答案按钮
 - (void)btnAnswerClick:(UIButton *)sender
 {
-    // 0. 启用option view与用户的交互
+    // 0. 启用option view与用户的交互，因为一旦去除一个答案，代表选择区的按钮的就是接来下数据都是可以点击的
     self.optionsView.userInteractionEnabled = YES;
     
     // 1. 设置所有的答案按钮的文字颜色为黑色
@@ -498,14 +498,14 @@
 //            optBtn.hidden = NO;
 //            break;
 //        }
-        
+        // 根据tag来判断元素
         if (sender.tag == optBtn.tag) {
-            optBtn.hidden = NO;
+            optBtn.hidden = NO; // 再将元素显示出来，标识不隐藏
             break;
         }
     }
     
-    // 1. 清空当前被点击的答案按钮的文字
+    // 3. 清空当前被点击的答案按钮的文字
    [sender setTitle:nil forState:UIControlStateNormal];
     
     

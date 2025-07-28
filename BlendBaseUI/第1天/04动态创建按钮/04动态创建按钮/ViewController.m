@@ -76,9 +76,6 @@
     
     
     
-    
-    
-    
     //把动态创建的按钮加到控制器所管理的那个view中
     [self.view addSubview:button];
 

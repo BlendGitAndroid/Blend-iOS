@@ -75,7 +75,7 @@
     lblMsg.font = [UIFont boldSystemFontOfSize:17];
     // 2.7 设置Label的透明度
     lblMsg.alpha = 0.0; // 一开始把透明度设置为0, 然后通过动画的方式慢慢的改变透明度
-    // 2.8 设置Label为"圆角"
+    // 2.8 设置Label为"圆角"，分为两步，设置圆角再裁掉多余的部分
     // 设置四个角的“半径”
     lblMsg.layer.cornerRadius = 10;
     // 把多余的部分裁剪掉
