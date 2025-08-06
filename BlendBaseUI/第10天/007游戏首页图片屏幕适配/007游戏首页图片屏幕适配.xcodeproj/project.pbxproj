@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18BDD5B61AAC34B9000AE564 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDD5B51AAC34B9000AE564 /* main.m */; };
+		18BDD5B91AAC34B9000AE564 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDD5B81AAC34B9000AE564 /* AppDelegate.m */; };
+		18BDD5BC1AAC34B9000AE564 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDD5BB1AAC34B9000AE564 /* ViewController.m */; };
+		18BDD5BF1AAC34B9000AE564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BDD5BD1AAC34B9000AE564 /* Main.storyboard */; };
+		18BDD5C11AAC34B9000AE564 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BDD5C01AAC34B9000AE564 /* Images.xcassets */; };
+		18BDD5C41AAC34B9000AE564 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BDD5C21AAC34B9000AE564 /* LaunchScreen.xib */; };
+		18BDD5D01AAC34B9000AE564 /* _07__________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDD5CF1AAC34B9000AE564 /* _07__________Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18BDD5CA1AAC34B9000AE564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BDD5A81AAC34B9000AE564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BDD5AF1AAC34B9000AE564;
+			remoteInfo = "007游戏首页图片屏幕适配";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18BDD5B01AAC34B9000AE564 /* 007游戏首页图片屏幕适配.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "007游戏首页图片屏幕适配.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BDD5B41AAC34B9000AE564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BDD5B51AAC34B9000AE564 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18BDD5B71AAC34B9000AE564 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18BDD5B81AAC34B9000AE564 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BDD5BA1AAC34B9000AE564 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18BDD5BB1AAC34B9000AE564 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18BDD5BE1AAC34B9000AE564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18BDD5C01AAC34B9000AE564 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18BDD5C31AAC34B9000AE564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18BDD5C91AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "007游戏首页图片屏幕适配Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BDD5CE1AAC34B9000AE564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BDD5CF1AAC34B9000AE564 /* _07__________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_07__________Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BDD5AD1AAC34B9000AE564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BDD5C61AAC34B9000AE564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BDD5A71AAC34B9000AE564 = {
+			isa = PBXGroup;
+			children = (
+				18BDD5B21AAC34B9000AE564 /* 007游戏首页图片屏幕适配 */,
+				18BDD5CC1AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests */,
+				18BDD5B11AAC34B9000AE564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BDD5B11AAC34B9000AE564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BDD5B01AAC34B9000AE564 /* 007游戏首页图片屏幕适配.app */,
+				18BDD5C91AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BDD5B21AAC34B9000AE564 /* 007游戏首页图片屏幕适配 */ = {
+			isa = PBXGroup;
+			children = (
+				18BDD5B71AAC34B9000AE564 /* AppDelegate.h */,
+				18BDD5B81AAC34B9000AE564 /* AppDelegate.m */,
+				18BDD5BA1AAC34B9000AE564 /* ViewController.h */,
+				18BDD5BB1AAC34B9000AE564 /* ViewController.m */,
+				18BDD5BD1AAC34B9000AE564 /* Main.storyboard */,
+				18BDD5C01AAC34B9000AE564 /* Images.xcassets */,
+				18BDD5C21AAC34B9000AE564 /* LaunchScreen.xib */,
+				18BDD5B31AAC34B9000AE564 /* Supporting Files */,
+			);
+			path = "007游戏首页图片屏幕适配";
+			sourceTree = "<group>";
+		};
+		18BDD5B31AAC34B9000AE564 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BDD5B41AAC34B9000AE564 /* Info.plist */,
+				18BDD5B51AAC34B9000AE564 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BDD5CC1AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18BDD5CF1AAC34B9000AE564 /* _07__________Tests.m */,
+				18BDD5CD1AAC34B9000AE564 /* Supporting Files */,
+			);
+			path = "007游戏首页图片屏幕适配Tests";
+			sourceTree = "<group>";
+		};
+		18BDD5CD1AAC34B9000AE564 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BDD5CE1AAC34B9000AE564 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BDD5AF1AAC34B9000AE564 /* 007游戏首页图片屏幕适配 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BDD5D31AAC34B9000AE564 /* Build configuration list for PBXNativeTarget "007游戏首页图片屏幕适配" */;
+			buildPhases = (
+				18BDD5AC1AAC34B9000AE564 /* Sources */,
+				18BDD5AD1AAC34B9000AE564 /* Frameworks */,
+				18BDD5AE1AAC34B9000AE564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "007游戏首页图片屏幕适配";
+			productName = "007游戏首页图片屏幕适配";
+			productReference = 18BDD5B01AAC34B9000AE564 /* 007游戏首页图片屏幕适配.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18BDD5C81AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BDD5D61AAC34B9000AE564 /* Build configuration list for PBXNativeTarget "007游戏首页图片屏幕适配Tests" */;
+			buildPhases = (
+				18BDD5C51AAC34B9000AE564 /* Sources */,
+				18BDD5C61AAC34B9000AE564 /* Frameworks */,
+				18BDD5C71AAC34B9000AE564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BDD5CB1AAC34B9000AE564 /* PBXTargetDependency */,
+			);
+			name = "007游戏首页图片屏幕适配Tests";
+			productName = "007游戏首页图片屏幕适配Tests";
+			productReference = 18BDD5C91AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BDD5A81AAC34B9000AE564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = itcast;
+				TargetAttributes = {
+					18BDD5AF1AAC34B9000AE564 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					18BDD5C81AAC34B9000AE564 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 18BDD5AF1AAC34B9000AE564;
+					};
+				};
+			};
+			buildConfigurationList = 18BDD5AB1AAC34B9000AE564 /* Build configuration list for PBXProject "007游戏首页图片屏幕适配" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 18BDD5A71AAC34B9000AE564;
+			productRefGroup = 18BDD5B11AAC34B9000AE564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BDD5AF1AAC34B9000AE564 /* 007游戏首页图片屏幕适配 */,
+				18BDD5C81AAC34B9000AE564 /* 007游戏首页图片屏幕适配Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BDD5AE1AAC34B9000AE564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BDD5BF1AAC34B9000AE564 /* Main.storyboard in Resources */,
+				18BDD5C41AAC34B9000AE564 /* LaunchScreen.xib in Resources */,
+				18BDD5C11AAC34B9000AE564 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BDD5C71AAC34B9000AE564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BDD5AC1AAC34B9000AE564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BDD5BC1AAC34B9000AE564 /* ViewController.m in Sources */,
+				18BDD5B91AAC34B9000AE564 /* AppDelegate.m in Sources */,
+				18BDD5B61AAC34B9000AE564 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BDD5C51AAC34B9000AE564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BDD5D01AAC34B9000AE564 /* _07__________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18BDD5CB1AAC34B9000AE564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BDD5AF1AAC34B9000AE564 /* 007游戏首页图片屏幕适配 */;
+			targetProxy = 18BDD5CA1AAC34B9000AE564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18BDD5BD1AAC34B9000AE564 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BDD5BE1AAC34B9000AE564 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18BDD5C21AAC34B9000AE564 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BDD5C31AAC34B9000AE564 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BDD5D11AAC34B9000AE564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18BDD5D21AAC34B9000AE564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BDD5D41AAC34B9000AE564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "007游戏首页图片屏幕适配/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18BDD5D51AAC34B9000AE564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "007游戏首页图片屏幕适配/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18BDD5D71AAC34B9000AE564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "007游戏首页图片屏幕适配Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/007游戏首页图片屏幕适配.app/007游戏首页图片屏幕适配";
+			};
+			name = Debug;
+		};
+		18BDD5D81AAC34B9000AE564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "007游戏首页图片屏幕适配Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/007游戏首页图片屏幕适配.app/007游戏首页图片屏幕适配";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BDD5AB1AAC34B9000AE564 /* Build configuration list for PBXProject "007游戏首页图片屏幕适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BDD5D11AAC34B9000AE564 /* Debug */,
+				18BDD5D21AAC34B9000AE564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BDD5D31AAC34B9000AE564 /* Build configuration list for PBXNativeTarget "007游戏首页图片屏幕适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BDD5D41AAC34B9000AE564 /* Debug */,
+				18BDD5D51AAC34B9000AE564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BDD5D61AAC34B9000AE564 /* Build configuration list for PBXNativeTarget "007游戏首页图片屏幕适配Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BDD5D71AAC34B9000AE564 /* Debug */,
+				18BDD5D81AAC34B9000AE564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BDD5A81AAC34B9000AE564 /* Project object */;
+}

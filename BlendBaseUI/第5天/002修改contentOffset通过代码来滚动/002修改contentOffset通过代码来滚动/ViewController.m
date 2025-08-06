@@ -22,12 +22,13 @@
     // 设置UIScrollView的实际内容大小
     self.scrollView.contentSize = self.imgView.image.size;
     
-    // 隐藏滚动指示器
+    // 隐藏滚动指示器，不展示左右的
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     
     // 设置UIScrollView的内容的内边距
-    self.scrollView.contentInset = UIEdgeInsetsMake(100, 50, 30, 5);
+    // UIEdgeInsetsMake 是 iOS 开发中用于创建边缘内边距的函数，用于调整视图内容的内边距。
+    self.scrollView.contentInset = UIEdgeInsetsMake(50, 50, 30, 5);
     
 }
 

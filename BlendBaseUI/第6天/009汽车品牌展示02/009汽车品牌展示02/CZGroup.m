@@ -20,6 +20,8 @@
         
         // 当有模型嵌套的时候需要手动把字典转成模型
         // 创建一个用来保存模型的数组
+        // 手动的进行字典转模型
+        // 再将里面的care转换为模型
         NSMutableArray *arrayModels = [NSMutableArray array];
         // 手动做一下字典转模型
         for (NSDictionary *item_dict in dict[@"cars"]) {

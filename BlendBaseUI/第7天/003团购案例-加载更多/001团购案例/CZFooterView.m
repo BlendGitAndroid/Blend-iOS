@@ -36,7 +36,23 @@
     
     
     
-    
+    // dispatch_after : 核心函数，用于在指定时间后执行代码块在指定时间后执行代码块
+    // - 2.
+    // 第一个参数 dispatch_time(...) : 指定延迟执行的时间
+
+    // - DISPATCH_TIME_NOW : 基准时间点，表示当前时刻
+    // - (int64_t)(1.0 * NSEC_PER_SEC) : 延迟时间，这里是 1 秒
+    //   - NSEC_PER_SEC : 常量，表示每秒包含的纳秒数 (1,000,000,000)
+    //   - 1.0 * NSEC_PER_SEC : 计算出 1 秒的纳秒数
+    //   - (int64_t) : 转换为 64 位整数类型
+    // - 3.
+    // 第二个参数 dispatch_get_main_queue() : 指定代码块执行的队列
+
+    // - 这里是主队列 (UI 队列)，确保 UI 相关操作在主线程执行
+    // - 4.
+    // 第三个参数 ^{/* 代码块 */} : 要延迟执行的代码
+
+    // - 这是一个匿名的 block 函数，包含实际要执行的逻辑
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // 3. 调用代理方法实现下面的功能

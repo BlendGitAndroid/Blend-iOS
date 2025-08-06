@@ -12,6 +12,7 @@
 #import "CZFooterView.h"
 #import "CZHeaderView.h"
 
+// 这里自定义了Delegate
 @interface ViewController () <UITableViewDataSource, CZFooterViewDelegate>
 
 // 用来存储所有的团购商品的数据
@@ -141,7 +142,7 @@
 //    [self.tableView reloadRowsAtIndexPaths:@[idxPath] withRowAnimation:UITableViewRowAnimationLeft];
     
     
-    // 5. 把UITableView中的最后一行的数据滚动到最上面
+    // 5. 把UITableView中的最后一行的数据滚动到最上面，即每次都显示的最新一行
      NSIndexPath *idxPath = [NSIndexPath indexPathForRow:self.goods.count - 1 inSection:0];
     [self.tableView scrollToRowAtIndexPath:idxPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }

@@ -16,6 +16,8 @@
 
 #pragma mark - /************** 数据源方法 *****************/
 // 返回要显示多少组数据
+// section标识的就是部分，章节
+// 这里的参数是tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // 要展示3组数据（亚洲，非洲，欧洲）
@@ -24,6 +26,7 @@
 
 
 // 每一组有几条数据
+// 这里的参数是section，表示第几组
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // 根据不同的组, 返回每组显示不同条数的数据
@@ -39,6 +42,7 @@
 
 
 // 每组的每行显示什么样的内容
+// 这里的参数是indexPath, 表示当前单元格的位置，意思是第section组的第row行，indexPath.section表示组，indexPath.row表示行
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 创建单元格

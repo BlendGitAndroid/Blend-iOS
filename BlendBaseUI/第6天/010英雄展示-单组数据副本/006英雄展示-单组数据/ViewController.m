@@ -13,6 +13,21 @@
 
 // 保存英雄的集合
 @property (nonatomic, strong) NSArray *heros;
+
+/**    
+在iOS开发中，使用`weak`修饰`IBOutlet`属性是一种最佳实践，主要有以下几个原因：
+
+1. **避免循环引用**：视图控制器(ViewController)会被其视图层次结构强引用，如果用`strong`修饰`tableView`，会导致视图控制器强引用`tableView`，而`tableView`又被视图控制器的视图层次结构强引用，形成循环引用。
+
+2. **视图生命周期管理**：视图的生命周期应由视图层次结构管理，而非视图控制器额外强引用。当视图从界面移除时，使用`weak`修饰允许它被正确释放，不会因视图控制器的强引用导致内存泄漏。
+
+3. **ARC自动置空**：在ARC环境下，当`tableView`被释放时，`weak`引用会自动置为`nil`，避免野指针异常，增强代码安全性。
+
+4. **`IBOutlet`特性**：`IBOutlet`连接的界面元素已被添加到视图层次结构中（已有强引用），视图控制器只需弱引用即可访问，无需额外强引用。
+
+因此，`weak`修饰符在此处是为了正确管理内存、避免循环引用和提高代码安全性。
+        
+*/
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -22,6 +37,7 @@
 
 
 #pragma mark - 代理方法
+// 如果高度是不固定的，那就使用这个方法来设置每一个cell的高度
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    int rowNum = indexPath.row;
@@ -43,7 +59,7 @@
         NSString *name = [alertView textFieldAtIndex:0].text;
         
         
-        // 2. 找到对应的英雄模型
+        // 2. 找到对应的英雄模型，通过TAG来找到
         CZHero *hero = self.heros[alertView.tag];
         
         
@@ -56,8 +72,13 @@
         
         // 局部刷新, 刷新指定的行
         // 创建一个行对象
+        // - 这行代码创建了一个表格视图索引路径对象 idxPath
+        // - indexPathForRow:alertView.tag 表示行索引为之前保存在 alertView.tag 中的值（即用户最初点击的行索引）
+        // - inSection:0 表示该行为第 0 组（因为当前表格只有一组数据）
         NSIndexPath *idxPath = [NSIndexPath indexPathForRow:alertView.tag inSection:0];
-        [self.tableView reloadRowsAtIndexPaths:@[idxPath] withRowAnimation:UITableViewRowAnimationLeft];
+        // - 这行代码刷新表格视图中 idxPath 对应的那一行
+        // 指定了刷新时使用从左侧滑入的动画效果
+        [self.tableView reloadRowsAtIndexPaths:@[idxPath] withRowAnimation:UITableViewRowAnimationFade];
         
     }
 }
@@ -71,7 +92,7 @@
     
     
     
-    // 创建一个对话框对象
+    // 创建一个对话框对象，并将代理设置成自己
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"编辑英雄" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     
     // 把当前行的索引保存到alertview的Tag中
@@ -108,6 +129,7 @@
 }
 
 #pragma mark - 数据源方法
+// 如果这个方法不写，默认返回的是1
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 //{
 //    return 1;
@@ -122,10 +144,15 @@
 {
     // 1. 获取模型数据
     CZHero *model = self.heros[indexPath.row];
+    
+    static NSString *ID = @"hero_cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
 
     // 2. 创建单元格
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    }
     // 3. 把模型数据设置给单元格
     cell.imageView.image = [UIImage imageNamed:model.icon];
     cell.textLabel.text = model.name;
@@ -142,6 +169,8 @@
     return cell;
 }
 
+
+// 隐藏状态栏
 - (BOOL)prefersStatusBarHidden
 {
     return YES;

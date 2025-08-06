@@ -16,7 +16,7 @@
         //self.title = dict[@"title"];
         //self.desc = dict[@"desc"];
         //self.cars = dict[@"cars"];
-        // KVC
+        // KVC，意思是通过字典的key来设置对象的属性
         [self setValuesForKeysWithDictionary:dict];
     }
     return self;

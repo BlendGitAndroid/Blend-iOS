@@ -13,6 +13,8 @@
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
+        // KVC，意思是通过字典的key来设置对象的属性
+        // kvc的参数一定是NSDictionary
         [self setValuesForKeysWithDictionary:dict];
     }
     return self;

@@ -22,7 +22,7 @@
         // 懒加载数据
         // 找到plist文件的路径
         NSString *path = [[NSBundle mainBundle] pathForResource:@"cars_simple.plist" ofType:nil];
-        // 加载plist文件
+        // 加载plist文件，将plist文件中的内容转成字典数组
         NSArray *arrayDict = [NSArray arrayWithContentsOfFile:path];
         // 把字典转成模型
         NSMutableArray *arrayModel = [NSMutableArray array];

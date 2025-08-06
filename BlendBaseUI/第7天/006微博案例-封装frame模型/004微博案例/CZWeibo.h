@@ -14,6 +14,8 @@
 @property (nonatomic, copy) NSString *icon;
 @property (nonatomic, copy) NSString *picture;
 @property (nonatomic, copy) NSString *name;
+
+// 如果是BOOL值的话，需要重写他的getter方法
 @property (nonatomic, assign, getter=isVip) BOOL vip;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;

@@ -65,7 +65,8 @@
     
     // 为UIScrollView找代理
     // 让当前控制器作为UIScrollView的代理对象
-    //self.scrollView.delegate = self;
+    // 设置代理对象
+    self.scrollView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -40,7 +40,7 @@
     
     CGFloat nameW = nameSize.width;
     CGFloat nameH = nameSize.height;
-    CGFloat nameY = iconY + (iconH - nameH) / 2;
+    CGFloat nameY = iconY + (iconH - nameH) / 2; // 将文本的高度显示为图标高度的一半
     
     _nameFrame = CGRectMake(nameX, nameY, nameW, nameH);
     
@@ -50,7 +50,7 @@
     CGFloat vipW = 10;
     CGFloat vipH = 10;
     CGFloat vipX = CGRectGetMaxX(_nameFrame) + margin;
-    CGFloat vipY = nameY;
+    CGFloat vipY = (nameH - vipH) * 0.5 + nameY;
     _vipFrame = CGRectMake(vipX, vipY, vipW, vipH);
     
     
@@ -89,6 +89,7 @@
 }
 
 // 根据给定的字符串、最大值的size、给定的字体, 来计算文字应该占用的大小
+// 这是iOS中处理动态文本布局的标准写法
 - (CGSize)sizeWithText:(NSString *)text andMaxSize:(CGSize)maxSize andFont:(UIFont *)font
 {
     NSDictionary *attr = @{NSFontAttributeName : font};

@@ -23,6 +23,7 @@
     //self.scrollView.contentSize = self.imgView.frame.size;
     
     // 设置UIScrollView的内容的大小等于图片框中所显示的图片的实际大小
+    // 如果图片的大小，大于内容的大小，就能滑动了
     self.scrollView.contentSize = self.imgView.image.size;
     NSLog(@"%@", NSStringFromCGSize(self.scrollView.contentSize));
 }
