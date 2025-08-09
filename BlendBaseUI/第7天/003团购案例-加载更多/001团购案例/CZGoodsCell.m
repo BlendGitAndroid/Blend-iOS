@@ -65,6 +65,7 @@ XIB文件在项目编译阶段会被Xcode的`ibtool`工具转换为二进制格�
     self.lblBuyCount.text = [NSString stringWithFormat:@"%@ 人已购买", goods.buyCount];
 }
 
+// 当视图从xib文件加载完成并被实例化的时候调用
 - (void)awakeFromNib {
     // Initialization code
 }

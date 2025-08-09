@@ -31,33 +31,43 @@
     return cell;
 }
 
+#pragma mark -  重写initWithStyle方法
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        // 创建子控件
+        
         self.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
-        //时间
+        
+        // 显示时间的label
         UILabel *timeView = [[UILabel alloc] init];
         [self.contentView addSubview:timeView];
         self.timeView = timeView;
+        // 设置文字居中
         self.timeView.textAlignment = NSTextAlignmentCenter;
-        //头像
+        
+        // 显示头像的UIImageView
         UIImageView *iconView = [[UIImageView alloc] init];
         [self.contentView addSubview:iconView];
         self.iconView = iconView;
-        //内容
+        
+        // 显示正文的按钮
         UIButton *textView = [[UIButton alloc] init];
         [self.contentView addSubview:textView];
         self.textView = textView;
         textView.titleLabel.font = [UIFont systemFontOfSize:CZTextFont];
+        // 设置按钮中的label的文字可以换行
         self.textView.titleLabel.numberOfLines = 0;
         
 //        textView.backgroundColor = [UIColor redColor];
+        // 设置文本的内边距，为了突出背景色，因为这里增加了内边距，所以文本的位置就得修改了
         self.textView.contentEdgeInsets = UIEdgeInsetsMake(20, 20, 20, 20);
         [self.textView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
     return self;
 }
 
+#pragma mark -  重写frame 模型的set方法
 - (void)setMessageFrame:(CZMessageFrame *)messageFrame
 {
     _messageFrame = messageFrame;
@@ -80,7 +90,9 @@
     }
     
 
+    // 设置背景图
     if (message.type == CZMessageTypeSelf) {
+        // resizeImage是一个自定义的扩展
         [self.textView setBackgroundImage:[UIImage resizeImage:@"chat_send_nor"] forState:UIControlStateNormal];
         [self.textView setBackgroundImage:[UIImage resizeImage:@"chat_send_press_pic"] forState:UIControlStateHighlighted];
     }else{

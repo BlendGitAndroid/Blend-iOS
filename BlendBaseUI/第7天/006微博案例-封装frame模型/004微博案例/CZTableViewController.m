@@ -14,6 +14,7 @@
 @interface CZTableViewController ()
 
 // 现在要求weiboFrames集合中保存的很多个CZWeiboFrame模型，不再是CZWeibo模型了。
+// 这个frame模型负责计算和存储cell的frame, 而不是cell的数据模型
 @property (nonatomic, strong) NSArray *weiboFrames;
 @end
 
@@ -85,7 +86,7 @@
 
     
     // 1. 获取模型数据
-    CZWeiboFrame *model = self.weiboFrames[indexPath.row];
+    CZWeiboFrame *frameModel = self.weiboFrames[indexPath.row];
 
     
     // 2. 创建单元格
@@ -93,7 +94,7 @@
     
 
     // 3. 设置单元格数据
-    cell.weiboFrame = model;
+    cell.weiboFrame = frameModel;
     
     // 4. 返回单元格
     return cell;

@@ -41,6 +41,7 @@
 @class CZWeibo;
 @interface CZWeiboFrame : NSObject
 
+// 保存原始数据的
 @property (nonatomic, strong) CZWeibo *weibo;
 
 // 用来保存头像的frame

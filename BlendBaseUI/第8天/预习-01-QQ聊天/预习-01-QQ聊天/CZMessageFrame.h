@@ -13,11 +13,19 @@
 
 @class CZMessage;
 @interface CZMessageFrame : NSObject
+
+// 时间Label的frame
 @property (nonatomic, assign, readonly) CGRect timeF;
+
+// 头像的frame
 @property (nonatomic, assign, readonly) CGRect iconF;
+
+// 正文的frame
 @property (nonatomic, assign, readonly) CGRect textF;
 
+// 行高
 @property (nonatomic, assign, readonly) CGFloat rowHeight;
 
+// 引用数据模型
 @property (nonatomic, strong) CZMessage *message;
 @end

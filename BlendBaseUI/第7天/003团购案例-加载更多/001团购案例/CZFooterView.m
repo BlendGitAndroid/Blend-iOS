@@ -17,6 +17,8 @@
 
 @implementation CZFooterView
 
+
+// 返回的是一个UI视图，CZFooterView继承了UIView，负责显示界面，而xib是一个可视化布局文件，loadNibNamed将xib绑定到View实例上
 + (instancetype)footerView
 {
     CZFooterView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"CZFooterView" owner:nil options:nil] lastObject];

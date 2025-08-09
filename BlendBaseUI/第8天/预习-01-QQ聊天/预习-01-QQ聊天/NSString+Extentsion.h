@@ -10,5 +10,9 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 @interface NSString (Extentsion)
+// 对象方法
 - (CGSize)sizeOfTextFontSize:(CGFloat)fontSize maxSize:(CGSize)maxSize;
+
+// 类方法
++ (CGSize)sizeOfTextFontSize:(NSString *)text font:(CGFloat)fontSize maxSize:(CGSize)maxSize;
 @end

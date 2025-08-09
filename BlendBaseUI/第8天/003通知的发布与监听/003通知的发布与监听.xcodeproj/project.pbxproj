@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C398541AA6E974000DA494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C398531AA6E974000DA494 /* main.m */; };
+		18C3985C1AA6E992000DA494 /* NotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3985B1AA6E992000DA494 /* NotificationSender.m */; };
+		18C3985F1AA6E9BA000DA494 /* NSNotificationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3985E1AA6E9BA000DA494 /* NSNotificationListener.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18C3984E1AA6E974000DA494 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18C398501AA6E974000DA494 /* 003通知的发布与监听 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "003通知的发布与监听"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C398531AA6E974000DA494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18C3985A1AA6E992000DA494 /* NotificationSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSender.h; sourceTree = "<group>"; };
+		18C3985B1AA6E992000DA494 /* NotificationSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSender.m; sourceTree = "<group>"; };
+		18C3985D1AA6E9BA000DA494 /* NSNotificationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNotificationListener.h; sourceTree = "<group>"; };
+		18C3985E1AA6E9BA000DA494 /* NSNotificationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationListener.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C3984D1AA6E974000DA494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C398471AA6E974000DA494 = {
+			isa = PBXGroup;
+			children = (
+				18C398521AA6E974000DA494 /* 003通知的发布与监听 */,
+				18C398511AA6E974000DA494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C398511AA6E974000DA494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C398501AA6E974000DA494 /* 003通知的发布与监听 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C398521AA6E974000DA494 /* 003通知的发布与监听 */ = {
+			isa = PBXGroup;
+			children = (
+				18C398531AA6E974000DA494 /* main.m */,
+				18C3985A1AA6E992000DA494 /* NotificationSender.h */,
+				18C3985B1AA6E992000DA494 /* NotificationSender.m */,
+				18C3985D1AA6E9BA000DA494 /* NSNotificationListener.h */,
+				18C3985E1AA6E9BA000DA494 /* NSNotificationListener.m */,
+			);
+			path = "003通知的发布与监听";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C3984F1AA6E974000DA494 /* 003通知的发布与监听 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C398571AA6E974000DA494 /* Build configuration list for PBXNativeTarget "003通知的发布与监听" */;
+			buildPhases = (
+				18C3984C1AA6E974000DA494 /* Sources */,
+				18C3984D1AA6E974000DA494 /* Frameworks */,
+				18C3984E1AA6E974000DA494 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "003通知的发布与监听";
+			productName = "003通知的发布与监听";
+			productReference = 18C398501AA6E974000DA494 /* 003通知的发布与监听 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C398481AA6E974000DA494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = itcast;
+				TargetAttributes = {
+					18C3984F1AA6E974000DA494 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 18C3984B1AA6E974000DA494 /* Build configuration list for PBXProject "003通知的发布与监听" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 18C398471AA6E974000DA494;
+			productRefGroup = 18C398511AA6E974000DA494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C3984F1AA6E974000DA494 /* 003通知的发布与监听 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C3984C1AA6E974000DA494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C398541AA6E974000DA494 /* main.m in Sources */,
+				18C3985C1AA6E992000DA494 /* NotificationSender.m in Sources */,
+				18C3985F1AA6E9BA000DA494 /* NSNotificationListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18C398551AA6E974000DA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18C398561AA6E974000DA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18C398581AA6E974000DA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18C398591AA6E974000DA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C3984B1AA6E974000DA494 /* Build configuration list for PBXProject "003通知的发布与监听" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C398551AA6E974000DA494 /* Debug */,
+				18C398561AA6E974000DA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C398571AA6E974000DA494 /* Build configuration list for PBXNativeTarget "003通知的发布与监听" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C398581AA6E974000DA494 /* Debug */,
+				18C398591AA6E974000DA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C398481AA6E974000DA494 /* Project object */;
+}

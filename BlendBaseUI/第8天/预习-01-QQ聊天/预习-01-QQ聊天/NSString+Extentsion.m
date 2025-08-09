@@ -9,9 +9,15 @@
 #import "NSString+Extentsion.h"
 #import <UIKit/UIKit.h>
 @implementation NSString (Extentsion)
+
+// 扩展方法
 - (CGSize)sizeOfTextFontSize:(CGFloat)fontSize maxSize:(CGSize)maxSize
 {
     NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]};
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+}
+
++ (CGSize)sizeOfTextFontSize:(NSString *)text font:(CGFloat)fontSize maxSize:(CGSize)maxSize {
+    return [text sizeOfTextFontSize:fontSize maxSize:maxSize];
 }
 @end

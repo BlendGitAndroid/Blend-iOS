@@ -16,6 +16,7 @@
     }
     return self;
 }
+
 + (instancetype)messageWithDic:(NSDictionary *)dic
 {
     return [[self alloc] initWithDic:dic];
@@ -26,10 +27,12 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"plist"];
     NSArray *dicArray = [NSArray arrayWithContentsOfFile:path];
     NSMutableArray *messages = [NSMutableArray array];
-     CZMessage *lastMessage;
+    // 保存lastMessage消息
+    CZMessage *lastMessage;
     for (NSDictionary *dic in dicArray) {
         CZMessage *message = [[CZMessage alloc] initWithDic:dic];
         
+        // 判断当前模型的“消息发送时间”是否和上一个模型的“消息发送时间”一致， 如果一致做个标记
         if ([message.time isEqualToString:lastMessage.time]) {
             message.hiddenTime = YES;
         }
