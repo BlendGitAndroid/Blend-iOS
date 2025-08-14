@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6DEB4771C0C2AD700B666E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEB4761C0C2AD700B666E1 /* main.m */; };
+		A6DEB47A1C0C2AD700B666E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEB4791C0C2AD700B666E1 /* AppDelegate.m */; };
+		A6DEB4821C0C2AD700B666E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DEB4811C0C2AD700B666E1 /* Assets.xcassets */; };
+		A6DEB4851C0C2AD700B666E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DEB4831C0C2AD700B666E1 /* LaunchScreen.storyboard */; };
+		A6DEB4901C0C2C7B00B666E1 /* HMRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEB48E1C0C2C7B00B666E1 /* HMRedViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A6DEB4911C0C2C7B00B666E1 /* HMRedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DEB48F1C0C2C7B00B666E1 /* HMRedViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A6DEB4951C0C2CAA00B666E1 /* HMGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEB4931C0C2CAA00B666E1 /* HMGreenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A6DEB4961C0C2CAA00B666E1 /* HMGreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DEB4941C0C2CAA00B666E1 /* HMGreenViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		A6DEB49A1C0C2CB600B666E1 /* HMBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEB4981C0C2CB600B666E1 /* HMBlueViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A6DEB49B1C0C2CB600B666E1 /* HMBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DEB4991C0C2CB600B666E1 /* HMBlueViewController.xib */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6DEB4721C0C2AD700B666E1 /* 06-导航控制器的基本使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-导航控制器的基本使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DEB4761C0C2AD700B666E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6DEB4781C0C2AD700B666E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6DEB4791C0C2AD700B666E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6DEB4811C0C2AD700B666E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6DEB4841C0C2AD700B666E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6DEB4861C0C2AD700B666E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6DEB48D1C0C2C7B00B666E1 /* HMRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRedViewController.h; sourceTree = "<group>"; };
+		A6DEB48E1C0C2C7B00B666E1 /* HMRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMRedViewController.m; sourceTree = "<group>"; };
+		A6DEB48F1C0C2C7B00B666E1 /* HMRedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRedViewController.xib; sourceTree = "<group>"; };
+		A6DEB4921C0C2CAA00B666E1 /* HMGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGreenViewController.h; sourceTree = "<group>"; };
+		A6DEB4931C0C2CAA00B666E1 /* HMGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGreenViewController.m; sourceTree = "<group>"; };
+		A6DEB4941C0C2CAA00B666E1 /* HMGreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMGreenViewController.xib; sourceTree = "<group>"; };
+		A6DEB4971C0C2CB600B666E1 /* HMBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMBlueViewController.h; sourceTree = "<group>"; };
+		A6DEB4981C0C2CB600B666E1 /* HMBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMBlueViewController.m; sourceTree = "<group>"; };
+		A6DEB4991C0C2CB600B666E1 /* HMBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMBlueViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6DEB46F1C0C2AD700B666E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6DEB4691C0C2AD700B666E1 = {
+			isa = PBXGroup;
+			children = (
+				A6DEB4741C0C2AD700B666E1 /* 06-导航控制器的基本使用 */,
+				A6DEB4731C0C2AD700B666E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6DEB4731C0C2AD700B666E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6DEB4721C0C2AD700B666E1 /* 06-导航控制器的基本使用.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6DEB4741C0C2AD700B666E1 /* 06-导航控制器的基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				A6DEB48C1C0C2C5800B666E1 /* Controllers */,
+				A6DEB4781C0C2AD700B666E1 /* AppDelegate.h */,
+				A6DEB4791C0C2AD700B666E1 /* AppDelegate.m */,
+				A6DEB4811C0C2AD700B666E1 /* Assets.xcassets */,
+				A6DEB4831C0C2AD700B666E1 /* LaunchScreen.storyboard */,
+				A6DEB4861C0C2AD700B666E1 /* Info.plist */,
+				A6DEB4751C0C2AD700B666E1 /* Supporting Files */,
+			);
+			path = "06-导航控制器的基本使用";
+			sourceTree = "<group>";
+		};
+		A6DEB4751C0C2AD700B666E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6DEB4761C0C2AD700B666E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6DEB48C1C0C2C5800B666E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6DEB48D1C0C2C7B00B666E1 /* HMRedViewController.h */,
+				A6DEB48E1C0C2C7B00B666E1 /* HMRedViewController.m */,
+				A6DEB48F1C0C2C7B00B666E1 /* HMRedViewController.xib */,
+				A6DEB4921C0C2CAA00B666E1 /* HMGreenViewController.h */,
+				A6DEB4931C0C2CAA00B666E1 /* HMGreenViewController.m */,
+				A6DEB4941C0C2CAA00B666E1 /* HMGreenViewController.xib */,
+				A6DEB4971C0C2CB600B666E1 /* HMBlueViewController.h */,
+				A6DEB4981C0C2CB600B666E1 /* HMBlueViewController.m */,
+				A6DEB4991C0C2CB600B666E1 /* HMBlueViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6DEB4711C0C2AD700B666E1 /* 06-导航控制器的基本使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DEB4891C0C2AD700B666E1 /* Build configuration list for PBXNativeTarget "06-导航控制器的基本使用" */;
+			buildPhases = (
+				A6DEB46E1C0C2AD700B666E1 /* Sources */,
+				A6DEB46F1C0C2AD700B666E1 /* Frameworks */,
+				A6DEB4701C0C2AD700B666E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-导航控制器的基本使用";
+			productName = "06-导航控制器的基本使用";
+			productReference = A6DEB4721C0C2AD700B666E1 /* 06-导航控制器的基本使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6DEB46A1C0C2AD700B666E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = itheima;
+				TargetAttributes = {
+					A6DEB4711C0C2AD700B666E1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = A6DEB46D1C0C2AD700B666E1 /* Build configuration list for PBXProject "06-导航控制器的基本使用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6DEB4691C0C2AD700B666E1;
+			productRefGroup = A6DEB4731C0C2AD700B666E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6DEB4711C0C2AD700B666E1 /* 06-导航控制器的基本使用 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6DEB4701C0C2AD700B666E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DEB49B1C0C2CB600B666E1 /* HMBlueViewController.xib in Resources */,
+				A6DEB4851C0C2AD700B666E1 /* LaunchScreen.storyboard in Resources */,
+				A6DEB4911C0C2C7B00B666E1 /* HMRedViewController.xib in Resources */,
+				A6DEB4821C0C2AD700B666E1 /* Assets.xcassets in Resources */,
+				A6DEB4961C0C2CAA00B666E1 /* HMGreenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6DEB46E1C0C2AD700B666E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DEB47A1C0C2AD700B666E1 /* AppDelegate.m in Sources */,
+				A6DEB4901C0C2C7B00B666E1 /* HMRedViewController.m in Sources */,
+				A6DEB49A1C0C2CB600B666E1 /* HMBlueViewController.m in Sources */,
+				A6DEB4771C0C2AD700B666E1 /* main.m in Sources */,
+				A6DEB4951C0C2CAA00B666E1 /* HMGreenViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6DEB4831C0C2AD700B666E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6DEB4841C0C2AD700B666E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6DEB4871C0C2AD700B666E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6DEB4881C0C2AD700B666E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6DEB48A1C0C2AD700B666E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-导航控制器的基本使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itheima.-6-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6DEB48B1C0C2AD700B666E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-导航控制器的基本使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itheima.-6-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6DEB46D1C0C2AD700B666E1 /* Build configuration list for PBXProject "06-导航控制器的基本使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DEB4871C0C2AD700B666E1 /* Debug */,
+				A6DEB4881C0C2AD700B666E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6DEB4891C0C2AD700B666E1 /* Build configuration list for PBXNativeTarget "06-导航控制器的基本使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DEB48A1C0C2AD700B666E1 /* Debug */,
+				A6DEB48B1C0C2AD700B666E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6DEB46A1C0C2AD700B666E1 /* Project object */;
+}

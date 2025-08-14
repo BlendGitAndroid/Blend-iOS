@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ceB-8s-ebB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Gwa-39-e5r">
+            <objects>
+                <navigationController id="ceB-8s-ebB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e8A-p3-vxc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="geA-Iv-X5y" kind="relationship" relationship="rootViewController" id="e0M-ep-Ig8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsY-a8-Rlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="375"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="K2D-sw-2dQ">
+            <objects>
+                <viewController id="geA-Iv-X5y" customClass="HMRedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y23-ya-HZR"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Os-DL-T6c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8AH-jZ-3VA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-ls-GAa">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="绿色">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Oii-Ib-xCu" kind="show" id="CoT-pb-poS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.61364091499999995" blue="0.68622531730000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2o-ls-GAa" firstAttribute="centerX" secondItem="8AH-jZ-3VA" secondAttribute="centerX" id="9hs-OQ-1El"/>
+                            <constraint firstItem="H2o-ls-GAa" firstAttribute="centerY" secondItem="8AH-jZ-3VA" secondAttribute="centerY" id="PRS-Lx-9tL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QjM-oV-ehd">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="Gqt-1h-2Uu"/>
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="redo" id="1xQ-dT-tLa"/>
+                            <barButtonItem systemItem="cancel" id="NsJ-QB-5H3"/>
+                        </leftBarButtonItems>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A6h-tK-eUH">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhB-Xc-uE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="375"/>
+        </scene>
+        <!--绿色控制器-->
+        <scene sceneID="7aw-df-0HS">
+            <objects>
+                <viewController id="Oii-Ib-xCu" customClass="HMGreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EC4-cf-pAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ejh-Hc-JeT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="moc-8O-O5b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-D2-fOi">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="蓝色"/>
+                                <connections>
+                                    <segue destination="8XV-Hp-Rbt" kind="show" id="Neo-kN-sPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ7-FD-Z3G">
+                                <rect key="frame" x="285" y="345" width="30" height="30"/>
+                                <state key="normal" title="红色">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back2Red:" destination="Oii-Ib-xCu" eventType="touchUpInside" id="ern-IA-LAO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68076531569999998" green="1" blue="0.88666969979999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bJ7-FD-Z3G" firstAttribute="centerX" secondItem="YXM-D2-fOi" secondAttribute="centerX" id="APR-gL-fKy"/>
+                            <constraint firstItem="bJ7-FD-Z3G" firstAttribute="top" secondItem="YXM-D2-fOi" secondAttribute="bottom" constant="30" id="kS7-fO-TeT"/>
+                            <constraint firstItem="YXM-D2-fOi" firstAttribute="centerY" secondItem="moc-8O-O5b" secondAttribute="centerY" id="roH-FQ-cqq"/>
+                            <constraint firstItem="YXM-D2-fOi" firstAttribute="centerX" secondItem="moc-8O-O5b" secondAttribute="centerX" id="xL8-fO-fvF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="绿色控制器" id="TCF-xf-PCq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMD-nr-yIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="375"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="6cl-iy-54f">
+            <objects>
+                <viewController id="8XV-Hp-Rbt" customClass="HMBlueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bE2-Xz-qEj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ByQ-oB-8OK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3O-kF-53l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-xh-OYv">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="根控制器"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-EV-6Mm">
+                                <rect key="frame" x="263" y="332" width="75" height="30"/>
+                                <state key="normal" title="指定控制器">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back2ZhiDing:" destination="8XV-Hp-Rbt" eventType="touchUpInside" id="4n0-cR-7jj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-Wg-X5f">
+                                <rect key="frame" x="278" y="216" width="45" height="30"/>
+                                <state key="normal" title="上一个"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45441348459999997" green="0.63578585570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9uX-xh-OYv" firstAttribute="centerX" secondItem="g3O-kF-53l" secondAttribute="centerX" id="43w-WZ-cTQ"/>
+                            <constraint firstItem="vvs-EV-6Mm" firstAttribute="centerX" secondItem="9uX-xh-OYv" secondAttribute="centerX" id="Dou-GL-7Rj"/>
+                            <constraint firstItem="vvs-EV-6Mm" firstAttribute="top" secondItem="9uX-xh-OYv" secondAttribute="bottom" constant="17" id="Hg3-Oy-6un"/>
+                            <constraint firstItem="0h6-Wg-X5f" firstAttribute="centerX" secondItem="9uX-xh-OYv" secondAttribute="centerX" id="SK9-I9-xX2"/>
+                            <constraint firstItem="9uX-xh-OYv" firstAttribute="top" secondItem="0h6-Wg-X5f" secondAttribute="bottom" constant="39" id="btS-cb-RdT"/>
+                            <constraint firstItem="9uX-xh-OYv" firstAttribute="centerY" secondItem="g3O-kF-53l" secondAttribute="centerY" id="ney-OT-XrC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPL-s1-N8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="378"/>
+        </scene>
+    </scenes>
+</document>

@@ -52,12 +52,31 @@
     self.tableView.allowsSelection = NO;
     
     self.tableView.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
-
+    
+    // 添加点击手势隐藏键盘
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tapGesture.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tapGesture];
     
     // 订阅键盘通知，通过通知中心，无论谁发出的键盘通知，都进行接受
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWiddChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
+
+// 视图布局完成后调用
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    // 滚动到最后一行
+    if (self.messageFrames.count > 0) {
+        NSIndexPath *lastIndexPath = [NSIndexPath indexPathForRow:self.messageFrames.count - 1 inSection:0];
+        [self.tableView scrollToRowAtIndexPath:lastIndexPath atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
+}
+// 点击界面隐藏键盘
+- (void)dismissKeyboard {
+    [self.view endEditing:YES];
+}
 // ***************** 注意: 监听通知以后一定要在监听通知的对象的dealloc方法中移除监听 *************/.
 
 - (void)dealloc
