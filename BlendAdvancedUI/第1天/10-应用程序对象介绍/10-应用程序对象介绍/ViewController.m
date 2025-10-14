@@ -33,9 +33,12 @@
     // 应用头像上的数字 默认情况下为0 ,没有数字
     // 如果不是0 就会显示出来
     
+    // 需要注册一个通知，并取得用户同意
     UIUserNotificationCategory *category = [[UIUserNotificationCategory alloc] init];
     NSSet *set = [NSSet setWithObject:category];
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:set];
+
+    
     [app registerUserNotificationSettings:settings];
     
     app.applicationIconBadgeNumber = 10;
@@ -45,8 +48,9 @@
     
     // openURL: 打电话/发短信/邮件/跳转到其他应用里面
     
-    // View controller-based status bar appearance
-    // 状态栏的管理
+    // View controller-based status bar appearance，需要在info.plist文件中新增该
+    // 属性并设置为该属性为NO
+    // 状态栏的管理，全局统一的状态栏管理，不需要依靠下面的perfersStatusBarHidden方法来操作
     app.statusBarHidden = YES;
     
 }

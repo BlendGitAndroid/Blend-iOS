@@ -10,6 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+// 这个是新建项目就会出现的，默认就有一个window
 @property (strong, nonatomic) UIWindow *window;
 
 

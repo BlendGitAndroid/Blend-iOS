@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // 1.创建窗口并且指定大小
+    // 1.创建窗口并且指定大小，如果没有自定义控制器，那这个window会被自动创建，但是也是得有这个属性的声明
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     // 2.设置窗口的根控制器
@@ -29,6 +29,7 @@
     
     // 3.将窗口作为应用程序的主窗口 并 可见[Visible]
     [self.window makeKeyAndVisible];
+    // 相当于下面的这两个
 //    [self.window makeKeyWindow];
 //    self.window.hidden = NO;
     

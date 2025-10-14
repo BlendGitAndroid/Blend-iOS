@@ -49,7 +49,7 @@
     
     self.navigationItem.leftBarButtonItems = @[left, left2];
     
-    // 3.返回按钮
+    // 3.返回按钮，这个返回按钮时给跳转到第二个界面的时候，返回的名字，但是如果在第二个界面上定义了左边的item，则这里的设置就会失效
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"FANHUI" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backItem;
     

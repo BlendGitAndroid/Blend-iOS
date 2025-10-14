@@ -22,13 +22,13 @@
     // 那么系统生成返回按钮,就不复存在了.
     
     // 放到绿色控制导航栏左侧的一个按钮
-    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(carmraClick)];
+    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(bookClick)];
     
     self.navigationItem.leftBarButtonItem = left;
 
 }
 
-- (void)carmraClick {
+- (void)bookClick {
 
     [self.navigationController popViewControllerAnimated:YES];
 }

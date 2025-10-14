@@ -18,6 +18,7 @@
 
 - (IBAction)back2RedVc:(id)sender {
     
+    // 返回上一级
     [self.navigationController popViewControllerAnimated:YES];
     
 }

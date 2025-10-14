@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // self.viwe中会首先调用loadView方法
     self.view.backgroundColor = [UIColor greenColor];
 }
 

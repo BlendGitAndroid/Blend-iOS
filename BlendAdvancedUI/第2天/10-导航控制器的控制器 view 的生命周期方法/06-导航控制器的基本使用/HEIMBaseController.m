@@ -14,41 +14,41 @@
 
 @implementation HEIMBaseController
 
-//- (void)viewDidLoad {
-//
-//    [super viewDidLoad];
-//    
-//    NSLog(@"%@--->界面加载完成", [self class]);
-//}
-//
-//
-//- (void)viewWillAppear:(BOOL)animated {
-//
-//    [super viewWillAppear:animated];
-//    
-//    NSLog(@"%@ --->界面即将显示", [self class]);
-//}
-//
-//- (void)viewDidAppear:(BOOL)animated {
-//
-//    [super viewDidAppear:animated];
-//    
-//    NSLog(@"%@ ---> 界面已经显示出来",[self class]);
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated {
-//
-//    [super viewWillDisappear:animated];
-//    
-//    NSLog(@"%@ ---> 界面即将消失", [self class]);
-//}
-//
-//- (void)viewDidDisappear:(BOOL)animated {
-//
-//    [super viewDidDisappear:animated];
-//    
-//    NSLog(@"%@ ---> 界面已经消失", [self class]);
-//}
+- (void)viewDidLoad {
+
+    [super viewDidLoad];
+    
+    NSLog(@"%@---> viewDidLoad ：界面加载完成", [self class]);
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%@ ---> viewWillAppear ： 界面即将显示", [self class]);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+
+    [super viewDidAppear:animated];
+    
+    NSLog(@"%@ ---> viewDidAppear ： 界面已经显示出来",[self class]);
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+
+    [super viewWillDisappear:animated];
+    
+    NSLog(@"%@ ---> viewWillDisappear ： 界面即将消失", [self class]);
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+
+    [super viewDidDisappear:animated];
+    
+    NSLog(@"%@ ---> viewDidDisappear ： 界面已经消失", [self class]);
+}
 
 
 - (void)dealloc {

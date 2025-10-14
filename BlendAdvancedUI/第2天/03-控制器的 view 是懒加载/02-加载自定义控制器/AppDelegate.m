@@ -13,6 +13,22 @@
 
 @end
 
+
+/**
+* 通过查看项目代码，我找到了控制器view懒加载项目运行后界面显示红色的原因：
+
+1. 1.
+   关键原因 ：AppDelegate.m中覆盖了HMViewController设置的背景色
+2. 2.
+   执行流程分析 ：
+   - 在AppDelegate.m中，代码首先创建了HMViewController实例： HMViewController *hmVc = [[HMViewController alloc] init];
+   - 紧接着直接访问了 hmVc.view 属性并设置其背景色为红色： hmVc.view.backgroundColor = [UIColor redColor];
+   - 这一访问触发了UIViewController的view懒加载机制，系统会调用 loadView 和 viewDidLoad 方法
+   - 在 viewDidLoad 方法中，HMViewController确实将背景色设置为了绿色： self.view.backgroundColor = [UIColor greenColor];
+   - 但在AppDelegate中，在设置完rootViewController之前，再次设置了view的背景色为红色，这覆盖了HMViewController中的设置
+3. 3.
+   技术要点 ：这很好地展示了UIViewController的view懒加载机制 - 只有当第一次访问view属性时，才会触发loadView和viewDidLoad方法的调用。
+*/
 @implementation AppDelegate
 
 

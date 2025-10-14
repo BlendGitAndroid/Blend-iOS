@@ -23,18 +23,19 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     // 2.设置窗口的根控制器
-//    > 需要先创建自定义控制器类
-//    > 指定 xib 文件
-    // a 名称没有规律
-//    HMXibViewController *xibVc = [[HMXibViewController alloc] initWithNibName:@"HMMMD" bundle:nil];
-    
-    // b 名称与控制器的类名相似
+////    > 需要先创建自定义控制器类
+////    > 指定 xib 文件
+//    // a 名称没有规律
+////    HMXibViewController *xibVc = [[HMXibViewController alloc] initWithNibName:@"HMMMD" bundle:nil];
+//    
+//    // b 名称与控制器的类名相似
+////    HMXibViewController *xibVc = [[HMXibViewController alloc] init];
+//    
+//    // c 名称与控制器雷鸣完全一致
 //    HMXibViewController *xibVc = [[HMXibViewController alloc] init];
-    
-    // c 名称与控制器雷鸣完全一致
-    HMXibViewController *xibVc = [[HMXibViewController alloc] init];
-    
-    self.window.rootViewController = xibVc;
+//    
+//    self.window.rootViewController = xibVc;
+    [self code];
 
     // 3.将窗口作为主窗口并可见
     [self.window makeKeyAndVisible];
@@ -61,6 +62,7 @@
     //    UIViewController *hmVc = [hmboard instantiateInitialViewController];
     //    self.window.rootViewController = hmVc;
     
+    // 这个blue就是storyboardId，一个storyboard有多个controller，则通过这个id来区分加载哪一个controller
     UIViewController *hmVc2 = [hmboard instantiateViewControllerWithIdentifier:@"blue"];
     self.window.rootViewController = hmVc2;
 }

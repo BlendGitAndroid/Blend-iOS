@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ceB-8s-ebB">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ceB-8s-ebB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -9,7 +12,7 @@
             <objects>
                 <navigationController id="ceB-8s-ebB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e8A-p3-vxc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -29,26 +32,26 @@
                         <viewControllerLayoutGuide type="bottom" id="9Os-DL-T6c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8AH-jZ-3VA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-ls-GAa">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-ls-GAa">
+                                <rect key="frame" x="181.66666666666666" y="411" width="30" height="30"/>
                                 <state key="normal" title="绿色">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="greenBtnClick:" destination="geA-Iv-X5y" eventType="touchUpInside" id="DQA-eY-z8p"/>
                                     <segue destination="Oii-Ib-xCu" kind="show" id="CoT-pb-poS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-9O-2r1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-9O-2r1">
                                 <rect key="frame" x="20" y="220" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61364091499999995" blue="0.68622531730000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.61364091499999995" blue="0.68622531730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H2o-ls-GAa" firstAttribute="centerX" secondItem="8AH-jZ-3VA" secondAttribute="centerX" id="9hs-OQ-1El"/>
                             <constraint firstItem="H2o-ls-GAa" firstAttribute="centerY" secondItem="8AH-jZ-3VA" secondAttribute="centerY" id="PRS-Lx-9tL"/>
@@ -75,27 +78,27 @@
                         <viewControllerLayoutGuide type="bottom" id="ejh-Hc-JeT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="moc-8O-O5b">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-D2-fOi">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-D2-fOi">
+                                <rect key="frame" x="181.66666666666666" y="411" width="30" height="30"/>
                                 <state key="normal" title="蓝色"/>
                                 <connections>
                                     <segue destination="8XV-Hp-Rbt" kind="show" id="Neo-kN-sPw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ7-FD-Z3G">
-                                <rect key="frame" x="285" y="345" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ7-FD-Z3G">
+                                <rect key="frame" x="181.66666666666666" y="471" width="30" height="30"/>
                                 <state key="normal" title="红色">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="back2Red:" destination="Oii-Ib-xCu" eventType="touchUpInside" id="ern-IA-LAO"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68076531569999998" green="1" blue="0.88666969979999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.68076531569999998" green="1" blue="0.88666969979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bJ7-FD-Z3G" firstAttribute="centerX" secondItem="YXM-D2-fOi" secondAttribute="centerX" id="APR-gL-fKy"/>
                             <constraint firstItem="bJ7-FD-Z3G" firstAttribute="top" secondItem="YXM-D2-fOi" secondAttribute="bottom" constant="30" id="kS7-fO-TeT"/>
@@ -117,28 +120,28 @@
                         <viewControllerLayoutGuide type="bottom" id="ByQ-oB-8OK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g3O-kF-53l">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-xh-OYv">
-                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-xh-OYv">
+                                <rect key="frame" x="166.66666666666666" y="411" width="60" height="30"/>
                                 <state key="normal" title="根控制器"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-EV-6Mm">
-                                <rect key="frame" x="263" y="332" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-EV-6Mm">
+                                <rect key="frame" x="159" y="458" width="75" height="30"/>
                                 <state key="normal" title="指定控制器">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="back2ZhiDing:" destination="8XV-Hp-Rbt" eventType="touchUpInside" id="4n0-cR-7jj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-Wg-X5f">
-                                <rect key="frame" x="278" y="216" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-Wg-X5f">
+                                <rect key="frame" x="174" y="342" width="45" height="30"/>
                                 <state key="normal" title="上一个"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.45441348459999997" green="0.63578585570000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.45441348459999997" green="0.63578585570000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9uX-xh-OYv" firstAttribute="centerX" secondItem="g3O-kF-53l" secondAttribute="centerX" id="43w-WZ-cTQ"/>
                             <constraint firstItem="vvs-EV-6Mm" firstAttribute="centerX" secondItem="9uX-xh-OYv" secondAttribute="centerX" id="Dou-GL-7Rj"/>
