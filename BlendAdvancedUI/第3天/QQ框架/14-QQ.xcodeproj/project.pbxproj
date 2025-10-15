@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0991F2C42E9F3DCA00CD5F36 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991F2C32E9F3DCA00CD5F36 /* TestTableViewController.m */; };
 		A635032A1C103A1D006367E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A63503291C103A1D006367E8 /* main.m */; };
 		A635032D1C103A1D006367E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A635032C1C103A1D006367E8 /* AppDelegate.m */; };
 		A63503301C103A1D006367E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A635032F1C103A1D006367E8 /* ViewController.m */; };
 		A63503331C103A1D006367E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63503311C103A1D006367E8 /* Main.storyboard */; };
 		A63503351C103A1D006367E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63503341C103A1D006367E8 /* Assets.xcassets */; };
 		A63503381C103A1D006367E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63503361C103A1D006367E8 /* LaunchScreen.storyboard */; };
-		A63503411C1042CE006367E8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63503401C1042CE006367E8 /* AboutViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A63503411C1042CE006367E8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63503401C1042CE006367E8 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0991F2C22E9F3DCA00CD5F36 /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		0991F2C32E9F3DCA00CD5F36 /* TestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		A63503251C103A1D006367E8 /* 14-QQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "14-QQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63503291C103A1D006367E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A635032B1C103A1D006367E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				A63503281C103A1D006367E8 /* Supporting Files */,
 				A635033F1C1042CE006367E8 /* AboutViewController.h */,
 				A63503401C1042CE006367E8 /* AboutViewController.m */,
+				0991F2C22E9F3DCA00CD5F36 /* TestTableViewController.h */,
+				0991F2C32E9F3DCA00CD5F36 /* TestTableViewController.m */,
 			);
 			path = "14-QQ";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -156,6 +162,7 @@
 			files = (
 				A63503301C103A1D006367E8 /* ViewController.m in Sources */,
 				A635032D1C103A1D006367E8 /* AppDelegate.m in Sources */,
+				0991F2C42E9F3DCA00CD5F36 /* TestTableViewController.m in Sources */,
 				A63503411C1042CE006367E8 /* AboutViewController.m in Sources */,
 				A635032A1C103A1D006367E8 /* main.m in Sources */,
 			);

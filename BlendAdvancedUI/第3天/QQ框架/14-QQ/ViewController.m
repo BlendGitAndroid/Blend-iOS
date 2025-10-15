@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+
+// 这个项目是使用TabBarController和NavagationController在一起的，根控制器是TabBarController，在StoryBoard中通过root view controllers来设置下一个根控制器。
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

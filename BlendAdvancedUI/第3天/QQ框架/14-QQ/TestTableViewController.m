@@ -1,18 +1,18 @@
 //
-//  AboutViewController.m
+//  TestTableViewController.m
 //  14-QQ
 //
-//  Created by Romeo on 15/12/3.
-//  Copyright © 2015年 heima. All rights reserved.
+//  Created by 徐海 on 2025/10/15.
+//  Copyright © 2025 heima. All rights reserved.
 //
 
-#import "AboutViewController.h"
+#import "TestTableViewController.h"
 
-@interface AboutViewController ()
+@interface TestTableViewController ()
 
 @end
 
-@implementation AboutViewController
+@implementation TestTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,24 +24,17 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
-#pragma mark - Table view data source
-// 静态的cell不需要写tabview的方法，如果写可以，但是要保证下面两个方法要对的上
-
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-//    return 0;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
+    return 0;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
