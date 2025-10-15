@@ -69,10 +69,10 @@
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     self.remPassword.on = [ud boolForKey:kRemPasswordKey];
     self.autoLogin.on = [ud boolForKey:kAutoLoginKey];
-    // 恢复用户名密码
+    // 恢复用户名
     self.usernameField.text = [ud objectForKey:kUsernameKey];
     if (self.remPassword.isOn) {
-        // 如果记住密码打开 那么显示密码
+        // 如果记住密码打开 那么显示密码，恢复密码
         self.passwordField.text = [ud objectForKey:kPasswordKey];
     }
 
@@ -100,7 +100,7 @@
 
         // 当用户名和密码正确的时候 进行跳转
         if ([self.usernameField.text isEqualToString:@"1"] && [self.passwordField.text isEqualToString:@"1"]) {
-            // 跳!!!
+            // 跳!!!，login2contact是在跳转的那条线上的名字
             [self performSegueWithIdentifier:@"login2contact" sender:nil];
 
             // 保存状态
@@ -111,8 +111,7 @@
             [ud setObject:self.passwordField.text forKey:kPasswordKey];
 
             [ud synchronize]; // 立即写入
-        }
-        else {
+        } else {
             // 提示错误消息
             //                        [MBProgressHUD showError:@"用户名或密码错误"];
             [SVProgressHUD showErrorWithStatus:@"用户名或密码错误"];
@@ -125,7 +124,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
 
+    // 得到目的控制器
     ContactViewController* contact = segue.destinationViewController;
+    // 传递账户的名称
     contact.username = self.usernameField.text;
 }
 

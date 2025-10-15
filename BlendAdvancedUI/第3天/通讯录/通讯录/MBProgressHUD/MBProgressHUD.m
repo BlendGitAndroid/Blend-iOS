@@ -727,9 +727,15 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
     }
     else if ([keyPath isEqualToString:@"progress"]) {
         if ([indicator respondsToSelector:@selector(setProgress:)]) {
-            [(id)indicator setProgress:progress];
+            if ([indicator isKindOfClass:[MBRoundProgressView class]]) {
+                [(MBRoundProgressView *)indicator setProgress:progress];
+            } else if ([indicator isKindOfClass:[MBBarProgressView class]]) {
+                [(MBBarProgressView *)indicator setProgress:progress];
+            } else {
+                // 处理其他可能的类型
+            }
+            return;
         }
-        return;
     }
     [self setNeedsLayout];
     [self setNeedsDisplay];

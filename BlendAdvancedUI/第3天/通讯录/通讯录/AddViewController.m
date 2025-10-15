@@ -9,6 +9,7 @@
 #import "AddViewController.h"
 
 @interface AddViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField* nameField;
 @property (weak, nonatomic) IBOutlet UITextField* numberField;
 @property (weak, nonatomic) IBOutlet UIButton* addButton;
@@ -29,7 +30,7 @@
     // 监听添加按钮的点击事件
     [self.addButton addTarget:self action:@selector(addClick) forControlEvents:UIControlEventTouchUpInside];
 
-    // 让姓名文本框 成为第一响应者
+    // 让姓名文本框 成为第一响应者，也就是获取到焦点
     [self.nameField becomeFirstResponder];
 }
 
@@ -42,7 +43,7 @@
 
         Contact* con = [[Contact alloc] init];
         con.name = self.nameField.text;
-        con.number = self.numberField.text;
+        con.numberPhone = self.numberField.text;
 
         // 如果可以响应 那么执行代理方法
         [self.delegate addViewController:self withContact:con];

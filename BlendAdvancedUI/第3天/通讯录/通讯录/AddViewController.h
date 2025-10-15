@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Contact.h"
-@class AddViewController;
+@class AddViewController; // 这里用class
 
+// 创建新建联系人协议
 @protocol AddViewControllerDelegate <NSObject>
 
 @optional

@@ -14,7 +14,7 @@
 - (void)encodeWithCoder:(NSCoder*)coder
 {
     [coder encodeObject:_name forKey:@"name"];
-    [coder encodeObject:_number forKey:@"number"];
+    [coder encodeObject:_numberPhone forKey:@"number"];
 }
 
 // 告诉系统解档哪些属性
@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         _name = [coder decodeObjectForKey:@"name"];
-        _number = [coder decodeObjectForKey:@"number"];
+        _numberPhone = [coder decodeObjectForKey:@"number"];
     }
     return self;
 }

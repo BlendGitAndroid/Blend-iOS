@@ -20,7 +20,7 @@
 
 @implementation ContactViewController
 
-// 懒加载
+// 懒加载，重写get方法
 - (NSMutableArray*)contacts
 {
     if (!_contacts) {
@@ -34,10 +34,11 @@
     [super viewDidLoad];
 
     // 添加左上角注销的按钮
+    // UIBarButtonItemStylePlain就是正常的样式，而不是加粗的
     UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(logOut)];
     self.navigationItem.leftBarButtonItem = item;
 
-    // 根据传过来的用户名设置标题
+    // 根据Segue传过来的用户名设置标题
     self.navigationItem.title = [NSString stringWithFormat:@"%@的联系人", self.username];
 
     // 取消分割线(iOS8无效)
@@ -56,6 +57,7 @@
 // cell 长啥样儿!!!
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
+    // 定义在sb中的cell的id为contact_cell，并且样式是选择style，右边的箭头为accessory
     static NSString* cellid = @"contact_cell";
 
     // 去缓存池找
@@ -63,16 +65,19 @@
 
     // 赋值
     cell.textLabel.text = [self.contacts[indexPath.row] name];
-    cell.detailTextLabel.text = [self.contacts[indexPath.row] number];
+    cell.detailTextLabel.text = [self.contacts[indexPath.row] numberPhone];
 
     return cell;
 }
 
-// 让 tableView 进入编辑模式
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"删除";
+}
+
+// 让 tableView 进入编辑模式，左滑动删除
 - (void)tableView:(UITableView*)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
 {
     // 删除某一行时 务必 先删除模型!!!!!!!!!!!!
-
     // 把数组中的元素删掉
     //    [self.contacts removeObject:self.contacts[indexPath.row]];
     [self.contacts removeObjectAtIndex:indexPath.row];
@@ -84,7 +89,7 @@
 
     // 删除某一行
     [self.tableView deleteRowsAtIndexPaths:@[ indexPath ] withRowAnimation:UITableViewRowAnimationNone];
-
+    
     // 删除以后归档一次
     [NSKeyedArchiver archiveRootObject:self.contacts toFile:kFilePath];
 }
@@ -130,6 +135,7 @@
 // 编辑联系人的代理方法
 - (void)editViewController:(EditViewController*)editViewController withContact:(Contact*)contact
 {
+    // 同一个对象，直接重新加载，页面数据就能刷新
     [self.tableView reloadData];
 
     // 归档数组(联系人信息)
@@ -143,9 +149,11 @@
     UIViewController* vc = segue.destinationViewController;
 
     // 判断目标控制器的真实类型
+    // 如果是新建联系人控制器
     if ([vc isKindOfClass:[AddViewController class]]) {
-        // 设置代理
+        // 强转
         AddViewController* add = (AddViewController*)vc;
+        // 设置代理，也就是实现了这个接口
         add.delegate = self;
     }
     else {
@@ -181,11 +189,12 @@
 // 注销按钮的点击事件
 - (void)logOut
 {
-    UIActionSheet* sheet = [[UIActionSheet alloc] initWithTitle:@"你确定要注销嘛?!" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"注销" otherButtonTitles:nil, nil];
+    UIActionSheet* sheet = [[UIActionSheet alloc] initWithTitle:@"你确定要注销嘛?" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"注销" otherButtonTitles:nil, nil];
 
     [sheet showInView:self.view];
 }
 
+// 需要注册UIActionSheetDelegate代理
 // acitonSheet的点击事件 buttonIndex: 从0开始 从上往下依次递增
 - (void)actionSheet:(UIActionSheet*)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
