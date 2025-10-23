@@ -39,7 +39,7 @@
         for (int i = 0; i < kButtonCount; ++i) {
             // 创建9个 btn
             UIButton* btn = [[UIButton alloc] init];
-
+            
             // 设置 tag(生成密码)
             btn.tag = i;
 
@@ -52,7 +52,7 @@
             // 设置 btn 点击高亮的图片(选中状态)
             [btn setBackgroundImage:[UIImage imageNamed:@"gesture_node_highlighted"] forState:UIControlStateSelected];
 
-            // 设置 btn 错误的图片(可用状态)
+            // 设置 btn 错误的图片(不可用状态)
             [btn setBackgroundImage:[UIImage imageNamed:@"gesture_node_error"] forState:UIControlStateDisabled];
 
             [self addSubview:btn];
@@ -72,6 +72,7 @@
     // 获取手指的位置
     CGPoint p = [t locationInView:t.view];
 
+    
     for (int i = 0; i < self.btns.count; ++i) {
         // 获取 btn
         UIButton* btn = self.btns[i];
@@ -128,19 +129,6 @@
     // 重绘
     [self setNeedsDisplay];
 
-    // 所有需要画线的 btn 都变成错误的样式
-    for (int i = 0; i < self.lineBtns.count; ++i) {
-        // 获取 btn
-        UIButton* btn = self.lineBtns[i];
-        // 让 btn 变成错误的状态的同时 需要取消选中状态
-        btn.selected = NO;
-        // 让 btn 变成错误的样式(不可用的状态)
-        btn.enabled = NO;
-    }
-    
-    
-    
-
     // 拼接密码
     NSString* password = @"";
     for (int i = 0; i < self.lineBtns.count; ++i) {
@@ -149,12 +137,22 @@
 
         password = [password stringByAppendingString:[NSString stringWithFormat:@"%ld", btn.tag]];
     }
+    
     if (self.passwordBlock) {
         if (self.passwordBlock(password)) {
             NSLog(@"zhengque");
         }
         else {
             NSLog(@"cuowu");
+            // 所有需要画线的 btn 都变成错误的样式
+            for (int i = 0; i < self.lineBtns.count; ++i) {
+                // 获取 btn
+                UIButton* btn = self.lineBtns[i];
+                // 让 btn 变成错误的状态的同时 需要取消选中状态
+                btn.selected = NO;
+                // 让 btn 变成错误的样式(不可用的状态)
+                btn.enabled = NO;
+            }
         }
     }
 
@@ -192,7 +190,7 @@
 - (void)drawRect:(CGRect)rect
 {
 
-    // 如果没有需要画线的按钮 那么不需要执行 drawrect 方法
+    // 如果没有需要画线的按钮 那么不需要执行 drawRect 方法
     if (!self.lineBtns.count) {
         return;
     }
@@ -207,20 +205,19 @@
         // 如果 是第一个按钮 那么设置为起点
         if (i == 0) {
             [path moveToPoint:btn.center];
-        }
-        else {
+        } else {
             [path addLineToPoint:btn.center];
         }
     }
 
-    // 连线到手指的位置
+    // 连线到手指的位置，防止出现圆点以外的线
     [path addLineToPoint:self.currentPoint];
 
     // 设置颜色
     [[UIColor whiteColor] set];
     // 设置线宽
     [path setLineWidth:10];
-    // 设置连接处的样式
+    // 设置连接处的样式，防止出现一个尖尖的箭头
     [path setLineJoinStyle:kCGLineJoinRound];
     // 设置头尾的样式
     [path setLineCapStyle:kCGLineCapRound];

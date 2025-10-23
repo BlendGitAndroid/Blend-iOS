@@ -18,7 +18,12 @@
 - (NSArray*)images
 {
     if (!_images) {
-        _images = @[ [UIImage imageNamed:@"spark_blue"], [UIImage imageNamed:@"spark_green"], [UIImage imageNamed:@"spark_cyan"], [UIImage imageNamed:@"spark_red"], [UIImage imageNamed:@"spark_yellow"], [UIImage imageNamed:@"spark_magenta"]];
+        _images = @[[UIImage imageNamed:@"spark_blue"],
+                    [UIImage imageNamed:@"spark_green"],
+                    [UIImage imageNamed:@"spark_cyan"],
+                    [UIImage imageNamed:@"spark_red"],
+                    [UIImage imageNamed:@"spark_yellow"],
+                    [UIImage imageNamed:@"spark_magenta"]];
     }
     return _images;
 }
@@ -77,16 +82,16 @@
         // 设置 imageView 的中心为手指的位置
         imageView.center = p;
 
-        // 把 imageView 加到黑色 view 上
+        // 把 imageView 加到黑色 view 上，加是父控件加
         [self addSubview:imageView];
 
         // 动画
         [UIView animateWithDuration:2
             animations:^{
-                imageView.alpha = 0;
+                imageView.alpha = 0; // 缓慢的透明度变化
             }
             completion:^(BOOL finished) {
-                [imageView removeFromSuperview]; // 移除控件
+                [imageView removeFromSuperview]; // 移除控件，移除是自己从父控件移除
             }];
 
         i++;

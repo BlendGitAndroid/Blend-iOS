@@ -18,6 +18,11 @@
     NSLog(@"button click");
 }
 
+// 控件不能响应的情况
+// 1>user interaction = no，也就是控件是否可以交互
+// 2>控件隐藏
+// 3>透明度小于等于0.01
+// 4>子视图超出了父控件的有效范围
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

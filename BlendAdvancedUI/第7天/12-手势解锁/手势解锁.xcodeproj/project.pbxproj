@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099333CB2EAA27DE008A5DDE /* SuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099333CA2EAA27DE008A5DDE /* SuccessController.m */; };
 		A6A1413B1C16BAA20048AB93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A1413A1C16BAA20048AB93 /* main.m */; };
 		A6A1413E1C16BAA20048AB93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A1413D1C16BAA20048AB93 /* AppDelegate.m */; };
 		A6A141411C16BAA20048AB93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A141401C16BAA20048AB93 /* ViewController.m */; };
 		A6A141441C16BAA20048AB93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A141421C16BAA20048AB93 /* Main.storyboard */; };
 		A6A141461C16BAA20048AB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A141451C16BAA20048AB93 /* Assets.xcassets */; };
 		A6A141491C16BAA20048AB93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A141471C16BAA20048AB93 /* LaunchScreen.storyboard */; };
-		A6A141521C16BBD40048AB93 /* HMView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A141511C16BBD40048AB93 /* HMView.m */; settings = {ASSET_TAGS = (); }; };
+		A6A141521C16BBD40048AB93 /* HMView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A141511C16BBD40048AB93 /* HMView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099333C92EAA27DE008A5DDE /* SuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessController.h; sourceTree = "<group>"; };
+		099333CA2EAA27DE008A5DDE /* SuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessController.m; sourceTree = "<group>"; };
 		A6A141361C16BAA20048AB93 /* 手势解锁.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "手势解锁.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A1413A1C16BAA20048AB93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6A1413C1C16BAA20048AB93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				A6A141391C16BAA20048AB93 /* Supporting Files */,
 				A6A141501C16BBD40048AB93 /* HMView.h */,
 				A6A141511C16BBD40048AB93 /* HMView.m */,
+				099333C92EAA27DE008A5DDE /* SuccessController.h */,
+				099333CA2EAA27DE008A5DDE /* SuccessController.m */,
 			);
 			path = "手势解锁";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -156,6 +162,7 @@
 			files = (
 				A6A141411C16BAA20048AB93 /* ViewController.m in Sources */,
 				A6A1413E1C16BAA20048AB93 /* AppDelegate.m in Sources */,
+				099333CB2EAA27DE008A5DDE /* SuccessController.m in Sources */,
 				A6A1413B1C16BAA20048AB93 /* main.m in Sources */,
 				A6A141521C16BBD40048AB93 /* HMView.m in Sources */,
 			);
@@ -304,6 +311,7 @@
 				A6A1414F1C16BAA20048AB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

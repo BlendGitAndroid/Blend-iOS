@@ -10,6 +10,7 @@
 
 @interface HMView : UIView
 
+// 设置一个回调
 @property (nonatomic, copy) BOOL (^passwordBlock)(NSString*);
 
 @end

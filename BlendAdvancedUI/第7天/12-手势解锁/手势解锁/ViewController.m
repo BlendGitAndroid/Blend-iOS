@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HMView.h"
+#import "SuccessController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet HMView* passwordView;
@@ -21,7 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    // 其实Storyboard也是一种特殊的xib
     // 设置控制器 view 的背景为一张图片(平铺)
+    // 设置控制器View的背景有3种方式，这是一种
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Home_refresh_bg"]];
 
     self.passwordView.passwordBlock = ^(NSString* pwd) {
@@ -29,6 +32,13 @@
         if ([pwd isEqualToString:@"012"]) {
             //
             NSLog(@"正确");
+            
+            SuccessController *success = [[SuccessController alloc] init];
+            success.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            [self presentViewController:success animated:YES completion:^{
+                            NSLog(@"打开成功");
+            }];
+            
             return YES;
         }
         else {
