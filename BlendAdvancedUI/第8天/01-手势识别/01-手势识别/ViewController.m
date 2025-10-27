@@ -32,8 +32,8 @@
     // 1.创建手势对象
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
 
-    tap.numberOfTapsRequired = 2; // 点几次
-    tap.numberOfTouchesRequired = 2; // 几根手指
+    tap.numberOfTapsRequired = 1; // 点几次
+    tap.numberOfTouchesRequired = 1; // 几根手指
 
     // 2.对某一个 view 添加手势
     [self.imageView addGestureRecognizer:tap];
@@ -44,7 +44,7 @@
     UILongPressGestureRecognizer* longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
 
     longPress.minimumPressDuration = 3; // 长按多长时间有反应
-    longPress.allowableMovement = 100; // 误差范围
+//    longPress.allowableMovement = 100; // 误差范围
 
     //
     //    @property (nonatomic) CFTimeInterval minimumPressDuration; // Default is 0.5. Time in seconds the fingers must be held down for the gesture to be recognized
