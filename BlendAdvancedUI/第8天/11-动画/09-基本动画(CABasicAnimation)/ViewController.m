@@ -20,17 +20,40 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CALayer* sun = [[CALayer alloc] init];
+    sun.bounds = CGRectMake(0, 0, 150, 150); // 大小
+    sun.position = CGPointMake(150, 150); // 位置
+    // 设置图片
+    sun.contents = (__bridge id)[UIImage imageNamed:@"sun1"].CGImage;
+    // 设置圆角
+    sun.cornerRadius = 100;
+    sun.masksToBounds = YES;
+    [self.view.layer addSublayer:sun];
 
     UIView* redView = [[UIView alloc] init];
-    redView.frame = CGRectMake(100, 100, 20, 20);
-    redView.backgroundColor = [UIColor redColor];
+    redView.frame = CGRectMake(240, 150, 20, 20);
+//    redView.backgroundColor = [UIColor redColor];
+    // 设置背景图片
+    redView.layer.contents = (__bridge id)[UIImage imageNamed:@"earth"].CGImage;
     self.layer = redView.layer;
     [self.view addSubview:redView];
 }
 
 - (void)touchesBegan:(NSSet<UITouch*>*)touches withEvent:(UIEvent*)event
 {
+    
+//    要注意的是，Core Animation是直接作用在CALayer上的，并非UIView。
 
+//    [self test1];
+    
+//    [self test2];
+    
+    [self test3];
+    
+}
+
+- (void)test3 {
     // 组动画
 
     // 1.创建动画
@@ -45,6 +68,7 @@
 
     anim.byValue = @(2 * M_PI * 5); // 在自身的基础上增加
     // ------ 基本动画(自旋转) ------
+    
     // ------ 关键帧动画(绕着圆转) ------
     // 1.做什么动画
     CAKeyframeAnimation* anim1 = [[CAKeyframeAnimation alloc] init];

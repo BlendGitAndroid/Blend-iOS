@@ -21,6 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+//    所有的非Root Layer，也就是手动创建的CALayer对象，都存在着隐式动画
+
+    
     // 创建 layer
     CALayer* layer = [[CALayer alloc] init];
 
@@ -29,6 +32,7 @@
     layer.bounds = CGRectMake(0, 0, 100, 100); // 大小
 
     // 把 layer 添加到 控制器 view 的 layer 上
+    // 还是一个View，但是在这个View上添加了图层
     [self.view.layer addSublayer:layer];
 
     // 给全局属性赋值
@@ -50,7 +54,9 @@
 
     // 禁用隐私动画(事务)
     [CATransaction begin]; // 开启事务
-    [CATransaction setDisableActions:YES]; // 禁用隐式动画
+    
+    // Layer默认是有动画的，如果想关闭动画，用下面的方法
+//    [CATransaction setDisableActions:YES]; // 禁用隐式动画
 
     // 让layer 跑到手指的位置
     self.layer.position = p;

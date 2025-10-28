@@ -13,7 +13,7 @@
 		A69F9C901C1811DD00E876A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69F9C8E1C1811DD00E876A4 /* Main.storyboard */; };
 		A69F9C921C1811DD00E876A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69F9C911C1811DD00E876A4 /* Assets.xcassets */; };
 		A69F9C951C1811DD00E876A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69F9C931C1811DD00E876A4 /* LaunchScreen.storyboard */; };
-		A69F9C9E1C1816FC00E876A4 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69F9C9D1C1816FC00E876A4 /* BGView.m */; settings = {ASSET_TAGS = (); }; };
+		A69F9C9E1C1816FC00E876A4 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69F9C9D1C1816FC00E876A4 /* BGView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +123,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -25,6 +25,21 @@
 
     // 创建表盘
     CALayer* clock = [[CALayer alloc] init];
+//     修改 clock.bounds = CGRectMake(0, 0, 200, 200) 中第一个和第二个参数（即bounds的origin坐标）没有视觉效果的原因如下：
+
+// 1. bounds属性的作用 ：bounds定义了图层的内部坐标系统，其中origin(x,y)表示图层内部坐标系的原点位置，size(width,height)表示图层的大小。
+// 2. origin参数的特性 ：对于大多数普通图层，修改bounds的origin值通常不会产生明显的视觉变化，因为：
+   
+//    - CALayer默认使用自身的中心点作为参照
+//    - position属性已经确定了图层在父坐标系中的位置
+//    - 单独修改origin不会改变图层在屏幕上的显示位置
+// 3. 为什么没有作用 ：在时钟练习中，clock图层的position属性已经设置为(200, 200)，这个position决定了图层在父视图中的位置。bounds的origin主要影响图层内部的坐标计算，而不是图层本身的位置。
+// 4. 什么时候origin会有影响 ：
+   
+//    - 当修改anchorPoint时，origin会影响position的相对关系
+//    - 当图层有子图层时，父图层的bounds.origin会影响子图层的定位
+//    - 当进行旋转或其他复杂变换时
+// 总结：对于单独的图层，bounds的size参数(width,height)决定了图层的可见大小，而origin(x,y)参数通常不会产生直接的视觉效果。
     clock.bounds = CGRectMake(0, 0, 200, 200); // 大小
     clock.position = CGPointMake(200, 200); // 位置
     // 设置图片
@@ -51,6 +66,14 @@
     // anchorPoint 是一个CGPoint类型的值，默认值为 (0.5, 0.5) ，表示图层的中心点。这个值是相对于图层自身坐标系的比例值，取值范围为0.0到1.0：
     // - X坐标：0.0表示图层左侧边缘，1.0表示右侧边缘
     // - Y坐标：0.0表示图层顶部边缘，1.0表示底部边缘
+//     anchorPoint （锚点）是CALayer类的一个属性，用于确定图层旋转、缩放等变换操作的中心点。它的作用和含义如下：
+
+// 1. 定义 ： anchorPoint 是一个CGPoint类型的值，表示锚点在图层坐标系中的位置，取值范围为(0.0, 0.0)到(1.0, 1.0)。
+// 2. 默认值 ：默认值为(0.5, 0.5)，即图层的中心点。
+// 3. 工作原理 ：当对图层进行旋转、缩放等变换时，图层会绕着锚点进行变换操作。
+// 4. 与position属性的关系 ： position 属性定义了锚点在父图层坐标系中的位置。也就是说，图层的 position 点始终对应其 anchorPoint 点。
+// 5. 在时钟练习中的应用 ：代码 second.anchorPoint = CGPointMake(0.5, 0.8) 将秒针图层的锚点设置为水平中心、垂直方向80%的位置，这样秒针就会绕着表盘中心旋转，而不是绕着自身中心旋转，从而实现真实时钟的效果。
+// 6. 注意事项 ：修改锚点不会改变图层在屏幕上的显示位置，但会改变图层的几何变换基准点。
     minute.anchorPoint = CGPointMake(0.5, 0.8);
     
     // 创建时针
@@ -87,7 +110,7 @@
     [self timeChange];
 }
 
-// 旋转(一秒一次)
+// 旋转
 - (void)timeChange
 {
     // 一秒钟旋转的角度
@@ -114,6 +137,8 @@
     
     NSLog(@"%f", hour);
 
+    //  Affine Transform（仿射变换） 就是：
+    // 一个线性变换（旋转、缩放、剪切） + 一个平移变换。
     self.second.affineTransform = CGAffineTransformMakeRotation(second * angle);
     self.minute.affineTransform = CGAffineTransformMakeRotation(minute * angle);
     self.hour.affineTransform = CGAffineTransformMakeRotation(hour * angle * 5);

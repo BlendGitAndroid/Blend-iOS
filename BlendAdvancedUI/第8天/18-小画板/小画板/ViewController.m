@@ -18,6 +18,11 @@
 
 @implementation ViewController
 
+// 上面显示的是4个按钮，其实是5个按钮，因为中间一个按钮不显示，是flexible space的，表示拉伸
+// 下面的三个颜色按钮，使用自动布局，平分空间
+
+// 控制器内有hmview的属性，自然可以调用hmview的方法
+
 // 清屏
 - (IBAction)clear:(id)sender
 {
@@ -59,7 +64,7 @@
     UIImageWriteToSavedPhotosAlbum(image, NULL, NULL, NULL);
 }
 
-// 监听颜色的改变
+// 监听颜色的改变，第一个参数就是Button类型
 - (IBAction)lineColorChange:(UIButton*)sender
 {
     // 设置颜色

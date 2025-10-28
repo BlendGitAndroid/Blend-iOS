@@ -17,6 +17,16 @@
 
 @implementation ViewController
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+
+    self.imageName = 0;
+}
+
+// 这个是在storyborad上关联的左策划
 // 轻扫手势执行的方法
 - (IBAction)imageChange:(UISwipeGestureRecognizer*)sender
 {
@@ -33,7 +43,7 @@
     CATransition* anim = [[CATransition alloc] init];
 
     // 2.操作
-    anim.type = @"moveIn";
+    anim.type = @"cube";
 
     if (sender.direction == UISwipeGestureRecognizerDirectionLeft) {
         // 从右往左
@@ -50,13 +60,6 @@
     [self.imageView.layer addAnimation:anim forKey:nil];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-
-    self.imageName = 0;
-}
 
 - (void)didReceiveMemoryWarning
 {

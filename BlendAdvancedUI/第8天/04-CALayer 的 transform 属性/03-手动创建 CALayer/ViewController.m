@@ -40,15 +40,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
   // 旋转
-  self.layer.transform =
-      CATransform3DRotate(self.layer.transform, M_PI_4, 0, 0, 1);
+    self.layer.transform = CATransform3DRotate(self.layer.transform, M_PI_4, 1, 1, 0);
 
   // 缩放(z无效)
-  //    self.layer.transform = CATransform3DScale(self.layer.transform, 1, 1,
-  //    0.5);
+    self.layer.transform = CATransform3DScale(self.layer.transform, 1, 1, 0.5);
 
-  // 平移(z无效)
-  self.layer.transform = CATransform3DTranslate(self.layer.transform, 0, 0, 10);
+  // 平移（z无效）
+  self.layer.transform = CATransform3DTranslate(self.layer.transform, 5, 5, 0);
 }
 
 @end

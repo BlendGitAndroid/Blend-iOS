@@ -19,6 +19,8 @@
     // 创建路径
     UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(150, 150) radius:100 startAngle:0 endAngle:2 * M_PI clockwise:1];
 
+    [[UIColor lightGrayColor] set];
+    
     [path stroke];
 }
 

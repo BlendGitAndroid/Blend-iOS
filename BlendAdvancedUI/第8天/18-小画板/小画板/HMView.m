@@ -8,6 +8,8 @@
 
 #import "HMView.h"
 
+
+// 创建内部类
 @interface HMBezierPath : UIBezierPath
 
 @property (nonatomic, strong) UIColor* lineColor1;
@@ -17,6 +19,8 @@
 @implementation HMBezierPath
 
 @end
+
+//-------------------------------------------------------------------------------
 
 @interface HMView ()
 
@@ -57,6 +61,7 @@
 // 回退
 - (void)back
 {
+    // 移除最后一个
     [self.paths removeLastObject];
     // 重绘
     [self setNeedsDisplay];
@@ -65,6 +70,7 @@
 // 橡皮
 - (void)eraser
 {
+    // 获取当前View的背景色
     self.lineColor = self.backgroundColor;
 }
 
@@ -99,7 +105,7 @@
     // 获取手指的位置
     CGPoint p = [t locationInView:t.view];
 
-    // 连线的点
+    // 连线的点，最后一个数组
     [[self.paths lastObject] addLineToPoint:p];
 
     // 重绘
