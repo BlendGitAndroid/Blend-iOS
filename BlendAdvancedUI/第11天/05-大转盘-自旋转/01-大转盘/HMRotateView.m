@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) CADisplayLink* link;
 
+@property (nonatomic, strong) NSMutableArray* nameArray;
+
 @end
 
 @implementation HMRotateView
@@ -23,6 +25,13 @@
 + (instancetype)rotateView
 {
     return [[NSBundle mainBundle] loadNibNamed:@"HMRotateView" owner:nil options:nil][0];
+}
+
+- (NSMutableArray*) nameArray {
+    if (!_nameArray) {
+        _nameArray = [@[@"狮子座", @"处女座", @"天秤座", @"天蝎座", @"射手座", @"摩羯座", @"水瓶座", @"双鱼座", @"白羊座", @"金牛座", @"双子座", @"巨蟹座"] mutableCopy];
+    }
+    return _nameArray;
 }
 
 // 创建12个 btn
@@ -75,10 +84,19 @@
         CABasicAnimation* anim = [[CABasicAnimation alloc] init];
         // 修改的属性
         anim.keyPath = @"transform.rotation";
-
-        // 计算 需要减去的角度
-        CGFloat angle = 2 * M_PI / 12 * self.currentButton.tag;
-
+        
+        NSInteger selectTag = 0;
+        if (!self.currentButton) {
+            selectTag =  arc4random_uniform(12);
+        } else {
+            // 计算 需要减去的角度
+            selectTag = self.currentButton.tag;
+        }
+        
+        CGFloat angle = 2 * M_PI / 12 * selectTag;
+        NSLog(@"self.currentButton.tag: %i", selectTag);
+        
+        NSLog(@"angle: %f", angle);
         // 5圈
         anim.toValue = @(5 * M_PI * 2 - angle);
 
@@ -93,11 +111,18 @@
         [self.rotateImage.layer addAnimation:anim forKey:@"key"];
 
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(anim.duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            // 根据tag获取Button
+            UIButton *selectedButton = (UIButton *)[self.rotateImage viewWithTag:selectTag];
+            [self btnClick:selectedButton];
+            
             // 旋转到最初始的位置
             self.rotateImage.transform = CGAffineTransformMakeRotation(-angle);
 
+            NSString *messageInfo = [self.nameArray objectAtIndex:selectTag];
+
             // 弹框
-            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"1,2,3,4,5,6,7" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:messageInfo delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
 
             // 弹出来
             [alertView show];
@@ -115,6 +140,9 @@
 
     // 开启自旋转
     self.link.paused = NO;
+    
+    self.currentButton.selected = NO;
+    self.currentButton = nil;
 }
 
 // 开始旋转
