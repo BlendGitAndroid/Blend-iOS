@@ -141,8 +141,10 @@
     // 开启自旋转
     self.link.paused = NO;
     
-    self.currentButton.selected = NO;
-    self.currentButton = nil;
+    if(self.currentButton) {
+        self.currentButton.selected = NO;
+        self.currentButton = nil;
+    }
 }
 
 // 开始旋转
@@ -169,7 +171,9 @@
 - (void)btnClick:(UIButton*)sender
 {
     // 把记录的按钮的选中状态取消
-    self.currentButton.selected = NO;
+    if (self.currentButton) {
+        self.currentButton.selected = NO;
+    }
 
     // 设置点击按钮选中
     sender.selected = YES;
