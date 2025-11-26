@@ -34,6 +34,10 @@
     HMTabBar* tabbar = [[HMTabBar alloc] init];
 
     // 3.使用 block(遵守协议,使用代理方法)
+    // __weak 是Objective-C中的内存修饰符，表示创建一个弱引用
+    // 这种模式主要在以下情况使用：
+    // 1. 闭包/Block中避免循环引用 ：当使用Block并在其中引用 self 时，如果Block本身被存储为实例变量，就可能形成循环引用
+    // 2. 异步操作回调 ：在网络请求、延时操作等异步任务的回调Block中使用
     __weak HMTabBarController* weakSelf = self;
     tabbar.tabbarButtonBlock = ^(NSInteger index) {
         weakSelf.selectedIndex = index;

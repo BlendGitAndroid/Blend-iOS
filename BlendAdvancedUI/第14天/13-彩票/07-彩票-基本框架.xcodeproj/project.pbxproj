@@ -237,7 +237,6 @@
 			children = (
 				A655B07C1C1FEFF500B6B98B /* Classes */,
 				A655B0651C1FED3000B6B98B /* Comman */,
-				A655B0661C1FED3000B6B98B /* Libs */,
 				A655B0671C1FED3000B6B98B /* Other */,
 				A655B0361C1FBB5100B6B98B /* Assets.xcassets */,
 				A655B0381C1FBB5100B6B98B /* LaunchScreen.storyboard */,
@@ -262,13 +261,6 @@
 				A68F91E11C20F227006FF4FF /* UIView+Frame.m */,
 			);
 			path = Comman;
-			sourceTree = "<group>";
-		};
-		A655B0661C1FED3000B6B98B /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libs;
 			sourceTree = "<group>";
 		};
 		A655B0671C1FED3000B6B98B /* Other */ = {
@@ -697,6 +689,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
