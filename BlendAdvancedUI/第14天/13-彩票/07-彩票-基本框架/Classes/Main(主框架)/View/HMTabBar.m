@@ -16,7 +16,7 @@
 
 - (void)setHighlighted:(BOOL)highlighted
 {
-    //    [super setHighlighted:highlighted];
+    [super setHighlighted:highlighted];
 }
 
 @end

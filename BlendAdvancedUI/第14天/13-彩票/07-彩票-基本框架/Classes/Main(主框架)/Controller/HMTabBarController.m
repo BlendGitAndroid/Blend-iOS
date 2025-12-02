@@ -53,9 +53,6 @@
         UIImage* imagePress = [UIImage imageNamed:[NSString stringWithFormat:@"TabBar%dSel", i + 1]];
 
         [tabbar addButtonWithImage:image andImageSel:imagePress];
-
-        // 取消高亮的效果
-        //        tabbarButton.adjustsImageWhenHighlighted = NO;
     }
 
     // 添加到 tabbarController 中
@@ -68,6 +65,8 @@
 {
     // 获取 sb对象
     UIStoryboard* sb = [UIStoryboard storyboardWithName:name bundle:nil];
+    // 获取 sb 箭头所指向的控制器
+    // 实例方法，用于从Storyboard中获取 初始视图控制器
     return [sb instantiateInitialViewController];
 }
 @end

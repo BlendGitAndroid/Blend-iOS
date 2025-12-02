@@ -10,7 +10,7 @@
 
 @interface HMTabBar : UIView
 
-// 1.写 block 属性 (相当于 代理的  协议,协议方法, id 属性)
+// 1.写 block 属性 (相当于 代理的  协议,协议方法, id 属性)，定义一个接口属性
 @property (nonatomic, copy) void (^tabbarButtonBlock)(NSInteger);
 
 - (void)addButtonWithImage:(UIImage*)image andImageSel:(UIImage*)imageSel;

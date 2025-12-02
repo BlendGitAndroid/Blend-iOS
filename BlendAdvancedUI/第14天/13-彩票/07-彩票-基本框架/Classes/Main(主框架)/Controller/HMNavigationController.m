@@ -24,7 +24,7 @@
         
         // 1. 设置背景颜色
         [appearance configureWithOpaqueBackground];
-        appearance.backgroundColor = [UIColor redColor];
+        appearance.backgroundImage = [UIImage imageNamed:@"NavBar64"];
         
         // 2. 设置标题文字属性
         appearance.titleTextAttributes = @{

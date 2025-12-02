@@ -28,7 +28,33 @@
     //    UIBarMetricsCompactPrompt, // 竖屏有副标题不显示 横屏有副标题显示
 
     // 设置 navbar 的图片
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NLArenaNavBar64"] forBarMetrics:UIBarMetricsDefault];
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        
+        // 1. 设置背景颜色
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundImage = [UIImage imageNamed:@"NLArenaNavBar64"];
+        
+        // 2. 设置标题文字属性
+        appearance.titleTextAttributes = @{
+            NSForegroundColorAttributeName: [UIColor whiteColor],
+            NSFontAttributeName: [UIFont systemFontOfSize:17]
+        };
+        
+        // 3. 设置大标题文字属性（如果有）
+        appearance.largeTitleTextAttributes = @{
+            NSForegroundColorAttributeName: [UIColor whiteColor]
+        };
+        
+        // 4. 应用到导航栏
+        self.navigationController.navigationBar.standardAppearance = appearance;
+        self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
+        if (@available(iOS 15.0, *)) {
+            self.navigationController.navigationBar.compactScrollEdgeAppearance = appearance;
+        }
+    } else {
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NLArenaNavBar64"] forBarMetrics:UIBarMetricsDefault];
+    }
 
     // 获取 titleView
     UISegmentedControl* seg = (UISegmentedControl*)self.navigationItem.titleView;
