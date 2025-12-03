@@ -12,6 +12,7 @@
 
 @interface HMMyLotteryController ()
 @property (weak, nonatomic) IBOutlet UIButton* loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -54,6 +55,7 @@
     image = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
     // 设置按钮的背景图片
     [self.loginButton setBackgroundImage:image forState:UIControlStateNormal];
+    [self.registerButton setBackgroundImage:image forState:UIControlStateNormal];
 
     // 获取图片
     UIImage* imagePressed = [UIImage imageNamed:@"RedButtonPressed"];
@@ -61,6 +63,8 @@
     imagePressed = [imagePressed stretchableImageWithLeftCapWidth:imagePressed.size.width * 0.5 topCapHeight:imagePressed.size.height * 0.5];
     // 设置按钮的背景图片
     [self.loginButton setBackgroundImage:imagePressed forState:UIControlStateHighlighted];
+    [self.registerButton setBackgroundImage:imagePressed forState:UIControlStateHighlighted];
+    
 }
 
 @end
