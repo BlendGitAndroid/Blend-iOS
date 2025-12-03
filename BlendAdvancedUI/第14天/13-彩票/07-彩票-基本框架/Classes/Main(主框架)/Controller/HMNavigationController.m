@@ -66,7 +66,8 @@
 // 以后只要使用这个 nav 去push 那么都隐藏tabbar
 - (void)pushViewController:(UIViewController*)viewController animated:(BOOL)animated
 {
-    // 隐藏底部的 tabbar
+    // 在跳转之前设置
+    // 隐藏底部的 tabbar，否则每次都会出现一个底部的TabBar
     viewController.hidesBottomBarWhenPushed = YES;
 
     [super pushViewController:viewController animated:animated];

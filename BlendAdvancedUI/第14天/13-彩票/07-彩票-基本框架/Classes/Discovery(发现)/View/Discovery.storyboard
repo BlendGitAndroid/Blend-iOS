@@ -332,76 +332,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="luck_entry_background" translatesAutoresizingMaskIntoConstraints="NO" id="bGF-Kv-Z5C">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luck_entry_background" translatesAutoresizingMaskIntoConstraints="NO" id="bGF-Kv-Z5C">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="tSp-eF-8lV">
-                                <rect key="frame" x="185" y="108" width="231" height="29"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="tSp-eF-8lV">
+                                <rect key="frame" x="81" y="108" width="231" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="231" id="U4b-pY-NoX"/>
-                                    <constraint firstAttribute="height" constant="29" id="zBS-qy-Azy"/>
+                                    <constraint firstAttribute="height" constant="29" id="6R9-E8-b4m"/>
+                                    <constraint firstAttribute="width" constant="231" id="UfI-qb-0NS"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rz1-LN-Uox">
-                                <rect key="frame" x="145" y="171" width="137" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rz1-LN-Uox">
+                                <rect key="frame" x="42" y="184" width="137" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="2iU-Sc-rNI"/>
-                                    <constraint firstAttribute="width" constant="137" id="Gq8-NM-lhv"/>
+                                    <constraint firstAttribute="width" constant="137" id="R1S-gW-ryc"/>
+                                    <constraint firstAttribute="height" constant="140" id="qFM-Q6-XQG"/>
                                 </constraints>
                                 <state key="normal" image="luck_entry_birthday_button_normal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imD-m2-DtW">
-                                <rect key="frame" x="318" y="171" width="137" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imD-m2-DtW">
+                                <rect key="frame" x="214" y="184" width="137" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="137" id="yTd-wh-WME"/>
-                                    <constraint firstAttribute="height" constant="140" id="zeN-gA-xsd"/>
+                                    <constraint firstAttribute="width" constant="137" id="2r3-b9-MI2"/>
+                                    <constraint firstAttribute="height" constant="140" id="9KB-y0-xmA"/>
                                 </constraints>
                                 <state key="normal" image="luck_entry_birthday_button_normal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi9-53-cgK">
-                                <rect key="frame" x="145" y="332" width="137" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi9-53-cgK">
+                                <rect key="frame" x="42" y="385" width="137" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="N4r-eB-Ea2"/>
-                                    <constraint firstAttribute="height" constant="140" id="T2U-cp-edI"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="gzq-iY-FK3"/>
-                                    <constraint firstAttribute="width" constant="137" id="m0i-yj-Ymp"/>
+                                    <constraint firstAttribute="width" constant="137" id="3Bd-8C-TQj"/>
+                                    <constraint firstAttribute="height" constant="140" id="jqP-Bu-amr"/>
                                 </constraints>
                                 <state key="normal" image="luck_entry_birthday_button_normal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZN-hl-JZj">
-                                <rect key="frame" x="318" y="332" width="137" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZN-hl-JZj">
+                                <rect key="frame" x="213.66666666666669" y="385" width="137.66666666666669" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="137" id="Bej-Ec-g9i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="EWL-fy-UaF"/>
-                                    <constraint firstAttribute="height" constant="140" id="KEI-hI-Uo4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="vwW-Oj-rWU"/>
+                                    <constraint firstAttribute="height" constant="140" id="0bD-8X-W7a"/>
+                                    <constraint firstAttribute="width" constant="137.66999999999999" id="HsW-Qm-ip1"/>
                                 </constraints>
                                 <state key="normal" image="luck_entry_birthday_button_normal"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bGF-Kv-Z5C" firstAttribute="top" secondItem="yIg-Rc-NX4" secondAttribute="bottom" id="17i-wf-v1K"/>
-                            <constraint firstItem="xi9-53-cgK" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="-86.5" id="3Rg-ZZ-Qjk"/>
-                            <constraint firstItem="xi9-53-cgK" firstAttribute="top" secondItem="rz1-LN-Uox" secondAttribute="bottom" constant="21" id="563-yr-G7C"/>
-                            <constraint firstItem="bGF-Kv-Z5C" firstAttribute="leading" secondItem="XU8-na-EfS" secondAttribute="leading" id="5FV-iv-8A2"/>
-                            <constraint firstItem="imD-m2-DtW" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="86" id="7Gg-al-1RE"/>
-                            <constraint firstItem="imD-m2-DtW" firstAttribute="top" secondItem="tSp-eF-8lV" secondAttribute="bottom" constant="34" id="8xJ-Kw-QuR"/>
-                            <constraint firstItem="tSp-eF-8lV" firstAttribute="top" secondItem="yIg-Rc-NX4" secondAttribute="bottom" constant="44" id="9LW-II-Bx8"/>
-                            <constraint firstItem="tSp-eF-8lV" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" id="9ab-SW-hC3"/>
-                            <constraint firstItem="oZN-hl-JZj" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="86.5" id="FfI-9y-0wJ"/>
-                            <constraint firstItem="rz1-LN-Uox" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="-86" id="MwV-8R-6q9"/>
-                            <constraint firstItem="bGF-Kv-Z5C" firstAttribute="bottom" secondItem="XU8-na-EfS" secondAttribute="bottomMargin" id="Ssz-C8-NtP"/>
-                            <constraint firstItem="oZN-hl-JZj" firstAttribute="top" secondItem="imD-m2-DtW" secondAttribute="bottom" constant="21" id="dxj-KC-7Cc"/>
-                            <constraint firstItem="ic9-zl-H0q" firstAttribute="top" secondItem="bGF-Kv-Z5C" secondAttribute="bottom" id="e98-ha-0IH"/>
-                            <constraint firstAttribute="trailing" secondItem="bGF-Kv-Z5C" secondAttribute="trailing" id="fR9-XR-C1K"/>
-                            <constraint firstItem="rz1-LN-Uox" firstAttribute="top" secondItem="tSp-eF-8lV" secondAttribute="bottom" constant="34" id="l6i-7W-7GN"/>
+                            <constraint firstItem="tSp-eF-8lV" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" id="3dO-Hy-mIj"/>
+                            <constraint firstItem="bGF-Kv-Z5C" firstAttribute="top" secondItem="XU8-na-EfS" secondAttribute="top" id="73h-jb-52t"/>
+                            <constraint firstItem="xi9-53-cgK" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="-86" id="9Ha-2z-I4s"/>
+                            <constraint firstItem="xi9-53-cgK" firstAttribute="top" secondItem="rz1-LN-Uox" secondAttribute="bottom" constant="61" id="AAF-JQ-Sr2"/>
+                            <constraint firstItem="ic9-zl-H0q" firstAttribute="top" secondItem="bGF-Kv-Z5C" secondAttribute="bottom" id="EnL-FV-Ter"/>
+                            <constraint firstItem="rz1-LN-Uox" firstAttribute="top" secondItem="tSp-eF-8lV" secondAttribute="bottom" constant="47" id="UYB-h4-cPo"/>
+                            <constraint firstAttribute="trailing" secondItem="bGF-Kv-Z5C" secondAttribute="trailing" id="VQL-17-Lep"/>
+                            <constraint firstItem="oZN-hl-JZj" firstAttribute="top" secondItem="imD-m2-DtW" secondAttribute="bottom" constant="61" id="bRM-8z-5NO"/>
+                            <constraint firstItem="imD-m2-DtW" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="86" id="dqh-RH-IYp"/>
+                            <constraint firstItem="imD-m2-DtW" firstAttribute="top" secondItem="tSp-eF-8lV" secondAttribute="bottom" constant="47" id="gGw-0g-XNI"/>
+                            <constraint firstItem="oZN-hl-JZj" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="86" id="lQV-Ii-nOT"/>
+                            <constraint firstItem="tSp-eF-8lV" firstAttribute="top" secondItem="yIg-Rc-NX4" secondAttribute="bottom" constant="5" id="rnM-4k-Esg"/>
+                            <constraint firstItem="bGF-Kv-Z5C" firstAttribute="leading" secondItem="XU8-na-EfS" secondAttribute="leading" id="to9-3U-9DR"/>
+                            <constraint firstItem="rz1-LN-Uox" firstAttribute="centerX" secondItem="bGF-Kv-Z5C" secondAttribute="centerX" constant="-86" id="wmg-6C-mDJ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="e98-ha-0IH"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="幸运选号" id="xsf-p0-m9B"/>
                     <connections>
