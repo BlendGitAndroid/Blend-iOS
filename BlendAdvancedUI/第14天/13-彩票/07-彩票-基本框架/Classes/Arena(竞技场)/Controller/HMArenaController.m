@@ -20,6 +20,11 @@
     // Do any additional setup after loading the view.
 
     // 设置控制器的背景图片(拉伸)
+    // 直接在layer上设置背景图片，并进行格式转换
+    // 为什么需要转换？
+    // 因为 layer 上设置的背景图片 是 CGImage 类型的，而 UIImage 是基于 Quartz 2D 绘制的，两者的坐标系不同，需要将UIImage转换成CGImage
+    // 但是转换后的CGImage是Core Graphics的，需要使用__bridge 进行桥接转换
+    // __bridge 是 Core Foundation 框架提供的一个桥梁，用于在 Core Foundation 和 Core Graphics 之间进行类型转换
     self.view.layer.contents = (__bridge id)[UIImage imageNamed:@"NLArenaBackground"].CGImage;
 
     //    UIBarMetricsDefault, // 横屏显示 竖屏显示

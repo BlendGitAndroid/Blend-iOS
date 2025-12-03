@@ -51,7 +51,8 @@
 
     // 获取图片
     UIImage* image = [UIImage imageNamed:@"RedButton"];
-    // 中间1像素拉伸
+    // 中间1像素拉伸，用于 创建可拉伸的图片 ，确保图片在拉伸时 边缘和细节保持不变 ，只有中间区域被拉伸
+    // 中间1像素拉伸，是方法的限制
     image = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
     // 设置按钮的背景图片
     [self.loginButton setBackgroundImage:image forState:UIControlStateNormal];

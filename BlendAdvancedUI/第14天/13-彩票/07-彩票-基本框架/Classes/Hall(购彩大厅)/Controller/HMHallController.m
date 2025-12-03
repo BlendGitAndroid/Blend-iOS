@@ -21,14 +21,16 @@
 {
     [super viewDidLoad];
 
+    // 导航栏的图标
     UIImage* image = [UIImage imageNamed:@"CS50_activity_image"];
 
-    // 告诉系统 使用这个图片的时候 不进行渲染
+    // 告诉系统 确保图片在UI控件中 始终显示原始颜色 ，不被系统的tint颜色（染色）覆盖
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 
     // 创建item
+    // UIBarButtonItemStylePlain 表示 普通样式的 导航栏按钮
     UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(activityClick)];
-
+    
     self.navigationItem.leftBarButtonItem = item;
 }
 
@@ -59,8 +61,10 @@
     UIButton* closeButton = [[UIButton alloc] init];
     // 获取图片
     UIImage* closeButtonImage = [UIImage imageNamed:@"alphaClose"];
+    // 只设置按钮的x坐标，y坐标为0，宽度和高度为0，确保按钮的大小根据图片的大小自动调整
     closeButton.frame = CGRectMake(imageView.bounds.size.width - closeButtonImage.size.width, 0, 0, 0);
     [closeButton setBackgroundImage:closeButtonImage forState:UIControlStateNormal];
+    // 调整按钮的大小，以适应图片的大小
     [closeButton sizeToFit];
     [imageView addSubview:closeButton];
     // 监听关闭按钮的点击
@@ -70,6 +74,7 @@
 // 关闭按钮
 - (void)closeClick
 {
+    // 移除遮罩和imageView
     [UIView animateWithDuration:0.25
                      animations:^{
                          [self.coverView removeFromSuperview];

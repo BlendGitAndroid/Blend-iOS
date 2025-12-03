@@ -15,11 +15,13 @@
 
 @implementation HMLuckyController
 
+//幸运选号界面
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    // 为图片设置动画
     // 设置要做动画的图片
     self.imageView.animationImages = @[ [UIImage imageNamed:@"lucky_entry_light0"], [UIImage imageNamed:@"lucky_entry_light1"] ];
 

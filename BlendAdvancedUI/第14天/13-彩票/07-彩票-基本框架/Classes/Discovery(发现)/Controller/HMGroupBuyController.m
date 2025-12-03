@@ -15,13 +15,20 @@
 
 @end
 
+
+// 发现下面的该ableView采用的是静态单元格的形式
+
+
+// 全部彩种
 @implementation HMGroupBuyController
 
 - (UIView*)blueView
 {
+    // 如果没有创建 blueView 那么创建一个
     if (!_blueView) {
         UIView* blueView = [[UIView alloc] init];
         blueView.backgroundColor = [UIColor blueColor];
+        // 64是状态栏的高度
         blueView.frame = CGRectMake(0, 64, kScreenWidth, 0);
         [self.view addSubview:blueView];
 
@@ -33,7 +40,7 @@
 // 全部彩种的点击事件
 - (IBAction)groupBuyClick:(UIButton*)sender
 {
-
+    // 动画 展开和收起
     [UIView animateWithDuration:0.25
                      animations:^{
                          // 如果高度有值 那么设置为0 如果没有值(值为0) 那么设置150
@@ -43,35 +50,13 @@
                          sender.imageView.transform = CGAffineTransformRotate(sender.imageView.transform, M_PI);
 
                      }];
-    
-    
-    
-   
-    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
     [self blueView];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
