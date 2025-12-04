@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A12B9B1BCCFEC900124CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12B9A1BCCFEC900124CDE /* main.m */; };
+		18A12B9E1BCCFEC900124CDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12B9D1BCCFEC900124CDE /* AppDelegate.m */; };
+		18A12BA11BCCFEC900124CDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A12BA01BCCFEC900124CDE /* ViewController.m */; };
+		18A12BA41BCCFEC900124CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A12BA21BCCFEC900124CDE /* Main.storyboard */; };
+		18A12BA61BCCFEC900124CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A12BA51BCCFEC900124CDE /* Assets.xcassets */; };
+		18A12BA91BCCFEC900124CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A12BA71BCCFEC900124CDE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18A12B961BCCFEC900124CDE /* 12-自动释放池面试题.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "12-自动释放池面试题.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A12B9A1BCCFEC900124CDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A12B9C1BCCFEC900124CDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A12B9D1BCCFEC900124CDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A12B9F1BCCFEC900124CDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A12BA01BCCFEC900124CDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A12BA31BCCFEC900124CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A12BA51BCCFEC900124CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A12BA81BCCFEC900124CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A12BAA1BCCFEC900124CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A12B931BCCFEC900124CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A12B8D1BCCFEC900124CDE = {
+			isa = PBXGroup;
+			children = (
+				18A12B981BCCFEC900124CDE /* 12-自动释放池面试题 */,
+				18A12B971BCCFEC900124CDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18A12B971BCCFEC900124CDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A12B961BCCFEC900124CDE /* 12-自动释放池面试题.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A12B981BCCFEC900124CDE /* 12-自动释放池面试题 */ = {
+			isa = PBXGroup;
+			children = (
+				18A12B9C1BCCFEC900124CDE /* AppDelegate.h */,
+				18A12B9D1BCCFEC900124CDE /* AppDelegate.m */,
+				18A12B9F1BCCFEC900124CDE /* ViewController.h */,
+				18A12BA01BCCFEC900124CDE /* ViewController.m */,
+				18A12BA21BCCFEC900124CDE /* Main.storyboard */,
+				18A12BA51BCCFEC900124CDE /* Assets.xcassets */,
+				18A12BA71BCCFEC900124CDE /* LaunchScreen.storyboard */,
+				18A12BAA1BCCFEC900124CDE /* Info.plist */,
+				18A12B991BCCFEC900124CDE /* Supporting Files */,
+			);
+			path = "12-自动释放池面试题";
+			sourceTree = "<group>";
+		};
+		18A12B991BCCFEC900124CDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A12B9A1BCCFEC900124CDE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A12B951BCCFEC900124CDE /* 12-自动释放池面试题 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A12BAD1BCCFEC900124CDE /* Build configuration list for PBXNativeTarget "12-自动释放池面试题" */;
+			buildPhases = (
+				18A12B921BCCFEC900124CDE /* Sources */,
+				18A12B931BCCFEC900124CDE /* Frameworks */,
+				18A12B941BCCFEC900124CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "12-自动释放池面试题";
+			productName = "12-自动释放池面试题";
+			productReference = 18A12B961BCCFEC900124CDE /* 12-自动释放池面试题.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A12B8E1BCCFEC900124CDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = heima;
+				TargetAttributes = {
+					18A12B951BCCFEC900124CDE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 18A12B911BCCFEC900124CDE /* Build configuration list for PBXProject "12-自动释放池面试题" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A12B8D1BCCFEC900124CDE;
+			productRefGroup = 18A12B971BCCFEC900124CDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A12B951BCCFEC900124CDE /* 12-自动释放池面试题 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A12B941BCCFEC900124CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A12BA91BCCFEC900124CDE /* LaunchScreen.storyboard in Resources */,
+				18A12BA61BCCFEC900124CDE /* Assets.xcassets in Resources */,
+				18A12BA41BCCFEC900124CDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A12B921BCCFEC900124CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A12BA11BCCFEC900124CDE /* ViewController.m in Sources */,
+				18A12B9E1BCCFEC900124CDE /* AppDelegate.m in Sources */,
+				18A12B9B1BCCFEC900124CDE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18A12BA21BCCFEC900124CDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A12BA31BCCFEC900124CDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A12BA71BCCFEC900124CDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A12BA81BCCFEC900124CDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A12BAB1BCCFEC900124CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18A12BAC1BCCFEC900124CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A12BAE1BCCFEC900124CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "12-自动释放池面试题/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.heima.-2---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18A12BAF1BCCFEC900124CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "12-自动释放池面试题/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.heima.-2---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A12B911BCCFEC900124CDE /* Build configuration list for PBXProject "12-自动释放池面试题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A12BAB1BCCFEC900124CDE /* Debug */,
+				18A12BAC1BCCFEC900124CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A12BAD1BCCFEC900124CDE /* Build configuration list for PBXNativeTarget "12-自动释放池面试题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A12BAE1BCCFEC900124CDE /* Debug */,
+				18A12BAF1BCCFEC900124CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A12B8E1BCCFEC900124CDE /* Project object */;
+}
