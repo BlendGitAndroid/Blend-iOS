@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic, copy) NSString* html;
 @property (nonatomic, copy) NSString* ids;
+@property (nonatomic, assign) BOOL shareable;
 
 + (instancetype)helpWithDict:(NSDictionary*)dict;
 

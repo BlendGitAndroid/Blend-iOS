@@ -17,6 +17,7 @@
     h.ids = dict[@"id"];
     h.title = dict[@"title"];
     h.html = dict[@"html"];
+    h.shareable = true;
 
     return h;
 }
