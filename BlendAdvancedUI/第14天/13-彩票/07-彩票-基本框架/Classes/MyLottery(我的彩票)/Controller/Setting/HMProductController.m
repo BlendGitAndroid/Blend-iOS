@@ -10,7 +10,7 @@
 #import "HMProduct.h"
 #import "HMProductCell.h"
 
-@interface HMProductController ()
+@interface HMProductController () <UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic, strong) NSArray *products;
 
@@ -61,8 +61,8 @@
     UICollectionViewFlowLayout *layout =
         [[UICollectionViewFlowLayout alloc] init];
 
-    // item大小
-    layout.itemSize = CGSizeMake(80, 80);
+    // 行间距
+    layout.minimumLineSpacing = 10;
     // item左右最小的距离
     layout.minimumInteritemSpacing = 0;
     // 组内边距
@@ -145,6 +145,14 @@ static NSString *const reuseIdentifier = @"product_cell";
     cell.product = self.products[indexPath.row];
 
     return cell;
+}
+
+// 动态计算 itemSize，实现自适应布局
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    // 一行显示4个item
+    CGFloat collectionViewWidth = CGRectGetWidth(collectionView.frame);
+    CGFloat itemWidth = collectionViewWidth / 4;
+    return CGSizeMake(itemWidth, itemWidth); // 保持正方形
 }
 
 @end

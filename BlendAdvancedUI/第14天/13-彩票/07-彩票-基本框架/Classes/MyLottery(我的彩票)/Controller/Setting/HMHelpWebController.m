@@ -8,6 +8,7 @@
 
 #import "HMHelpWebController.h"
 
+// 实现WebView的代理
 @interface HMHelpWebController () <UIWebViewDelegate>
 
 @end
@@ -15,37 +16,37 @@
 @implementation HMHelpWebController
 
 // 把控制器 view 变成 WebView
-- (void)loadView
-{
+- (void)loadView {
     self.view = [[UIWebView alloc] initWithFrame:kScreenSize];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
     // 加载网页
-    UIWebView* webView = (UIWebView*)self.view;
+    UIWebView *webView = (UIWebView *)self.view;
 
     // 设置代理
     webView.delegate = self;
 
     // 创建 url 对象
-    NSURL* url = [[NSBundle mainBundle] URLForResource:self.help.html withExtension:nil];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:self.help.html
+                                         withExtension:nil];
 
     // 通过一个统一资源定位符 包装成一个请求
-    NSURLRequest* req = [NSURLRequest requestWithURL:url];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
 
     // 加载请求
     [webView loadRequest:req];
 }
 
 // 网页加载完成调用
-- (void)webViewDidFinishLoad:(UIWebView*)webView
-{
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
     // 代码
-    NSString* code = [NSString stringWithFormat:@"document.location.href = '#%@';", self.help.ids];
+    NSString *code = [NSString
+        stringWithFormat:@"document.location.href = '#%@';", self.help.ids];
+    // 用于 在网页中执行 JavaScript 代码并获取执行结果
     [webView stringByEvaluatingJavaScriptFromString:code];
 }
 
