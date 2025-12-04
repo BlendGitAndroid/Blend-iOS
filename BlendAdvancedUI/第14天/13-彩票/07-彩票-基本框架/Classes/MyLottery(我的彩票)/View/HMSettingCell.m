@@ -10,26 +10,27 @@
 
 @implementation HMSettingCell
 
-+ (instancetype)settingCellWithTableView:(UITableView*)tableView andItem:(NSDictionary*)item
-{
++ (instancetype)settingCellWithTableView:(UITableView *)tableView
+                                 andItem:(NSDictionary *)item {
 
     //    static NSString* cellid = @"setting_cell";
 
     // 解决 cell 重用:
     // 创建 cell 的时候 根绝不同的类型 填写不同的 id
     // 下一次服用的时候 只要根据某一个类型的 id 去找那么一定找到的就是对应的类型
-    NSString* cellid = @"";
+    NSString *cellid = @"";
     if (item[@"cellType"] && [item[@"cellType"] length] > 0) {
         cellid = item[@"cellType"];
-    }
-    else {
+    } else {
         cellid = @"setting_cell";
     }
 
     // 缓存池找
-    HMSettingCell* cell = [tableView dequeueReusableCellWithIdentifier:cellid];
+    HMSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
     if (!cell) {
-        cell = [[HMSettingCell alloc] initWithStyle:[self loadCellStyleWithItem:item] reuseIdentifier:cellid];
+        cell = [[HMSettingCell alloc]
+              initWithStyle:[self loadCellStyleWithItem:item]
+            reuseIdentifier:cellid];
     }
 
     cell.item = item;
@@ -37,15 +38,16 @@
     return cell;
 }
 
-- (void)setItem:(NSDictionary*)item
-{
+// 设置 cell 的数据，重写默认的setter方法
+- (void)setItem:(NSDictionary *)item {
     _item = item;
 
     // 把数据放到 cell 上
 
     // 赋值
     if (item[@"icon"] && [item[@"icon"] length] > 0) {
-        self.imageView.image = [UIImage imageNamed:item[@"icon"]]; // ---设置图片
+        self.imageView.image =
+            [UIImage imageNamed:item[@"icon"]]; // ---设置图片
     }
 
     self.textLabel.text = item[@"title"]; // ---设置标题
@@ -54,57 +56,61 @@
 
     // 判断是否需要设置成红色
     if ([item[@"isRed"] boolValue] && item[@"isRed"]) {
-        self.detailTextLabel.textColor = [UIColor redColor]; // ---设置子标题颜色
+        self.detailTextLabel.textColor =
+            [UIColor redColor]; // ---设置子标题颜色
     }
 
     // 根据字符创生成对象======
-    NSString* accessoryType = item[@"accessoryType"]; // 获取到 UISwith的字符串   @"UISwitch"
-    Class Clz = NSClassFromString(accessoryType); // 获取 UISwitch的类型 UISwitch
-    UIView* obj = [[Clz alloc] init]; // 获取 UISwitch类型的对象
+    NSString *accessoryType =
+        item[@"accessoryType"]; // 获取到 UISwith的字符串   @"UISwitch"
+    Class Clz =
+        NSClassFromString(accessoryType); // 获取 UISwitch的类型 UISwitch
+    UIView *obj = [[Clz alloc] init];     // 获取 UISwitch类型的对象
 
     // 判断 obj 真实的类型
     if ([obj isKindOfClass:[UIImageView class]]) {
         // 设置 frame,图片
-        UIImageView* imageView = (UIImageView*)obj;
+        UIImageView *imageView = (UIImageView *)obj;
         imageView.image = [UIImage imageNamed:item[@"accessoryContent"]];
+        // 设置图片，根据视图内容自动调整视图的大小
         [imageView sizeToFit];
-    }
-    else if ([obj isKindOfClass:[UISwitch class]]) {
+    } else if ([obj isKindOfClass:[UISwitch class]]) {
         // 如果是开关的类型 那么监听
-        UISwitch* switcher = (UISwitch*)obj;
-        [switcher addTarget:self action:@selector(switcherChange:) forControlEvents:UIControlEventValueChanged];
+        UISwitch *switcher = (UISwitch *)obj;
+        [switcher addTarget:self
+                      action:@selector(switcherChange:)
+            forControlEvents:UIControlEventValueChanged];
 
-        // 从 ud 读取开关状态
-        NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
+        // 从 ud 读取开关状态，基于plist文件格式存储，位于应用沙盒的 Library/Preferences 目录下
+        // 过 [NSUserDefaults standardUserDefaults] 获取全局唯一实例
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
         switcher.on = [ud boolForKey:item[@"switchKey"]];
     }
 
+    // 设置右边的视图
     self.accessoryView = obj; // ---设置accessoryView
 }
 
 // 开关状态改变的时候调用
-- (void)switcherChange:(UISwitch*)sender
-{
+- (void)switcherChange:(UISwitch *)sender {
     // ud 单例
-    NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     // 保存
     [ud setBool:sender.isOn forKey:self.item[@"switchKey"]];
 }
 
 // 根据传入的 cell 的类型 返回需要创建的 cell 的类型
-+ (UITableViewCellStyle)loadCellStyleWithItem:(NSDictionary*)item
-{
++ (UITableViewCellStyle)loadCellStyleWithItem:(NSDictionary *)item {
 
     if ([item[@"cellType"] isEqualToString:@"UITableViewCellStyleSubtitle"]) {
         return UITableViewCellStyleSubtitle;
-    }
-    else if ([item[@"cellType"] isEqualToString:@"UITableViewCellStyleValue1"]) {
+    } else if ([item[@"cellType"]
+                   isEqualToString:@"UITableViewCellStyleValue1"]) {
         return UITableViewCellStyleValue1;
-    }
-    else if ([item[@"cellType"] isEqualToString:@"UITableViewCellStyleValue2"]) {
+    } else if ([item[@"cellType"]
+                   isEqualToString:@"UITableViewCellStyleValue2"]) {
         return UITableViewCellStyleValue2;
-    }
-    else {
+    } else {
         return UITableViewCellStyleDefault;
     }
 }

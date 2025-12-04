@@ -10,6 +10,6 @@
 
 @interface HMSettingController : UITableViewController
 
-@property (nonatomic, copy) NSString* plistName;
+@property(nonatomic, copy) NSString *plistName;
 
 @end

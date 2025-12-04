@@ -10,9 +10,10 @@
 
 @implementation HMAboutHeaderView
 
-+ (instancetype)aboutHeaderView
-{
-    return [[NSBundle mainBundle] loadNibNamed:@"HMAboutHeaderView" owner:nil options:nil][0];
++ (instancetype)aboutHeaderView {
+    return [[NSBundle mainBundle] loadNibNamed:@"HMAboutHeaderView"
+                                         owner:nil
+                                       options:nil][0];
 }
 
 @end
