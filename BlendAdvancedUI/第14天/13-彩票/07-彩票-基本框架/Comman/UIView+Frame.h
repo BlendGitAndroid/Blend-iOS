@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// 自定义类别
 @interface UIView (Frame)
 
 @property (nonatomic, assign) CGFloat x;
