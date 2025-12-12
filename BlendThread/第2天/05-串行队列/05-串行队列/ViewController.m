@@ -1,0 +1,48 @@
+//
+//  ViewController.m
+//  05-串行队列
+//
+//  Created by Apple on 15/10/14.
+//  Copyright © 2015年 heima. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self demo2];
+}
+
+//1 串行队列，同步执行   不开新线程, 任务是按顺序执行
+- (void)demo1 {
+    //串行队列
+    dispatch_queue_t queue = dispatch_queue_create("hm", DISPATCH_QUEUE_SERIAL);
+    for (int i=0; i<10; i++) {
+        dispatch_sync(queue, ^{
+            NSLog(@"hello  %d   %@",i,[NSThread currentThread]);
+        });
+    }
+    
+}
+//2 串行队列，异步执行   开启新线程（1个），任务是有序执行
+- (void)demo2 {
+    //串行队列
+    dispatch_queue_t queue = dispatch_queue_create("hm", DISPATCH_QUEUE_SERIAL);
+    for (int i=0; i<10; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"hello  %d   %@",i,[NSThread currentThread]);
+        });
+    }
+}
+
+@end
