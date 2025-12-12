@@ -37,7 +37,7 @@
     NSLog(@"begin");
     for (int i = 0 ; i < 10000000; i++) {
 //        int n = i;
-//        NSString *str = @"hello";  //存储在常量区
+//        NSString *str = @"hello";  //字符串存储在常量区，即时创建很多，也只有一个对象
 //        NSString *str = [NSString stringWithFormat:@"hello %d",i];
         NSLog(@"%d",i);
         

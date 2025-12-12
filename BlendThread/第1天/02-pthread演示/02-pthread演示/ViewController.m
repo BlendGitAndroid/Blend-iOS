@@ -35,8 +35,11 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //创建子线程
     pthread_t pthread; //线程编号
+    
+    
     int result =  pthread_create(&pthread, NULL, demo, NULL);
     
+    // 主线程的线程编号是1
     NSLog(@"touchesBegan  %@",[NSThread currentThread]);
     
     if (result == 0) {

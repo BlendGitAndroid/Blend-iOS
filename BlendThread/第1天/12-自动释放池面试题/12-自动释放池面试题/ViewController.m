@@ -16,15 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 在这里增加自动释放池
     // Do any additional setup after loading the view, typically from a nib.
-    for (int i=0; i < 100000000; i++) {
+    for (int i = 0; i < 100000000; i++) {
         @autoreleasepool {
 
-            NSString *str = [NSString stringWithFormat:@"hello %d",i];
+            NSString *str = [NSString stringWithFormat:@"hello %d", i];
         }
     }
-    
-    
 }
 
 @end

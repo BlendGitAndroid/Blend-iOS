@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+
+// 代理这里要被设置成weak，防止循环引用
 @property (nonatomic, weak) id delegate;
 
 @property (nonatomic, copy) NSString *name;

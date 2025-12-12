@@ -9,86 +9,88 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-//总票数
-@property (nonatomic, assign) int ticketsCount;
+// 总票数
+@property(nonatomic, assign) int ticketsCount;
 
-@property (nonatomic, strong) NSObject *obj;
-//原子属性是线程安全的  自旋锁
-@property (nonatomic, copy) NSString *name;
+@property(nonatomic, strong) NSObject *obj;
+// 原子属性是线程安全的  自旋锁
+@property(nonatomic, copy) NSString *name;
 @end
 
 @implementation ViewController
-//当同时重写属性的setter和getter方法，不会自动生成_name 成员变量
 
-//为属性生成对应的成员变量
+// 因为你同时重写了属性的 setter 和 getter 方法，导致编译器不会自动生成 _name
+// 实例变量，所以需要手动合成。
+//  当同时重写属性的setter和getter方法，不会自动生成_name 成员变量
+//  为属性生成对应的成员变量，编译器指令，注意和synchronized区分
 @synthesize name = _name;
 
-//模拟原子属性
+// 模拟原子属性
 - (NSString *)name {
     return _name;
 }
 
 - (void)setName:(NSString *)name {
+    // 加锁了
     @synchronized(self) {
         _name = name;
     }
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.ticketsCount = 10;
-    
+
     self.obj = [NSObject new];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    //模拟买票窗口1
-    NSThread *thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(sellTickets) object:nil];
+    // 模拟买票窗口1
+    NSThread *thread1 = [[NSThread alloc] initWithTarget:self
+                                                selector:@selector(sellTickets)
+                                                  object:nil];
     [thread1 start];
-    
-    //模拟买票窗口2
-    NSThread *thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(sellTickets) object:nil];
+
+    // 模拟买票窗口2
+    NSThread *thread2 = [[NSThread alloc] initWithTarget:self
+                                                selector:@selector(sellTickets)
+                                                  object:nil];
     [thread2 start];
 }
-//线程是不安全的
-//模拟卖票的方法
+// 线程是不安全的
+// 模拟卖票的方法
 - (void)sellTickets {
-    
+
     while (YES) {
-        //模拟耗时
+        // 模拟耗时
         [NSThread sleepForTimeInterval:1.0];
-        //任意一个对象内部都有一把锁
-        //加锁会影响程序的性能
-        
-        
-        //互斥锁
-        //线程同步
+        // 任意一个对象内部都有一把锁
+        // 加锁会影响程序的性能
+
+        // 互斥锁
+        // 线程同步
         @synchronized(self.obj) {
-            //判断还有没有票
+            // 判断还有没有票
             if (self.ticketsCount > 0) {
                 self.ticketsCount = self.ticketsCount - 1;
-                NSLog(@"剩余%d张票",self.ticketsCount);
-            }else{
+                NSLog(@"剩余%d张票", self.ticketsCount);
+            } else {
                 NSLog(@"来晚了，票没了");
                 break;
             }
         }
-        
     }
 }
-//输出两次9
-//t1   t=10
-//t2   t=10
-//t1   t=9   log
-//t2   t=9   log
+// 输出两次9
+// t1   t=10
+// t2   t=10
+// t1   t=9   log
+// t2   t=9   log
 
-//输出8，9
-//t2   t=9
-//t1   t=8  log
-//t2   log
-
-
+// 输出8，9
+// t2   t=9
+// t1   t=8  log
+// t2   log
 
 @end
