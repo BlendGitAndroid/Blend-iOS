@@ -22,7 +22,7 @@
         NSAssert(self.finishedBlock != nil, @"finishedBlock 不能为nil");
         
         //模拟网络延时
-        [NSThread sleepForTimeInterval:2.0];
+//        [NSThread sleepForTimeInterval:2.0];
         //下载网络图片
         NSURL *url = [NSURL URLWithString:self.urlString];
         NSData *data = [NSData dataWithContentsOfURL:url];

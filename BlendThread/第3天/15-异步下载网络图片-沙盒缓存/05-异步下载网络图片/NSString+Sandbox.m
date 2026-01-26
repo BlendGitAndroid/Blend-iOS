@@ -9,15 +9,21 @@
 #import "NSString+Sandbox.h"
 
 @implementation NSString (Sandbox)
+// 保存到cache目录
 - (instancetype)appendCache {
-    return [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[self lastPathComponent]];
+    return [[NSSearchPathForDirectoriesInDomains(
+        NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+        stringByAppendingPathComponent:[self lastPathComponent]];
 }
+
 - (instancetype)appendTemp {
-    return [NSTemporaryDirectory() stringByAppendingPathComponent:[self lastPathComponent]];
-
+    return [NSTemporaryDirectory()
+        stringByAppendingPathComponent:[self lastPathComponent]];
 }
-- (instancetype)appendDocument {
-    return [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[self lastPathComponent]];
 
+- (instancetype)appendDocument {
+    return [[NSSearchPathForDirectoriesInDomains(
+        NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+        stringByAppendingPathComponent:[self lastPathComponent]];
 }
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (MyView)
-@property (nonatomic, copy) NSString *urlString;
+@property(nonatomic, copy) NSString *urlString;
 @end

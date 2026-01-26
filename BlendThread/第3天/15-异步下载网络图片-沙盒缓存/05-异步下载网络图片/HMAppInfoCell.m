@@ -9,18 +9,18 @@
 #import "HMAppInfoCell.h"
 #import "HMAppInfo.h"
 @interface HMAppInfoCell ()
-@property (weak, nonatomic) IBOutlet UILabel *nameView;
-@property (weak, nonatomic) IBOutlet UILabel *downloadView;
+@property(weak, nonatomic) IBOutlet UILabel *nameView;
+@property(weak, nonatomic) IBOutlet UILabel *downloadView;
 
 @end
 
 @implementation HMAppInfoCell
 
+// 自定义cell，赋值
 - (void)setAppInfo:(HMAppInfo *)appInfo {
     _appInfo = appInfo;
     self.nameView.text = appInfo.name;
     self.downloadView.text = appInfo.download;
-    
 }
 
 @end

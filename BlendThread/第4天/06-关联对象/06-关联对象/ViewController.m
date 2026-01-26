@@ -19,10 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     UIImageView *imgView = [UIImageView new];
-    
+
     imgView.urlString = @"123abc";
-    
-    NSLog(@"%@",imgView.urlString);
+
+    NSLog(@"%@", imgView.urlString);
 }
 
 - (void)didReceiveMemoryWarning {

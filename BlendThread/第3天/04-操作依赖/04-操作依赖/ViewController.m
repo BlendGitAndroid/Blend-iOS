@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) NSOperationQueue *queue;
+@property(nonatomic, strong) NSOperationQueue *queue;
 @end
 
 @implementation ViewController
@@ -26,31 +26,31 @@
 
     // 下载 - 解压 - 升级完成
     NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"下载");
+      NSLog(@"下载");
     }];
-    
+
     NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
-        [NSThread sleepForTimeInterval:2.0];
-        NSLog(@"解压");
+      [NSThread sleepForTimeInterval:2.0];
+      NSLog(@"解压");
     }];
-    
+
     NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"升级完成");
+      NSLog(@"升级完成");
     }];
-    //设置操作间的依赖
+    // 设置操作间的依赖
     [op2 addDependency:op1];
     [op3 addDependency:op2];
-    
-    //错误，会发生循环依赖，什么都不执行
-//    [op1 addDependency:op3];
-    
-    
-    //操作添加到队列中
-    [self.queue addOperations:@[op1,op2] waitUntilFinished:NO];
-    //依赖关系可以夸队列执行
+
+    // 错误，会发生循环依赖，什么都不执行
+    //    [op1 addDependency:op3];
+
+    // 操作添加到队列中
+    // waitUntilFinished = YES 等待所有操作执行完毕
+    // waitUntilFinished = NO  不等所有操作执行完毕，继续执行后续代码
+    [self.queue addOperations:@[ op1, op2 ] waitUntilFinished:NO];
+    // 依赖关系可以夸队列执行
+    // 等op1,op2执行完毕，再执行op3,在主线程上执行
     [[NSOperationQueue mainQueue] addOperation:op3];
 }
-
-
 
 @end

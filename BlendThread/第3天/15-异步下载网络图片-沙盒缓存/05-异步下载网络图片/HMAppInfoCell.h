@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// 用class修饰，避免循环引用
 @class HMAppInfo;
 @interface HMAppInfoCell : UITableViewCell
-@property (nonatomic, strong) HMAppInfo *appInfo;
+@property(nonatomic, strong) HMAppInfo *appInfo;
 
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+// 自定义cell的图标
+@property(weak, nonatomic) IBOutlet UIImageView *iconView;
 
 @end

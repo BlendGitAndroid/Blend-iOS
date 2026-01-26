@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// 继承自UITableViewController，用于展示应用列表
 @interface ViewController : UITableViewController
 
 

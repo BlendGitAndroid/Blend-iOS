@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface HMDownloaderOperationManager : NSObject
-//单例的方法
+// 单例的方法
 + (instancetype)sharedManager;
 
-- (void)downloadWithURLString:(NSString *)urlString finishedBlock:(void(^)(UIImage *img))finishedBlock;
+- (void)downloadWithURLString:(NSString *)urlString
+                finishedBlock:(void (^)(UIImage *img))finishedBlock;
 
-
-//取消操作
+// 取消操作
 - (void)cancelOperation:(NSString *)urlString;
 @end
