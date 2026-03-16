@@ -32,6 +32,9 @@
 
     // 设置refreshControl的显示内容
     self.refreshControl.tintColor = [UIColor blueColor];
+    // 用于设置刷新的文字颜色
+    // NSForegroundColorAttributeName 是 Foundation 框架中定义的 字符串常量
+    // ，用于设置富文本（Attributed String）的前景色（文字颜色）。
     self.refreshControl.attributedTitle = [[NSAttributedString alloc]
         initWithString:@"正在拼命加载..."
             attributes:@{NSForegroundColorAttributeName : [UIColor redColor]}];
@@ -39,22 +42,50 @@
     //    NSString *str;
     //    [str sizeWithAttributes:(nullable NSDictionary<NSString *,id> *)]
 
+    // 开始下拉刷新
+    // refreshControl 是 UIScrollView 的属性，而 UITableView 继承自 UIScrollView
+    // ，所以 UITableViewController 可以直接使用。
     [self.refreshControl beginRefreshing];
     // 发送异步请求，获取数据
     [self loadNews];
 }
 
-// 发送异步请求获取数据
+// 发送异步请求获取数据 - 改进版
 - (IBAction)loadNews {
-    NSLog(@"获取数据中");
+    NSLog(@"📱 开始获取新闻数据...");
 
     [HMNews
-        newsWithSuccess:^(NSArray *array) {
-          self.newsList = array;
-          NSLog(@"获取数据");
+        newsWithSuccess:^(NSArray<HMNews *> *newsList) {
+          // 成功获取数据
+          NSLog(@"✅ 成功获取 %ld 条新闻", newsList.count);
+          self.newsList = newsList;
+
+          // 打印第一条新闻的详细信息用于调试
+          if (newsList.count > 0) {
+              HMNews *firstNews = newsList.firstObject;
+              NSLog(@"📰 第一条新闻: %@", firstNews.title);
+              NSLog(@"🔥 热度: %@", firstNews.hot_value);
+              NSLog(@"🏷️ 标签: %@ (%@)", firstNews.label, firstNews.label_desc);
+          }
         }
-        error:^{
-          NSLog(@"获取数据出错");
+        error:^(NSError *error) {
+          // 错误处理 - 详细的错误信息
+          NSLog(@"❌ 获取数据失败: %@", error.localizedDescription);
+          NSLog(@"💡 错误原因: %@", error.localizedFailureReason);
+
+          // 可以在这里添加用户提示，比如显示错误Alert
+          dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertController *alert = [UIAlertController
+                alertControllerWithTitle:@"网络错误"
+                                 message:error.localizedFailureReason
+                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction =
+                [UIAlertAction actionWithTitle:@"确定"
+                                         style:UIAlertActionStyleDefault
+                                       handler:nil];
+            [alert addAction:okAction];
+            [self presentViewController:alert animated:YES completion:nil];
+          });
         }];
 }
 

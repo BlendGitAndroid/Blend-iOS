@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0915A70D2F6426C800F25234 /* HMAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915A70C2F6426C800F25234 /* HMAPIConfig.m */; };
 		18E174311BD62EED0021DF1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E174301BD62EED0021DF1D /* main.m */; };
 		18E174341BD62EED0021DF1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E174331BD62EED0021DF1D /* AppDelegate.m */; };
 		18E174371BD62EED0021DF1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E174361BD62EED0021DF1D /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0915A70B2F6426C800F25234 /* HMAPIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAPIConfig.h; sourceTree = "<group>"; };
+		0915A70C2F6426C800F25234 /* HMAPIConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAPIConfig.m; sourceTree = "<group>"; };
 		18E1742C1BD62EED0021DF1D /* 08-模拟科技头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-模拟科技头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E174301BD62EED0021DF1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E174321BD62EED0021DF1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,14 +129,16 @@
 				18E174351BD62EED0021DF1D /* ViewController.h */,
 				18E174361BD62EED0021DF1D /* ViewController.m */,
 				18E174381BD62EED0021DF1D /* Main.storyboard */,
-				18E1743B1BD62EED0021DF1D /* Assets.xcassets */,
 				18E1743D1BD62EED0021DF1D /* LaunchScreen.storyboard */,
+				18E1743B1BD62EED0021DF1D /* Assets.xcassets */,
 				18E174401BD62EED0021DF1D /* Info.plist */,
-				18E1742F1BD62EED0021DF1D /* Supporting Files */,
 				18E174461BD62F020021DF1D /* HMNews.h */,
 				18E174471BD62F020021DF1D /* HMNews.m */,
 				18E1744F1BD63F1E0021DF1D /* HMNewsCell.h */,
 				18E174501BD63F1E0021DF1D /* HMNewsCell.m */,
+				0915A70B2F6426C800F25234 /* HMAPIConfig.h */,
+				0915A70C2F6426C800F25234 /* HMAPIConfig.m */,
+				18E1742F1BD62EED0021DF1D /* Supporting Files */,
 			);
 			path = "08-模拟科技头条";
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				18E1747F1BD640190021DF1D /* UIButton+WebCache.m in Sources */,
 				18E174771BD640190021DF1D /* NSData+ImageContentType.m in Sources */,
 				18E1747E1BD640190021DF1D /* SDWebImagePrefetcher.m in Sources */,
+				0915A70D2F6426C800F25234 /* HMAPIConfig.m in Sources */,
 				18E1747B1BD640190021DF1D /* SDWebImageDownloader.m in Sources */,
 				18E174481BD62F020021DF1D /* HMNews.m in Sources */,
 				18E174821BD640190021DF1D /* UIImage+WebP.m in Sources */,
