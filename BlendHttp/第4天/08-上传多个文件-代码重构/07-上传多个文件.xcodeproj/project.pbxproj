@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187B75971BDA1EF500C3BF5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B75961BDA1EF500C3BF5C /* main.m */; };
+		187B759A1BDA1EF500C3BF5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B75991BDA1EF500C3BF5C /* AppDelegate.m */; };
+		187B759D1BDA1EF500C3BF5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B759C1BDA1EF500C3BF5C /* ViewController.m */; };
+		187B75A01BDA1EF500C3BF5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B759E1BDA1EF500C3BF5C /* Main.storyboard */; };
+		187B75A21BDA1EF500C3BF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187B75A11BDA1EF500C3BF5C /* Assets.xcassets */; };
+		187B75A51BDA1EF500C3BF5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B75A31BDA1EF500C3BF5C /* LaunchScreen.storyboard */; };
+		187B75AE1BDA253F00C3BF5C /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187B75AC1BDA253F00C3BF5C /* 01.jpg */; settings = {ASSET_TAGS = (); }; };
+		187B75AF1BDA253F00C3BF5C /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187B75AD1BDA253F00C3BF5C /* 06.jpg */; settings = {ASSET_TAGS = (); }; };
+		187B75B21BDA2A4A00C3BF5C /* HMUploadFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B75B11BDA2A4A00C3BF5C /* HMUploadFiles.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187B75921BDA1EF500C3BF5C /* 07-上传多个文件.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-上传多个文件.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187B75961BDA1EF500C3BF5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		187B75981BDA1EF500C3BF5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		187B75991BDA1EF500C3BF5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		187B759B1BDA1EF500C3BF5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		187B759C1BDA1EF500C3BF5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		187B759F1BDA1EF500C3BF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187B75A11BDA1EF500C3BF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187B75A41BDA1EF500C3BF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187B75A61BDA1EF500C3BF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187B75AC1BDA253F00C3BF5C /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		187B75AD1BDA253F00C3BF5C /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
+		187B75B01BDA2A4A00C3BF5C /* HMUploadFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUploadFiles.h; sourceTree = "<group>"; };
+		187B75B11BDA2A4A00C3BF5C /* HMUploadFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUploadFiles.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187B758F1BDA1EF500C3BF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187B75891BDA1EF500C3BF5C = {
+			isa = PBXGroup;
+			children = (
+				187B75941BDA1EF500C3BF5C /* 07-上传多个文件 */,
+				187B75931BDA1EF500C3BF5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187B75931BDA1EF500C3BF5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187B75921BDA1EF500C3BF5C /* 07-上传多个文件.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187B75941BDA1EF500C3BF5C /* 07-上传多个文件 */ = {
+			isa = PBXGroup;
+			children = (
+				187B75981BDA1EF500C3BF5C /* AppDelegate.h */,
+				187B75991BDA1EF500C3BF5C /* AppDelegate.m */,
+				187B759B1BDA1EF500C3BF5C /* ViewController.h */,
+				187B759C1BDA1EF500C3BF5C /* ViewController.m */,
+				187B759E1BDA1EF500C3BF5C /* Main.storyboard */,
+				187B75A11BDA1EF500C3BF5C /* Assets.xcassets */,
+				187B75A31BDA1EF500C3BF5C /* LaunchScreen.storyboard */,
+				187B75A61BDA1EF500C3BF5C /* Info.plist */,
+				187B75951BDA1EF500C3BF5C /* Supporting Files */,
+				187B75B01BDA2A4A00C3BF5C /* HMUploadFiles.h */,
+				187B75B11BDA2A4A00C3BF5C /* HMUploadFiles.m */,
+			);
+			path = "07-上传多个文件";
+			sourceTree = "<group>";
+		};
+		187B75951BDA1EF500C3BF5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				187B75AC1BDA253F00C3BF5C /* 01.jpg */,
+				187B75AD1BDA253F00C3BF5C /* 06.jpg */,
+				187B75961BDA1EF500C3BF5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187B75911BDA1EF500C3BF5C /* 07-上传多个文件 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187B75A91BDA1EF500C3BF5C /* Build configuration list for PBXNativeTarget "07-上传多个文件" */;
+			buildPhases = (
+				187B758E1BDA1EF500C3BF5C /* Sources */,
+				187B758F1BDA1EF500C3BF5C /* Frameworks */,
+				187B75901BDA1EF500C3BF5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-上传多个文件";
+			productName = "07-上传多个文件";
+			productReference = 187B75921BDA1EF500C3BF5C /* 07-上传多个文件.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187B758A1BDA1EF500C3BF5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = heima;
+				TargetAttributes = {
+					187B75911BDA1EF500C3BF5C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 187B758D1BDA1EF500C3BF5C /* Build configuration list for PBXProject "07-上传多个文件" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187B75891BDA1EF500C3BF5C;
+			productRefGroup = 187B75931BDA1EF500C3BF5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187B75911BDA1EF500C3BF5C /* 07-上传多个文件 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187B75901BDA1EF500C3BF5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187B75AF1BDA253F00C3BF5C /* 06.jpg in Resources */,
+				187B75A51BDA1EF500C3BF5C /* LaunchScreen.storyboard in Resources */,
+				187B75A21BDA1EF500C3BF5C /* Assets.xcassets in Resources */,
+				187B75AE1BDA253F00C3BF5C /* 01.jpg in Resources */,
+				187B75A01BDA1EF500C3BF5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187B758E1BDA1EF500C3BF5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187B759D1BDA1EF500C3BF5C /* ViewController.m in Sources */,
+				187B759A1BDA1EF500C3BF5C /* AppDelegate.m in Sources */,
+				187B75971BDA1EF500C3BF5C /* main.m in Sources */,
+				187B75B21BDA2A4A00C3BF5C /* HMUploadFiles.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		187B759E1BDA1EF500C3BF5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187B759F1BDA1EF500C3BF5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187B75A31BDA1EF500C3BF5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187B75A41BDA1EF500C3BF5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187B75A71BDA1EF500C3BF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		187B75A81BDA1EF500C3BF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187B75AA1BDA1EF500C3BF5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07-上传多个文件/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.heima.-7-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		187B75AB1BDA1EF500C3BF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07-上传多个文件/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.heima.-7-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187B758D1BDA1EF500C3BF5C /* Build configuration list for PBXProject "07-上传多个文件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187B75A71BDA1EF500C3BF5C /* Debug */,
+				187B75A81BDA1EF500C3BF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187B75A91BDA1EF500C3BF5C /* Build configuration list for PBXNativeTarget "07-上传多个文件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187B75AA1BDA1EF500C3BF5C /* Debug */,
+				187B75AB1BDA1EF500C3BF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187B758A1BDA1EF500C3BF5C /* Project object */;
+}
