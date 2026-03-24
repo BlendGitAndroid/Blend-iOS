@@ -29,5 +29,9 @@
     self.newsController.view.frame = self.bounds;
 }
 
+- (void)setUrlString:(NSString *)urlString {
+    self.newsController.urlString = urlString;
+}
+
 
 @end

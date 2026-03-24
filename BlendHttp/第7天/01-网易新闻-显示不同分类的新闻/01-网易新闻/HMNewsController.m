@@ -21,16 +21,22 @@
     [self.tableView reloadData];
 }
 
+//当获取到新闻地址之后。发送请求
+- (void)setUrlString:(NSString *)urlString {
+    self.newsList = nil;
+    //异步加载数据
+    [HMNews newsListWithURLString:urlString successBlock:^(NSArray *array) {
+        self.newsList = array;
+        
+    } errorBlock:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //异步加载数据
-    [HMNews newsListWithSuccessBlock:^(NSArray *array) {
-        self.newsList = array;
-    } errorBlock:^(NSError *error) {
-        NSLog(@"%@",error);
-    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

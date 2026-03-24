@@ -19,6 +19,6 @@
 
 + (instancetype)newsWithDic:(NSDictionary *)dic;
 //发送异步请求，获取数据，字典转模型
-+ (void)newsListWithSuccessBlock:(void(^)(NSArray *array))successBlock errorBlock:(void(^)(NSError *error))errorBlock;
++ (void)newsListWithURLString:(NSString *)urlString successBlock:(void(^)(NSArray *array))successBlock errorBlock:(void(^)(NSError *error))errorBlock;
 
 @end

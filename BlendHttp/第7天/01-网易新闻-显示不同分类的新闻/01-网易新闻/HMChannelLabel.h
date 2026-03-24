@@ -10,4 +10,6 @@
 
 @interface HMChannelLabel : UILabel
 + (instancetype)channelLabelWithTName:(NSString *)tname;
+
+@property (nonatomic, assign) CGFloat scale;
 @end

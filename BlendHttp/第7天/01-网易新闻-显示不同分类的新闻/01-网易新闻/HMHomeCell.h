@@ -1,5 +1,5 @@
 //
-//  HMNewsController.h
+//  HMHomeCell.h
 //  01-网易新闻
 //
 //  Created by Apple on 15/10/28.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HMNewsController : UITableViewController
-
+@interface HMHomeCell : UICollectionViewCell
+@property (nonatomic, copy) NSString *urlString;
 @end

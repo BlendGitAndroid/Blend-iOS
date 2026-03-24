@@ -19,9 +19,9 @@
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 
 //发送异步请求，获取数据，字典转模型
-+ (void)newsListWithSuccessBlock:(void(^)(NSArray *array))successBlock errorBlock:(void(^)(NSError *error))errorBlock {
++ (void)newsListWithURLString:(NSString *)urlString successBlock:(void(^)(NSArray *array))successBlock errorBlock:(void(^)(NSError *error))errorBlock{
     //http://c.m.163.com/nc/article/headline/T1348647853363/0-140.html
-    [[HMNetworkTools sharedManager] GET:@"article/headline/T1348647853363/0-140.html" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary  *responseObject) {
+    [[HMNetworkTools sharedManager] GET:urlString parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary  *responseObject) {
         //获取第一个键
         NSString *rootKey = responseObject.keyEnumerator.nextObject;
         NSArray *array = responseObject[rootKey];

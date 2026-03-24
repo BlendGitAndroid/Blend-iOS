@@ -25,5 +25,12 @@
     return lbl;
 }
 
+//根据比例改变文字的大小
+- (void)setScale:(CGFloat)scale {
+    CGFloat max = kBIGFONT * 1.0 / kSMALLFONT - 1;
+    
+    self.transform = CGAffineTransformMakeScale( max*scale+1, max*scale+1);
+    self.textColor = [UIColor colorWithRed:scale green:0 blue:0 alpha:1];
+}
 
 @end

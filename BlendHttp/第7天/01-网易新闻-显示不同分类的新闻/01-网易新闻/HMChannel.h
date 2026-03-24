@@ -12,6 +12,8 @@
 @interface HMChannel : NSObject
 @property (nonatomic, copy) NSString *tname;
 @property (nonatomic, copy) NSString *tid;
+//请求新闻的地址
+@property (nonatomic, copy, readonly) NSString *urlString;
 
 + (instancetype)channelWithDic:(NSDictionary *)dic;
 //加载本地数据

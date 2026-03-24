@@ -19,7 +19,7 @@
         NSURL *baseURL = [NSURL URLWithString:@"http://c.m.163.com/nc/"];
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         //配置超时时长
-        config.timeoutIntervalForRequest = 15;
+        config.timeoutIntervalForRequest = 30;
         
         instance = [[self alloc] initWithBaseURL:baseURL sessionConfiguration:config];
         

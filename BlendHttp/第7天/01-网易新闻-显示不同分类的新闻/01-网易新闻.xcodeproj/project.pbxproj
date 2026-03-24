@@ -21,7 +21,7 @@
 		186A88811BE0CCBE00ACD01D /* HMChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186A88801BE0CCBE00ACD01D /* HMChannelLabel.m */; settings = {ASSET_TAGS = (); }; };
 		186A88841BE0D19800ACD01D /* HMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186A88831BE0D19800ACD01D /* HMHomeCell.m */; settings = {ASSET_TAGS = (); }; };
 		18FAF73D1BE073B60009048B /* HMHeadlineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FAF73C1BE073B60009048B /* HMHeadlineCell.m */; settings = {ASSET_TAGS = (); }; };
-		95273AD1545AE0E94FBD20F2 /* libPods-01-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 905093E7AEE25754E34E1D84 /* libPods-01-网易新闻.a */; };
+		85F47C5603BDDC5ECCC8E64E /* libPods-01-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF88EC46C131D31B3D29FD7 /* libPods-01-网易新闻.a */; };
 		AE0D1BBF1BDF33DF00F7970E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0D1BBE1BDF33DF00F7970E /* main.m */; };
 		AE0D1BC21BDF33DF00F7970E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0D1BC11BDF33DF00F7970E /* AppDelegate.m */; };
 		AE0D1BCA1BDF33DF00F7970E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0D1BC91BDF33DF00F7970E /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0037729E391428B1EDA9966B /* Pods-01-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-网易新闻.release.xcconfig"; path = "Target Support Files/Pods-01-网易新闻/Pods-01-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		169699BB2AA3F5A635A4ABDE /* Pods-01-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-网易新闻.debug.xcconfig"; path = "Target Support Files/Pods-01-网易新闻/Pods-01-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		1822D2E51BE0B50A003C25E2 /* HMNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNewsController.h; sourceTree = "<group>"; };
 		1822D2E61BE0B50A003C25E2 /* HMNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNewsController.m; sourceTree = "<group>"; };
 		1822D2E81BE0B89D003C25E2 /* HMNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNewsCell.h; sourceTree = "<group>"; };
@@ -55,8 +55,7 @@
 		186A88831BE0D19800ACD01D /* HMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMHomeCell.m; sourceTree = "<group>"; };
 		18FAF73B1BE073B60009048B /* HMHeadlineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMHeadlineCell.h; sourceTree = "<group>"; };
 		18FAF73C1BE073B60009048B /* HMHeadlineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMHeadlineCell.m; sourceTree = "<group>"; };
-		82B0F4547E0CFC4AA80F92F2 /* Pods-01-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-网易新闻.debug.xcconfig"; path = "Target Support Files/Pods-01-网易新闻/Pods-01-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
-		905093E7AEE25754E34E1D84 /* libPods-01-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-01-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FE7E9F57C76F20C7F6D1DF /* Pods-01-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-网易新闻.release.xcconfig"; path = "Target Support Files/Pods-01-网易新闻/Pods-01-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		AE0D1BBA1BDF33DF00F7970E /* 01-网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0D1BBE1BDF33DF00F7970E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE0D1BC01BDF33DF00F7970E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		AE0D1BC91BDF33DF00F7970E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0D1BCC1BDF33DF00F7970E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE0D1BCE1BDF33DF00F7970E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF88EC46C131D31B3D29FD7 /* libPods-01-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-01-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95273AD1545AE0E94FBD20F2 /* libPods-01-网易新闻.a in Frameworks */,
+				85F47C5603BDDC5ECCC8E64E /* libPods-01-网易新闻.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,20 +128,10 @@
 			name = News;
 			sourceTree = "<group>";
 		};
-		228328093AB1DB08AD4F859C /* Pods */ = {
+		7244202644E544127637D3B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82B0F4547E0CFC4AA80F92F2 /* Pods-01-网易新闻.debug.xcconfig */,
-				0037729E391428B1EDA9966B /* Pods-01-网易新闻.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4DA9E7A1A24C22528B9087BE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				905093E7AEE25754E34E1D84 /* libPods-01-网易新闻.a */,
+				AEF88EC46C131D31B3D29FD7 /* libPods-01-网易新闻.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,8 +141,8 @@
 			children = (
 				AE0D1BBC1BDF33DF00F7970E /* 01-网易新闻 */,
 				AE0D1BBB1BDF33DF00F7970E /* Products */,
-				228328093AB1DB08AD4F859C /* Pods */,
-				4DA9E7A1A24C22528B9087BE /* Frameworks */,
+				DEEE8A14DA5ED1CA8BE609ED /* Pods */,
+				7244202644E544127637D3B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +182,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DEEE8A14DA5ED1CA8BE609ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				169699BB2AA3F5A635A4ABDE /* Pods-01-网易新闻.debug.xcconfig */,
+				81FE7E9F57C76F20C7F6D1DF /* Pods-01-网易新闻.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,7 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE0D1BD11BDF33DF00F7970E /* Build configuration list for PBXNativeTarget "01-网易新闻" */;
 			buildPhases = (
-				DF93F550C68C66A2E9EB2BC9 /* [CP] Check Pods Manifest.lock */,
+				123E0DC932FA20F14EF529EA /* [CP] Check Pods Manifest.lock */,
 				AE0D1BB61BDF33DF00F7970E /* Sources */,
 				AE0D1BB71BDF33DF00F7970E /* Frameworks */,
 				AE0D1BB81BDF33DF00F7970E /* Resources */,
@@ -261,7 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DF93F550C68C66A2E9EB2BC9 /* [CP] Check Pods Manifest.lock */ = {
+		123E0DC932FA20F14EF529EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +402,7 @@
 		};
 		AE0D1BD21BDF33DF00F7970E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82B0F4547E0CFC4AA80F92F2 /* Pods-01-网易新闻.debug.xcconfig */;
+			baseConfigurationReference = 169699BB2AA3F5A635A4ABDE /* Pods-01-网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "01-网易新闻/Info.plist";
@@ -414,7 +414,7 @@
 		};
 		AE0D1BD31BDF33DF00F7970E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0037729E391428B1EDA9966B /* Pods-01-网易新闻.release.xcconfig */;
+			baseConfigurationReference = 81FE7E9F57C76F20C7F6D1DF /* Pods-01-网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "01-网易新闻/Info.plist";

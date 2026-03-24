@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 
+//记录当前label的索引
+@property (nonatomic, assign) int currentIndex;
 @end
 
 @implementation HMHomeController
@@ -67,6 +69,10 @@
     //设置滚动范围
     self.scrollView.contentSize = CGSizeMake(x, 0);
     self.scrollView.showsHorizontalScrollIndicator = NO;
+    
+    //设置第一个label，显示大字体
+    HMChannelLabel *lbl = self.scrollView.subviews[0];
+    lbl.scale = 1;
 }
 
 
@@ -84,9 +90,60 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HMHomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"news" forIndexPath:indexPath];
     
+    HMChannel *channel = self.channels[indexPath.item];
+    cell.urlString = channel.urlString;
     
     return cell;
 }
 
+
+//collectionView的代理方法
+//collectionView正在滚动的方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //当前label
+    HMChannelLabel *currentLabel = self.scrollView.subviews[self.currentIndex];
+//    int index = scrollView.contentOffset.x / scrollView.bounds.size.width;
+
+    //下一个label
+    HMChannelLabel *nextLabel = nil;
+    //遍历当前可见cell的索引
+    for (NSIndexPath *indexPath in self.collectionView.indexPathsForVisibleItems) {
+        //如果不是当前的cell，就是下一个cell
+        if (indexPath.item != self.currentIndex) {
+            nextLabel = self.scrollView.subviews[indexPath.item];
+            break;
+        }
+    }
+    
+    if (nextLabel == nil) {
+        return;
+    }
+    
+    
+    //获取滚动的比例
+    CGFloat nextScale = ABS(scrollView.contentOffset.x / scrollView.bounds.size.width - self.currentIndex);
+    CGFloat currentScale = 1-nextScale;
+    
+    currentLabel.scale = currentScale;
+    nextLabel.scale = nextScale;
+    
+}
+//滚动结束之后，计算currentIndex
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    self.currentIndex = scrollView.contentOffset.x / scrollView.bounds.size.width;
+    
+    //居中显示当前显示的标签
+      HMChannelLabel *label = self.scrollView.subviews[self.currentIndex];
+      CGFloat offset = label.center.x - self.scrollView.bounds.size.width * 0.5;
+      CGFloat maxOffset = self.scrollView.contentSize.width - label.bounds.size.width - self.scrollView.bounds.size.width;
+     
+      if (offset < 0) {
+            offset = 0;
+          } else if (offset > maxOffset) {
+                offset = maxOffset + label.bounds.size.width;
+              }
+     
+      [self.scrollView setContentOffset:CGPointMake(offset, 0) animated:YES];
+}
 
 @end

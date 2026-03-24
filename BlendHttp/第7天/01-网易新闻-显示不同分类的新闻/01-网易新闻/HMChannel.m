@@ -35,4 +35,9 @@
         return [obj1.tid compare:obj2.tid];
     }];
 }
+
+- (NSString *)urlString {
+    
+    return [NSString stringWithFormat:@"article/headline/%@/0-140.html",self.tid];
+}
 @end
