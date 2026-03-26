@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Egi-IP-6GC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--好友列表-->
+        <scene sceneID="tvM-2F-sZO">
+            <objects>
+                <viewController id="1Cp-ts-SUl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F44-uh-8Uw"/>
+                        <viewControllerLayoutGuide type="bottom" id="BTF-ST-Wu3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pKZ-wB-cRb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.71464839338897579" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="好友列表" id="g59-Fx-h2Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsl-lM-ufr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="651"/>
+        </scene>
+        <!--朋友圈-->
+        <scene sceneID="GZs-s8-MXH">
+            <objects>
+                <viewController id="lZJ-ZH-5xL" customClass="HMTimelineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wPd-8k-pmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7c-ta-NBr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agr-E4-el6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk2-vY-GGs">
+                                <rect key="frame" x="44" y="177" width="115" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backClick:" destination="lZJ-ZH-5xL" eventType="touchUpInside" id="Vre-1m-J6d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.62918293904646116" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="朋友圈" id="WMO-tx-MmH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7W4-fQ-f8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="-74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.019607843140000001" green="0.57254901960000004" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ns0-1E-fyp"/>
+                    <connections>
+                        <segue destination="lZJ-ZH-5xL" kind="show" identifier="timeline" id="8w7-3L-fgs"/>
+                        <segue destination="1Cp-ts-SUl" kind="show" identifier="session" id="Eex-7k-ttf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cEj-8x-8FP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Egi-IP-6GC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nEV-Mg-HTg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bLI-jQ-Zjy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="je0-16-JLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="352"/>
+        </scene>
+    </scenes>
+</document>
