@@ -128,7 +128,7 @@
 
 #pragma mark 接受远程推送的消息
 // 前台/后台/应用程序退出  三种情况下都可以收到消息
-// 需要配置一个值, 在项目--> Target
+// 需要配置一个值, 在项目--> Target-> Capabilities--> Background Modes--> Remote notifications
 // 如果实现了此方法, 那么上面的方法将会弃用, 此时,
 // 也就不需要在程序启动的代理方法中写代码了
 - (void)application:(UIApplication *)application
