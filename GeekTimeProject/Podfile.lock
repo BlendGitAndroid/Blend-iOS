@@ -1,33 +1,31 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.5.3):
-    - CocoaLumberjack/Core (= 3.5.3)
-  - CocoaLumberjack/Core (3.5.3)
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
-  - SDWebImage (5.0.6):
-    - SDWebImage/Core (= 5.0.6)
-  - SDWebImage/Core (5.0.6)
+  - CocoaLumberjack (3.9.0):
+    - CocoaLumberjack/Core (= 3.9.0)
+  - CocoaLumberjack/Core (3.9.0)
+  - IGListDiffKit (5.2.0)
+  - IGListKit (5.2.0):
+    - IGListDiffKit (= 5.2.0)
+  - SDWebImage (5.21.7):
+    - SDWebImage/Core (= 5.21.7)
+  - SDWebImage/Core (5.21.7)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 4.0)
   - CocoaLumberjack
   - IGListKit
   - SDWebImage
@@ -36,15 +34,17 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - CocoaLumberjack
+    - IGListDiffKit
     - IGListKit
     - SDWebImage
 
 SPEC CHECKSUMS:
-  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
-  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
-  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CocoaLumberjack: 5644158777912b7de7469fa881f8a3f259c2512a
+  IGListDiffKit: 33d814e2f318fe75080c527a71bafcc31b6b3abc
+  IGListKit: e43679ba92defb48928d3b27765ac87648f06f25
+  SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
 
-PODFILE CHECKSUM: f576514b5ded8ae171e954e13db9d95374e67d3e
+PODFILE CHECKSUM: 06ac3fc386e0fb89d75c9d5f1af8db30f572ed5f
 
 COCOAPODS: 1.16.2
